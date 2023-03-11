@@ -1,0 +1,12 @@
+<snippet>
+	<description>mdialog.inc</description>
+	<content><![CDATA[
+DialogResponse:${1:dialog_name}(playerid, response, listitem, inputtext[])
+{
+	${4}
+	return 1;
+}
+]]></content>
+	<tabTrigger>DialogResponse:</tabTrigger>
+	<scope>source.pawn</scope>
+</snippet>

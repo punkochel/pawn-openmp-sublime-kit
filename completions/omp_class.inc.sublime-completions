@@ -1,0 +1,27 @@
+{
+    "scope": "source.pawn - variable.other.pawn",
+
+    "completions": 
+    [
+		/*
+			Natives
+		*/
+		{"trigger": "AddPlayerClass", "contents": "AddPlayerClass(${1:skin}, ${2:Float:spawnX}, ${3:Float:spawnY}, ${4:Float:spawnZ}, ${5:Float:angle}, ${6:WEAPON:weapon1 = WEAPON_FIST}, ${7:ammo1 = 0}, ${8:WEAPON:weapon2 = WEAPON_FIST}, ${9:ammo2 = 0}, ${10:WEAPON:weapon3 = WEAPON_FIST}, ${11:ammo3 = 0})"},
+		{"trigger": "AddPlayerClassEx", "contents": "AddPlayerClassEx(${1:team}, ${2:skin}, ${3:Float:spawnX}, ${4:Float:spawnY}, ${5:Float:spawnZ}, ${6:Float:angle}, ${7:WEAPON:weapon1 = WEAPON_FIST}, ${8:ammo1 = 0}, ${9:WEAPON:weapon2 = WEAPON_FIST}, ${10:ammo2 = 0}, ${11:WEAPON:weapon3 = WEAPON_FIST}, ${12:ammo3 = 0})"},
+		{"trigger": "SetSpawnInfo", "contents": "SetSpawnInfo(${1:playerid}, ${2:team}, ${3:skin}, ${4:Float:spawnX}, ${5:Float:spawnY}, ${6:Float:spawnZ}, ${7:Float:angle}, ${8:WEAPON:weapon1 = WEAPON_FIST}, ${9:ammo1 = 0}, ${10:WEAPON:weapon2 = WEAPON_FIST}, ${11:ammo2 = 0}, ${12:WEAPON:weapon3 = WEAPON_FIST}, ${13:ammo3 = 0})"},
+		{"trigger": "GetSpawnInfo", "contents": "GetSpawnInfo(${1:playerid}, ${2:&team}, ${3:&skin = 0}, ${4:&Float:spawnX = 0.0}, ${5:&Float:spawnY = 0.0}, ${6:&Float:spawnZ = 0.0}, ${7:&Float:angle = 0.0}, ${8:&WEAPON:weapon1 = WEAPON_FIST}, ${9:&ammo1 = 0}, ${10:&WEAPON:weapon2 = WEAPON_FIST}, ${11:&ammo2 = 0}, ${12:&WEAPON:weapon3 = WEAPON_FIST}, ${13:&ammo3 = 0})"},
+		{"trigger": "SpawnPlayer", "contents": "SpawnPlayer(${1:playerid})"},
+		{"trigger": "SetTeamCount", "contents": "SetTeamCount(${1:count})"},
+		{"trigger": "ForceClassSelection", "contents": "ForceClassSelection(${1:playerid})"},
+		{"trigger": "GetAvailableClasses", "contents": "GetAvailableClasses()"},
+		{"trigger": "GetPlayerClass", "contents": "GetPlayerClass(${1:classid}, ${2:&team}, ${3:&skin = 0}, ${4:&Float:spawnX = 0.0}, ${5:&Float:spawnY = 0.0}, ${6:&Float:spawnZ = 0.0}, ${7:&Float:angle = 0.0}, ${8:&WEAPON:weapon1 = WEAPON_FIST}, ${9:&ammo1 = 0}, ${10:&WEAPON:weapon2 = WEAPON_FIST}, ${11:&ammo2 = 0}, ${12:&WEAPON:weapon3 = WEAPON_FIST}, ${13:&ammo3 = 0})"},
+		{"trigger": "EditPlayerClass", "contents": "EditPlayerClass(${1:classid}, ${2:team}, ${3:skin}, ${4:Float:spawnX}, ${5:Float:spawnY}, ${6:Float:spawnZ}, ${7:Float:angle}, ${8:WEAPON:weapon1 = WEAPON_FIST}, ${9:ammo1 = 0}, ${10:WEAPON:weapon2 = WEAPON_FIST}, ${11:ammo2 = 0}, ${12:WEAPON:weapon3 = WEAPON_FIST}, ${13:ammo3 = 0})"},
+		
+		/*
+			Callbacks
+		*/
+		{"trigger": "OnPlayerRequestClass", "contents": "OnPlayerRequestClass(${1:playerid}, ${2:classid})"},
+		{"trigger": "OnPlayerRequestSpawn", "contents": "OnPlayerRequestSpawn(${1:playerid})"},
+		{"trigger": "OnPlayerSpawn", "contents": "OnPlayerSpawn(${1:playerid})"}
+	]
+}

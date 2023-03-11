@@ -1,0 +1,47 @@
+{
+    "scope": "source.pawn - variable.other.pawn",
+
+    "completions": 
+    [
+		"VARTYPE_NONE",
+		"VARTYPE_INT",
+		"VARTYPE_STRING",
+		"VARTYPE_FLOAT",
+		"SERVER_VARTYPE_NONE",
+		"SERVER_VARTYPE_INT",
+		"SERVER_VARTYPE_STRING",
+		"SERVER_VARTYPE_FLOAT",
+		"PLAYER_VARTYPE_NONE",
+		"PLAYER_VARTYPE_INT",
+		"PLAYER_VARTYPE_STRING",
+		"PLAYER_VARTYPE_FLOAT",
+
+		/*
+			SVar
+		*/
+		{"trigger": "SetSVarInt", "contents": "SetSVarInt(${1:const svar[]}, ${2:value})"},
+		{"trigger": "GetSVarInt", "contents": "GetSVarInt(${1:const svar[]})"},
+		{"trigger": "SetSVarString", "contents": "SetSVarString(${1:const svar[]}, ${2:const value[]}, ${3:OPEN_MP_TAGS:...})"},
+		{"trigger": "GetSVarString", "contents": "GetSVarString(${1:const svar[]}, ${2:output[]}, ${3:len = sizeof (output)})"},
+		{"trigger": "SetSVarFloat", "contents": "SetSVarFloat(${1:const svar[]}, ${2:Float:value})"},
+		{"trigger": "GetSVarFloat", "contents": "GetSVarFloat(${1:const svar[]})"},
+		{"trigger": "DeleteSVar", "contents": "DeleteSVar(${1:const svar[]})"},
+		{"trigger": "GetSVarsUpperIndex", "contents": "GetSVarsUpperIndex()"},
+		{"trigger": "GetSVarNameAtIndex", "contents": "GetSVarNameAtIndex(${1:index}, ${2:output[]}, ${3:size = sizeof (output)})"},
+		{"trigger": "GetSVarType", "contents": "GetSVarType(${1:const svar[]})"},
+		
+		/*
+			PVar
+		*/
+		{"trigger": "SetPVarInt", "contents": "SetPVarInt(${1:playerid}, ${2:const pvar[]}, ${3:value})"},
+		{"trigger": "GetPVarInt", "contents": "GetPVarInt(${1:playerid}, ${2:const pvar[]})"},
+		{"trigger": "SetPVarString", "contents": "SetPVarString(${1:playerid}, ${2:const pvar[]}, ${3:const value[]}, ${4:OPEN_MP_TAGS:...})"},
+		{"trigger": "GetPVarString", "contents": "GetPVarString(${1:playerid}, ${2:const pvar[]}, ${3:output[]}, ${4:len = sizeof (output)})"},
+		{"trigger": "SetPVarFloat", "contents": "SetPVarFloat(${1:playerid}, ${2:const pvar[]}, ${3:Float:value})"},
+		{"trigger": "GetPVarFloat", "contents": "GetPVarFloat(${1:playerid}, ${2:const pvar[]})"},
+		{"trigger": "DeletePVar", "contents": "DeletePVar(${1:playerid}, ${2:const pvar[]})"},
+		{"trigger": "GetPVarsUpperIndex", "contents": "GetPVarsUpperIndex(${1:playerid})"},
+		{"trigger": "GetPVarNameAtIndex", "contents": "GetPVarNameAtIndex(${1:playerid}, ${2:index}, ${3:output[]}, ${4:size = sizeof (output)})"},
+		{"trigger": "GetPVarType", "contents": "GetPVarType(${1:playerid}, ${2:const pvar[]})"}
+	]
+}

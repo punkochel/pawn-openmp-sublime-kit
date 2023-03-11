@@ -1,0 +1,12 @@
+<snippet>
+	<description>Pawn.CMD</description>
+	<content><![CDATA[
+CMD:${1:command_name}(playerid, params[])
+{
+	${4}
+	return 1;
+}
+]]></content>
+	<tabTrigger>CMD</tabTrigger>
+	<scope>source.pawn</scope>
+</snippet>

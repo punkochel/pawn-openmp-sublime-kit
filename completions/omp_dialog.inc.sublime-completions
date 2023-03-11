@@ -1,0 +1,34 @@
+{
+    "scope": "source.pawn - variable.other.pawn",
+
+    "completions": 
+    [
+    	"INVALID_DIALOG_ID",
+		"MAX_DIALOG",
+		"DIALOG_STYLE_MSGBOX",
+		"DIALOG_STYLE_INPUT",
+		"DIALOG_STYLE_LIST",
+		"DIALOG_STYLE_PASSWORD",
+		"DIALOG_STYLE_TABLIST",
+		"DIALOG_STYLE_TABLIST_HEADERS",
+
+		/*
+			Natives
+		*/
+		{"trigger": "ShowPlayerDialog", "contents": "ShowPlayerDialog(${1:playerid}, ${2:dialogid}, ${3:DIALOG_STYLE:style}, ${4:const title[]}, ${5:const body[]}, ${6:const button1[]}, ${7:const button2[]}, ${8:OPEN_MP_TAGS:...})"},
+		{"trigger": "HidePlayerDialog", "contents": "HidePlayerDialog(${1:playerid})"},
+		{"trigger": "GetPlayerDialogData", "contents": "GetPlayerDialogData(${1:playerid}, ${2:&DIALOG_STYLE:style}, ${3:title[]}, ${4:titleSize = sizeof (title)}, ${5:body[]}, ${6:bodySize = sizeof (body)}, ${7:button1[]}, ${8:button1Size = sizeof (button1)}, ${9:button2[]}, ${10:button2Size = sizeof (button2)})"},
+		{"trigger": "GetPlayerDialogID", "contents": "GetPlayerDialogID(${1:playerid})"},
+		
+		/*
+			Deprecated
+		*/
+		{"trigger": "GetPlayerDialog", "contents": "GetPlayerDialog(${1:playerid})"},
+
+		/*
+			Callbacks
+		*/
+		{"trigger": "OnDialogResponse", "contents": "OnDialogResponse(${1:playerid}, ${2:dialogid}, ${3:response}, ${4:listitem}, ${5:inputtext[]})"}
+
+	]
+}

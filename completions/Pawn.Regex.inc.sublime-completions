@@ -1,0 +1,38 @@
+{
+    "scope": "source.pawn - variable.other.pawn",
+    "completions": 
+    [
+    	"REGEX_ECMASCRIPT",
+        "REGEX_BASIC",
+        "REGEX_EXTENDED",
+        "REGEX_AWK",
+        "REGEX_GREP",
+        "REGEX_EGREP",
+        "REGEX_DEFAULT",
+        "REGEX_ICASE",
+        "REGEX_NOSUBS",
+        "REGEX_OPTIMIZE",
+        "REGEX_COLLATE",
+        "MATCH_DEFAULT",
+        "MATCH_NOT_BOL",
+        "MATCH_NOT_EOL",
+        "MATCH_NOT_BOW",
+        "MATCH_NOT_EOW",
+        "MATCH_ANY",
+        "MATCH_NOT_NULL",
+        "MATCH_CONTINUOUS",
+        "MATCH_PREV_AVAIL",
+        "MATCH_FORMAT_SED",
+        "MATCH_FORMAT_NO_COPY",
+        "MATCH_FORMAT_FIRST_ONLY",
+
+        {"trigger": "Regex_New", "contents": "Regex_New(${1:const pattern[]}, ${2:E_REGEX_FLAG:flags = REGEX_DEFAULT}, ${3:E_REGEX_GRAMMAR:grammar = REGEX_ECMASCRIPT})"},
+        {"trigger": "Regex_Delete", "contents": "Regex_Delete(${1:&Regex:r})"},
+        {"trigger": "Regex_Check", "contents": "Regex_Check(${1:const str[]}, ${2:Regex:r}, ${3:E_MATCH_FLAG:flags = MATCH_DEFAULT})"},
+        {"trigger": "Regex_Match", "contents": "Regex_Match(${1:const str[]}, ${2:Regex:r}, ${3:&RegexMatch:m}, ${4:E_MATCH_FLAG:flags = MATCH_DEFAULT})"},
+        {"trigger": "Regex_Search", "contents": "Regex_Search(${1:const str[]}, ${2:Regex:r}, ${3:&RegexMatch:m}, ${4:&pos}, ${5:startpos = 0}, ${6:E_MATCH_FLAG:flags = MATCH_DEFAULT})"},
+        {"trigger": "Regex_Replace", "contents": "Regex_Replace(${1:const str[]}, ${2:Regex:r}, ${3:const fmt[]}, ${4:dest[]}, ${5:E_MATCH_FLAG:flags = MATCH_DEFAULT}, ${6:size = sizeof dest})"},
+        {"trigger": "Match_GetGroup", "contents": "Match_GetGroup(${1:RegexMatch:m}, ${2:index}, ${3:dest[]}, ${4:&length}, ${5:size = sizeof dest})"},
+        {"trigger": "Match_Free", "contents": "Match_Free(${1:&RegexMatch:m})"}
+	]
+}

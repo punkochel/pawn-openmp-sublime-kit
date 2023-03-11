@@ -1,0 +1,82 @@
+{
+    "scope": "source.pawn - variable.other.pawn",
+
+    "completions": 
+    [
+    	"CONNECTION_STATUS_NO_ACTION",
+		"CONNECTION_STATUS_DISCONNECT_ASAP",
+		"CONNECTION_STATUS_DISCONNECT_ASAP_SILENTLY",
+		"CONNECTION_STATUS_DISCONNECT_ON_NO_ACK",
+		"CONNECTION_STATUS_REQUESTED_CONNECTION",
+		"CONNECTION_STATUS_HANDLING_CONNECTION_REQUEST",
+		"CONNECTION_STATUS_UNVERIFIED_SENDER",
+		"CONNECTION_STATUS_SET_ENCRYPTION_ON_MULTIPLE_16_BYTE_PACKET",
+		"CONNECTION_STATUS_CONNECTED",
+		"CONNSTAT_NO_ACTION",
+		"CONNSTAT_DISCONNECT_ASAP",
+		"CONNSTAT_DISCONNECT_ASAP_SILNT",
+		"CONNSTAT_DISCONNECT_ON_NO_ACK",
+		"CONNSTAT_REQUESTED_CONNECTION",
+		"CONNSTAT_HANDLING_CONN_REQ",
+		"CONNSTAT_UNVERIFIED_SENDER",
+		"CONNSTAT_SET_ENCRYPTION",
+		"CONNSTAT_CONNECTED",
+		"DOWNLOAD_REQUEST_EMPTY",
+		"DOWNLOAD_REQUEST_MODEL_FILE",
+		"DOWNLOAD_REQUEST_TEXTURE_FILE",
+
+		/*
+			Natives
+		*/
+		{"trigger": "Kick", "contents": "Kick(${1:playerid})"},
+		{"trigger": "Ban", "contents": "Ban(${1:playerid})"},
+		{"trigger": "BanEx", "contents": "BanEx(${1:playerid}, ${2:const reason[]})"},
+		{"trigger": "BlockIpAddress", "contents": "BlockIpAddress(${1:const ipAddress[]}, ${2:timeMS})"},
+		{"trigger": "UnBlockIpAddress", "contents": "UnBlockIpAddress(${1:const ipAddress[]})"},
+		{"trigger": "ClearBanList", "contents": "ClearBanList()"},
+		{"trigger": "IsBanned", "contents": "IsBanned(${1:const ipaddress[]})"},
+		{"trigger": "IsPlayerAdmin", "contents": "IsPlayerAdmin(${1:playerid})"},
+		{"trigger": "SetPlayerAdmin", "contents": "SetPlayerAdmin(${1:playerid}, ${2:bool:admin})"},
+		{"trigger": "SendRconCommand", "contents": "SendRconCommand(${1:const format[]}, ${2:OPEN_MP_TAGS:...})"},
+		{"trigger": "GetPlayerVersion", "contents": "GetPlayerVersion(${1:playerid}, ${2:version[]}, ${3:len = sizeof (version)})"},
+		{"trigger": "GPCI", "contents": "GPCI(${1:playerid}, ${2:serial[]}, ${3:len = sizeof (serial)})"},
+		{"trigger": "GetPlayerIp", "contents": "GetPlayerIp(${1:playerid}, ${2:ip[]}, ${3:len = sizeof (ip)})"},
+		{"trigger": "GetPlayerRawIp", "contents": "GetPlayerRawIp(${1:playerid})"},
+		{"trigger": "GetPlayerPing", "contents": "GetPlayerPing(${1:playerid})"},
+		{"trigger": "SendClientCheck", "contents": "SendClientCheck(${1:playerid}, ${2:type}, ${3:memoryAddress}, ${4:memoryOffset}, ${5:byteCount})"},
+
+		/*
+			Netstats
+		*/
+		{"trigger": "NetStats_GetConnectedTime", "contents": "NetStats_GetConnectedTime(${1:playerid})"},
+		{"trigger": "NetStats_MessagesReceived", "contents": "NetStats_MessagesReceived(${1:playerid})"},
+		{"trigger": "NetStats_BytesReceived", "contents": "NetStats_BytesReceived(${1:playerid})"},
+		{"trigger": "NetStats_MessagesSent", "contents": "NetStats_MessagesSent(${1:playerid})"},
+		{"trigger": "NetStats_BytesSent", "contents": "NetStats_BytesSent(${1:playerid})"},
+		{"trigger": "NetStats_MessagesRecvPerSecond", "contents": "NetStats_MessagesRecvPerSecond(${1:playerid})"},
+		{"trigger": "NetStats_PacketLossPercent", "contents": "NetStats_PacketLossPercent(${1:playerid})"},
+		{"trigger": "NetStats_ConnectionStatus", "contents": "NetStats_ConnectionStatus(${1:playerid})"},
+		{"trigger": "NetStats_GetIpPort", "contents": "NetStats_GetIpPort(${1:playerid}, ${2:output[]}, ${3:size = sizeof (output)})"},
+
+		/*
+			Formatted
+		*/
+		{"trigger": "GetNetworkStats", "contents": "GetNetworkStats(${1:output[]}, ${2:size = sizeof (output)})"},
+		{"trigger": "GetPlayerNetworkStats", "contents": "GetPlayerNetworkStats(${1:playerid}, ${2:output[]}, ${3:size = sizeof (output)})"},
+
+		/*
+			Deprecated
+		*/
+		{"trigger": "SendRconCommandf", "contents": "SendRconCommandf(${1:const format[]}, ${2:OPEN_MP_TAGS:...})"},
+		{"trigger": "gpci", "contents": "gpci(${1:playerid}, ${2:serial[]}, ${3:len = sizeof (serial)})"},
+		
+		/*
+			Callbacks
+		*/
+		{"trigger": "OnClientCheckResponse", "contents": "OnClientCheckResponse(${1:playerid}, ${2:actionid}, ${3:memaddr}, ${4:retndata})"},
+		{"trigger": "OnRconLoginAttempt", "contents": "OnRconLoginAttempt(${1:ip[]}, ${2:password[]}, ${3:success})"},
+		{"trigger": "OnPlayerFinishedDownloading", "contents": "OnPlayerFinishedDownloading(${1:playerid}, ${2:virtualworld})"},
+		{"trigger": "OnPlayerRequestDownload", "contents": "OnPlayerRequestDownload(${1:playerid}, ${2:DOWNLOAD_REQUEST:type}, ${3:crc})"},
+		{"trigger": "OnRconCommand", "contents": "OnRconCommand(${1:cmd[]})"}
+	]
+}
