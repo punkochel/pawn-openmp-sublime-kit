@@ -2,8 +2,8 @@
 This plugin is a fork of [Pawn syntax](https://github.com/Southclaws/pawn-sublime-language), visiting the parent page will give you more details on the plugin's capabilities.
 If you development for SA:MP, use Pawn syntax.
 
-## Peculiarities
-The plugin is adapted for development under [Open MP](https://www.open.mp/)
+## Description
+The plugin is adapted for development under [Open MP](https://www.open.mp/)  
 Refactored snippets and completions
 
 ## Supported Libraries
