@@ -1,3 +1,4 @@
+[![GitHub Release](https://img.shields.io/github/v/release/punkochel/pawn-openmp-sublime-kit.svg)](https://github.com/punkochel/pawn-openmp-sublime-kit/releases/latest)
 # Pawn Kit for Sublime Text
 This plugin is a fork of [Pawn syntax](https://github.com/Southclaws/pawn-sublime-language), visiting the parent page will give you more details on the plugin's capabilities.  
 If you development for SA:MP, use Pawn syntax.
