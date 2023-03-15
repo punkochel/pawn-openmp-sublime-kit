@@ -3,54 +3,54 @@
 
     "completions": 
     [
-    	"MAX_PICKUPS",
-		"INVALID_PICKUP",
+    	{"trigger": "MAX_PICKUPS", "annotation": "omp_pickup.inc"},
+		{"trigger": "INVALID_PICKUP", "annotation": "omp_pickup.inc"},
 
 		/*
 			Global
 		*/
-		{"trigger": "AddStaticPickup", "contents": "AddStaticPickup(${1:model}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:virtualWorld = 0})"},
-		{"trigger": "CreatePickup", "contents": "CreatePickup(${1:model}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:virtualWorld = 0})"},
-		{"trigger": "DestroyPickup", "contents": "DestroyPickup(${1:pickup})"},
-		{"trigger": "IsValidPickup", "contents": "IsValidPickup(${1:pickupid})"},
-		{"trigger": "IsPickupStreamedIn", "contents": "IsPickupStreamedIn(${1:playerid}, ${2:pickupid})"},
-		{"trigger": "GetPickupPos", "contents": "GetPickupPos(${1:pickupid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z})"},
-		{"trigger": "GetPickupModel", "contents": "GetPickupModel(${1:pickupid})"},
-		{"trigger": "GetPickupType", "contents": "GetPickupType(${1:pickupid})"},
-		{"trigger": "GetPickupVirtualWorld", "contents": "GetPickupVirtualWorld(${1:pickupid})"},
-		{"trigger": "SetPickupPos", "contents": "SetPickupPos(${1:pickupid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:bool:update = true})"},
-		{"trigger": "SetPickupModel", "contents": "SetPickupModel(${1:pickupid}, ${2:model}, ${3:bool:update = true})"},
-		{"trigger": "SetPickupType", "contents": "SetPickupType(${1:pickupid}, ${2:type}, ${3:bool:update = true})"},
-		{"trigger": "SetPickupVirtualWorld", "contents": "SetPickupVirtualWorld(${1:pickupid}, ${2:virtualWorld})"},
-		{"trigger": "ShowPickupForPlayer", "contents": "ShowPickupForPlayer(${1:playerid}, ${2:pickupid})"},
-		{"trigger": "HidePickupForPlayer", "contents": "HidePickupForPlayer(${1:playerid}, ${2:pickupid})"},
-		{"trigger": "SetPickupForPlayer", "contents": "SetPickupForPlayer(${1:playerid}, ${2:id}, ${3:model}, ${4:type}, ${5:Float:x}, ${6:Float:y}, ${7:Float:z})"},
-		{"trigger": "IsPickupHiddenForPlayer", "contents": "IsPickupHiddenForPlayer(${1:playerid}, ${2:pickupid})"},
+		{"trigger": "AddStaticPickup", "contents": "AddStaticPickup(${1:model}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:virtualWorld = 0})", "annotation": "omp_pickup.inc"},
+		{"trigger": "CreatePickup", "contents": "CreatePickup(${1:model}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:virtualWorld = 0})", "annotation": "omp_pickup.inc"},
+		{"trigger": "DestroyPickup", "contents": "DestroyPickup(${1:pickup})", "annotation": "omp_pickup.inc"},
+		{"trigger": "IsValidPickup", "contents": "IsValidPickup(${1:pickupid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "IsPickupStreamedIn", "contents": "IsPickupStreamedIn(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "GetPickupPos", "contents": "GetPickupPos(${1:pickupid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z})", "annotation": "omp_pickup.inc"},
+		{"trigger": "GetPickupModel", "contents": "GetPickupModel(${1:pickupid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "GetPickupType", "contents": "GetPickupType(${1:pickupid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "GetPickupVirtualWorld", "contents": "GetPickupVirtualWorld(${1:pickupid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "SetPickupPos", "contents": "SetPickupPos(${1:pickupid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:bool:update = true})", "annotation": "omp_pickup.inc"},
+		{"trigger": "SetPickupModel", "contents": "SetPickupModel(${1:pickupid}, ${2:model}, ${3:bool:update = true})", "annotation": "omp_pickup.inc"},
+		{"trigger": "SetPickupType", "contents": "SetPickupType(${1:pickupid}, ${2:type}, ${3:bool:update = true})", "annotation": "omp_pickup.inc"},
+		{"trigger": "SetPickupVirtualWorld", "contents": "SetPickupVirtualWorld(${1:pickupid}, ${2:virtualWorld})", "annotation": "omp_pickup.inc"},
+		{"trigger": "ShowPickupForPlayer", "contents": "ShowPickupForPlayer(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "HidePickupForPlayer", "contents": "HidePickupForPlayer(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "SetPickupForPlayer", "contents": "SetPickupForPlayer(${1:playerid}, ${2:id}, ${3:model}, ${4:type}, ${5:Float:x}, ${6:Float:y}, ${7:Float:z})", "annotation": "omp_pickup.inc"},
+		{"trigger": "IsPickupHiddenForPlayer", "contents": "IsPickupHiddenForPlayer(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
 		
 		/*
 			Per-Player
 		*/
-		{"trigger": "CreatePlayerPickup", "contents": "CreatePlayerPickup(${1:playerid}, ${2:model}, ${3:type}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z}, ${7:virtualWorld = 0})"},
-		{"trigger": "DestroyPlayerPickup", "contents": "DestroyPlayerPickup(${1:playerid}, ${2:pickupid})"},
-		{"trigger": "IsValidPlayerPickup", "contents": "IsValidPlayerPickup(${1:playerid}, ${2:pickupid})"},
-		{"trigger": "IsPlayerPickupStreamedIn", "contents": "IsPlayerPickupStreamedIn(${1:playerid}, ${2:pickupid})"},
-		{"trigger": "GetPlayerPickupPos", "contents": "GetPlayerPickupPos(${1:playerid}, ${2:pickupid}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z})"},
-		{"trigger": "SetPlayerPickupPos", "contents": "SetPlayerPickupPos(${1:playerid}, ${2:pickupid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:bool:update = true})"},
-		{"trigger": "SetPlayerPickupModel", "contents": "SetPlayerPickupModel(${1:playerid}, ${2:pickupid}, ${3:model}, ${4:bool:update = true})"},
-		{"trigger": "SetPlayerPickupType", "contents": "SetPlayerPickupType(${1:playerid}, ${2:pickupid}, ${3:type}, ${4:bool:update = true})"},
-		{"trigger": "SetPlayerPickupVirtualWorld", "contents": "SetPlayerPickupVirtualWorld(${1:playerid}, ${2:pickupid}, ${3:virtualWorld})"},
-		{"trigger": "GetPlayerPickupModel", "contents": "GetPlayerPickupModel(${1:playerid}, ${2:pickupid})"},
-		{"trigger": "GetPlayerPickupType", "contents": "GetPlayerPickupType(${1:playerid}, ${2:pickupid})"},
-		{"trigger": "GetPlayerPickupVirtualWorld", "contents": "GetPlayerPickupVirtualWorld(${1:playerid}, ${2:pickupid})"},
+		{"trigger": "CreatePlayerPickup", "contents": "CreatePlayerPickup(${1:playerid}, ${2:model}, ${3:type}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z}, ${7:virtualWorld = 0})", "annotation": "omp_pickup.inc"},
+		{"trigger": "DestroyPlayerPickup", "contents": "DestroyPlayerPickup(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "IsValidPlayerPickup", "contents": "IsValidPlayerPickup(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "IsPlayerPickupStreamedIn", "contents": "IsPlayerPickupStreamedIn(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "GetPlayerPickupPos", "contents": "GetPlayerPickupPos(${1:playerid}, ${2:pickupid}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z})", "annotation": "omp_pickup.inc"},
+		{"trigger": "SetPlayerPickupPos", "contents": "SetPlayerPickupPos(${1:playerid}, ${2:pickupid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:bool:update = true})", "annotation": "omp_pickup.inc"},
+		{"trigger": "SetPlayerPickupModel", "contents": "SetPlayerPickupModel(${1:playerid}, ${2:pickupid}, ${3:model}, ${4:bool:update = true})", "annotation": "omp_pickup.inc"},
+		{"trigger": "SetPlayerPickupType", "contents": "SetPlayerPickupType(${1:playerid}, ${2:pickupid}, ${3:type}, ${4:bool:update = true})", "annotation": "omp_pickup.inc"},
+		{"trigger": "SetPlayerPickupVirtualWorld", "contents": "SetPlayerPickupVirtualWorld(${1:playerid}, ${2:pickupid}, ${3:virtualWorld})", "annotation": "omp_pickup.inc"},
+		{"trigger": "GetPlayerPickupModel", "contents": "GetPlayerPickupModel(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "GetPlayerPickupType", "contents": "GetPlayerPickupType(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "GetPlayerPickupVirtualWorld", "contents": "GetPlayerPickupVirtualWorld(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
 
 		/*
 			Callbacks
 		*/
-		{"trigger": "OnPlayerPickUpPickup", "contents": "OnPlayerPickUpPickup(${1:playerid}, ${2:pickupid})"},
-		{"trigger": "OnPlayerPickUpPlayerPickup", "contents": "OnPlayerPickUpPlayerPickup(${1:playerid}, ${2:pickupid})"},
-		{"trigger": "OnPickupStreamIn", "contents": "OnPickupStreamIn(${1:pickupid}, ${2:playerid})"},
-		{"trigger": "OnPickupStreamOut", "contents": "OnPickupStreamOut(${1:pickupid}, ${2:playerid})"},
-		{"trigger": "OnPlayerPickupStreamIn", "contents": "OnPlayerPickupStreamIn(${1:pickupid}, ${2:playerid})"},
-		{"trigger": "OnPlayerPickupStreamOut", "contents": "OnPlayerPickupStreamOut(${1:pickupid}, ${2:playerid})"}
+		{"trigger": "OnPlayerPickUpPickup", "contents": "OnPlayerPickUpPickup(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "OnPlayerPickUpPlayerPickup", "contents": "OnPlayerPickUpPlayerPickup(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "OnPickupStreamIn", "contents": "OnPickupStreamIn(${1:pickupid}, ${2:playerid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "OnPickupStreamOut", "contents": "OnPickupStreamOut(${1:pickupid}, ${2:playerid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "OnPlayerPickupStreamIn", "contents": "OnPlayerPickupStreamIn(${1:pickupid}, ${2:playerid})", "annotation": "omp_pickup.inc"},
+		{"trigger": "OnPlayerPickupStreamOut", "contents": "OnPlayerPickupStreamOut(${1:pickupid}, ${2:playerid})", "annotation": "omp_pickup.inc"}
 	]
 }

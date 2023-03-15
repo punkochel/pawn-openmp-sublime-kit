@@ -3,23 +3,23 @@
 
     "completions": 
     [
-		{"trigger": "strlen", "contents": "strlen(${1:const string[]})"},
-		{"trigger": "strpack", "contents": "strpack(${1:dest[]}, ${2:const source[]}, ${3:maxlength = sizeof (dest)})"},
-		{"trigger": "strunpack", "contents": "strunpack(${1:dest[]}, ${2:const source[]}, ${3:maxlength = sizeof (dest)})"},
-		{"trigger": "strcat", "contents": "strcat(${1:dest[]}, ${2:const source[]}, ${3:maxlength = sizeof (dest)})"},
-		{"trigger": "strcopy", "contents": "strcopy(${1:dest[]}, ${2:const source[]}, ${3:maxlength = sizeof (dest)})"},
-		{"trigger": "strmid", "contents": "strmid(${1:dest[]}, ${2:const source[]}, ${3:start}, ${4:end}, ${5:maxlength = sizeof (dest)})"},
-		{"trigger": "strins", "contents": "strins(${1:string[]}, ${2:const substr[]}, ${3:pos}, ${4:maxlength = sizeof (string)})"},
-		{"trigger": "strdel", "contents": "strdel(${1:string[]}, ${2:start}, ${3:end})"},
-		{"trigger": "strcmp", "contents": "strcmp(${1:const string1[]}, ${2:const string2[]}, ${3:bool:ignorecase = false}, ${4:length = cellmax})"},
-		{"trigger": "strfind", "contents": "strfind(${1:const string[]}, ${2:const sub[]}, ${3:bool:ignorecase = false}, ${4:pos = 0})"},
-		{"trigger": "strval", "contents": "strval(${1:const string[]})"},
-		{"trigger": "valstr", "contents": "valstr(${1:dest[]}, ${2:value}, ${3:bool:pack = false})"},
-		{"trigger": "ispacked", "contents": "ispacked(${1:const string[]})"},
-		{"trigger": "strformat", "contents": "strformat(${1:dest[]}, ${2:size = sizeof (dest)}, ${3:bool:pack = true}, ${4:const format[]}, ${5:{Fixed, Float, _}:...})"},
-		{"trigger": "uudecode", "contents": "uudecode(${1:dest[]}, ${2:const source[]}, ${3:maxlength = sizeof (dest)})"},
-		{"trigger": "uuencode", "contents": "uuencode(${1:dest[]}, ${2:const source[]}, ${3:numbytes}, ${4:maxlength = sizeof (dest)})"},
-		{"trigger": "memcpy", "contents": "memcpy(${1:dest[]}, ${2:const source[]}, ${3:index = 0}, ${4:numbytes}, ${5:maxlength = sizeof (dest)})"},
-		{"trigger": "strequal", "contents": "strequal(${1:const string1[]}, ${2:const string2[]}, ${3:bool:ignorecase = false}, ${4:length = cellmax})"}
+		{"trigger": "strlen", "contents": "strlen(${1:const string[]})", "annotation": "string.inc"},
+		{"trigger": "strpack", "contents": "strpack(${1:dest[]}, ${2:const source[]}, ${3:maxlength = sizeof (dest)})", "annotation": "string.inc"},
+		{"trigger": "strunpack", "contents": "strunpack(${1:dest[]}, ${2:const source[]}, ${3:maxlength = sizeof (dest)})", "annotation": "string.inc"},
+		{"trigger": "strcat", "contents": "strcat(${1:dest[]}, ${2:const source[]}, ${3:maxlength = sizeof (dest)})", "annotation": "string.inc"},
+		{"trigger": "strcopy", "contents": "strcopy(${1:dest[]}, ${2:const source[]}, ${3:maxlength = sizeof (dest)})", "annotation": "string.inc"},
+		{"trigger": "strmid", "contents": "strmid(${1:dest[]}, ${2:const source[]}, ${3:start}, ${4:end}, ${5:maxlength = sizeof (dest)})", "annotation": "string.inc"},
+		{"trigger": "strins", "contents": "strins(${1:string[]}, ${2:const substr[]}, ${3:pos}, ${4:maxlength = sizeof (string)})", "annotation": "string.inc"},
+		{"trigger": "strdel", "contents": "strdel(${1:string[]}, ${2:start}, ${3:end})", "annotation": "string.inc"},
+		{"trigger": "strcmp", "contents": "strcmp(${1:const string1[]}, ${2:const string2[]}, ${3:bool:ignorecase = false}, ${4:length = cellmax})", "annotation": "string.inc"},
+		{"trigger": "strfind", "contents": "strfind(${1:const string[]}, ${2:const sub[]}, ${3:bool:ignorecase = false}, ${4:pos = 0})", "annotation": "string.inc"},
+		{"trigger": "strval", "contents": "strval(${1:const string[]})", "annotation": "string.inc"},
+		{"trigger": "valstr", "contents": "valstr(${1:dest[]}, ${2:value}, ${3:bool:pack = false})", "annotation": "string.inc"},
+		{"trigger": "ispacked", "contents": "ispacked(${1:const string[]})", "annotation": "string.inc"},
+		{"trigger": "strformat", "contents": "strformat(${1:dest[]}, ${2:size = sizeof (dest)}, ${3:bool:pack = true}, ${4:const format[]}, ${5:{Fixed, Float, _}:...})", "annotation": "string.inc"},
+		{"trigger": "uudecode", "contents": "uudecode(${1:dest[]}, ${2:const source[]}, ${3:maxlength = sizeof (dest)})", "annotation": "string.inc"},
+		{"trigger": "uuencode", "contents": "uuencode(${1:dest[]}, ${2:const source[]}, ${3:numbytes}, ${4:maxlength = sizeof (dest)})", "annotation": "string.inc"},
+		{"trigger": "memcpy", "contents": "memcpy(${1:dest[]}, ${2:const source[]}, ${3:index = 0}, ${4:numbytes}, ${5:maxlength = sizeof (dest)})", "annotation": "string.inc"},
+		{"trigger": "strequal", "contents": "strequal(${1:const string1[]}, ${2:const string2[]}, ${3:bool:ignorecase = false}, ${4:length = cellmax})", "annotation": "string.inc"}
 	]
 }

@@ -1,5 +1,5 @@
 <snippet>
-	<description>Pawn.CMD</description>
+	<description>Pawn.CMD.inc</description>
 	<content><![CDATA[
 CMD:${1:command_name}(playerid, params[])
 {

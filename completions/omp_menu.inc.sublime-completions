@@ -3,35 +3,35 @@
 
     "completions": 
     [
-    	"MAX_MENUS",
-		"INVALID_MENU",
+    	{"trigger": "MAX_MENUS", "annotation": "omp_menu.inc"},
+		{"trigger": "INVALID_MENU", "annotation": "omp_menu.inc"},
 
 		/*
 			Natives
 		*/
-		{"trigger": "CreateMenu", "contents": "CreateMenu(${1:const title[]}, ${2:columns}, ${3:Float:x}, ${4:Float:y}, ${5:Float:column1width}, ${6:Float:column2width = 0.0}, ${7:OPEN_MP_TAGS:...})"},
-		{"trigger": "DestroyMenu", "contents": "DestroyMenu(${1:Menu:menuid})"},
-		{"trigger": "AddMenuItem", "contents": "AddMenuItem(${1:Menu:menuid}, ${2:column}, ${3:const text[]}, ${4:OPEN_MP_TAGS:...})"},
-		{"trigger": "SetMenuColumnHeader", "contents": "SetMenuColumnHeader(${1:Menu:menuid}, ${2:column}, ${3:const heading[]}, ${4:OPEN_MP_TAGS:...})"},
-		{"trigger": "ShowMenuForPlayer", "contents": "ShowMenuForPlayer(${1:Menu:menuid}, ${2:playerid})"},
-		{"trigger": "HideMenuForPlayer", "contents": "HideMenuForPlayer(${1:Menu:menuid}, ${2:playerid})"},
-		{"trigger": "IsValidMenu", "contents": "IsValidMenu(${1:Menu:menuid})"},
-		{"trigger": "DisableMenu", "contents": "DisableMenu(${1:Menu:menuid})"},
-		{"trigger": "DisableMenuRow", "contents": "DisableMenuRow(${1:Menu:menuid}, ${2:row})"},
-		{"trigger": "GetPlayerMenu", "contents": "GetPlayerMenu(${1:playerid})"},
-		{"trigger": "IsMenuDisabled", "contents": "IsMenuDisabled(${1:Menu:menuid})"},
-		{"trigger": "IsMenuRowDisabled", "contents": "IsMenuRowDisabled(${1:Menu:menuid}, ${2:row})"},
-		{"trigger": "GetMenuColumns", "contents": "GetMenuColumns(${1:Menu:menuid})"},
-		{"trigger": "GetMenuItems", "contents": "GetMenuItems(${1:Menu:menuid}, ${2:column})"},
-		{"trigger": "GetMenuPos", "contents": "GetMenuPos(${1:Menu:menuid}, ${2:&Float:x}, ${3:&Float:y})"},
-		{"trigger": "GetMenuColumnWidth", "contents": "GetMenuColumnWidth(${1:Menu:menuid}, ${2:&Float:column1Width}, ${3:&Float:column2Width = 0.0})"},
-		{"trigger": "GetMenuColumnHeader", "contents": "GetMenuColumnHeader(${1:Menu:menuid}, ${2:column}, ${3:header[]}, ${4:len = sizeof (header)})"},
-		{"trigger": "GetMenuItem", "contents": "GetMenuItem(${1:Menu:menuid}, ${2:column}, ${3:row}, ${4:cell[]}, ${5:len = sizeof (cell)})"},
+		{"trigger": "CreateMenu", "contents": "CreateMenu(${1:const title[]}, ${2:columns}, ${3:Float:x}, ${4:Float:y}, ${5:Float:column1width}, ${6:Float:column2width = 0.0}, ${7:OPEN_MP_TAGS:...})", "annotation": "omp_menu.inc"},
+		{"trigger": "DestroyMenu", "contents": "DestroyMenu(${1:Menu:menuid})", "annotation": "omp_menu.inc"},
+		{"trigger": "AddMenuItem", "contents": "AddMenuItem(${1:Menu:menuid}, ${2:column}, ${3:const text[]}, ${4:OPEN_MP_TAGS:...})", "annotation": "omp_menu.inc"},
+		{"trigger": "SetMenuColumnHeader", "contents": "SetMenuColumnHeader(${1:Menu:menuid}, ${2:column}, ${3:const heading[]}, ${4:OPEN_MP_TAGS:...})", "annotation": "omp_menu.inc"},
+		{"trigger": "ShowMenuForPlayer", "contents": "ShowMenuForPlayer(${1:Menu:menuid}, ${2:playerid})", "annotation": "omp_menu.inc"},
+		{"trigger": "HideMenuForPlayer", "contents": "HideMenuForPlayer(${1:Menu:menuid}, ${2:playerid})", "annotation": "omp_menu.inc"},
+		{"trigger": "IsValidMenu", "contents": "IsValidMenu(${1:Menu:menuid})", "annotation": "omp_menu.inc"},
+		{"trigger": "DisableMenu", "contents": "DisableMenu(${1:Menu:menuid})", "annotation": "omp_menu.inc"},
+		{"trigger": "DisableMenuRow", "contents": "DisableMenuRow(${1:Menu:menuid}, ${2:row})", "annotation": "omp_menu.inc"},
+		{"trigger": "GetPlayerMenu", "contents": "GetPlayerMenu(${1:playerid})", "annotation": "omp_menu.inc"},
+		{"trigger": "IsMenuDisabled", "contents": "IsMenuDisabled(${1:Menu:menuid})", "annotation": "omp_menu.inc"},
+		{"trigger": "IsMenuRowDisabled", "contents": "IsMenuRowDisabled(${1:Menu:menuid}, ${2:row})", "annotation": "omp_menu.inc"},
+		{"trigger": "GetMenuColumns", "contents": "GetMenuColumns(${1:Menu:menuid})", "annotation": "omp_menu.inc"},
+		{"trigger": "GetMenuItems", "contents": "GetMenuItems(${1:Menu:menuid}, ${2:column})", "annotation": "omp_menu.inc"},
+		{"trigger": "GetMenuPos", "contents": "GetMenuPos(${1:Menu:menuid}, ${2:&Float:x}, ${3:&Float:y})", "annotation": "omp_menu.inc"},
+		{"trigger": "GetMenuColumnWidth", "contents": "GetMenuColumnWidth(${1:Menu:menuid}, ${2:&Float:column1Width}, ${3:&Float:column2Width = 0.0})", "annotation": "omp_menu.inc"},
+		{"trigger": "GetMenuColumnHeader", "contents": "GetMenuColumnHeader(${1:Menu:menuid}, ${2:column}, ${3:header[]}, ${4:len = sizeof (header)})", "annotation": "omp_menu.inc"},
+		{"trigger": "GetMenuItem", "contents": "GetMenuItem(${1:Menu:menuid}, ${2:column}, ${3:row}, ${4:cell[]}, ${5:len = sizeof (cell)})", "annotation": "omp_menu.inc"},
 		
 		/*
 			Callbacks
 		*/
-		{"trigger": "OnPlayerSelectedMenuRow", "contents": "OnPlayerSelectedMenuRow(${1:playerid}, ${2:row})"},
-		{"trigger": "OnPlayerExitedMenu", "contents": "OnPlayerExitedMenu(${1:playerid})"}
+		{"trigger": "OnPlayerSelectedMenuRow", "contents": "OnPlayerSelectedMenuRow(${1:playerid}, ${2:row})", "annotation": "omp_menu.inc"},
+		{"trigger": "OnPlayerExitedMenu", "contents": "OnPlayerExitedMenu(${1:playerid})", "annotation": "omp_menu.inc"}
 	]
 }

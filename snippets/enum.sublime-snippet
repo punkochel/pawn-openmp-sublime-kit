@@ -1,0 +1,10 @@
+<snippet>
+	<description>enum</description>
+	<content><![CDATA[
+enum ${1:e_} {
+	${4}
+};
+]]></content>
+	<tabTrigger>enum</tabTrigger>
+	<scope>source.pawn</scope>
+</snippet>

@@ -3,15 +3,15 @@
 
     "completions": 
     [
-    	{"trigger": "__print", "contents": "__print(${1:const string[]})"},
-		{"trigger": "print", "contents": "print(${1:const string[]}, ${2:foreground = -1}, ${3:background = -1})"},
-		{"trigger": "printf", "contents": "printf(${1:const format[]}, ${2:{Float, _}:...})"},
-		{"trigger": "clreol", "contents": "clreol()"},
-		{"trigger": "clrscr", "contents": "clrscr()"},
-		{"trigger": "getchar", "contents": "getchar(${1:bool:echo = true})"},
-		{"trigger": "getstring", "contents": "getstring(${1:string[]}, ${2:size = sizeof (string)}, ${3:bool:pack = false})"},
-		{"trigger": "getvalue", "contents": "getvalue(${1:base = 10}, ${2:end = '\r'}, ${3:...})"},
-		{"trigger": "gotoxy", "contents": "gotoxy(${1:x = 1}, ${2:y = 1})"},
-		{"trigger": "setattr", "contents": "setattr(${1:foreground = -1}, ${2:background = -1})"}
+    	{"trigger": "__print", "contents": "__print(${1:const string[]})", "annotation": "console.inc"},
+		{"trigger": "print", "contents": "print(${1:const string[]}, ${2:foreground = -1}, ${3:background = -1})", "annotation": "console.inc"},
+		{"trigger": "printf", "contents": "printf(${1:const format[]}, ${2:{Float, _}:...})", "annotation": "console.inc"},
+		{"trigger": "clreol", "contents": "clreol()", "annotation": "console.inc"},
+		{"trigger": "clrscr", "contents": "clrscr()", "annotation": "console.inc"},
+		{"trigger": "getchar", "contents": "getchar(${1:bool:echo = true})", "annotation": "console.inc"},
+		{"trigger": "getstring", "contents": "getstring(${1:string[]}, ${2:size = sizeof (string)}, ${3:bool:pack = false})", "annotation": "console.inc"},
+		{"trigger": "getvalue", "contents": "getvalue(${1:base = 10}, ${2:end = '\r'}, ${3:...})", "annotation": "console.inc"},
+		{"trigger": "gotoxy", "contents": "gotoxy(${1:x = 1}, ${2:y = 1})", "annotation": "console.inc"},
+		{"trigger": "setattr", "contents": "setattr(${1:foreground = -1}, ${2:background = -1})", "annotation": "console.inc"}
 	]
 }

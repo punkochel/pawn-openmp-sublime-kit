@@ -3,65 +3,65 @@
 
     "completions": 
     [
-    	"MAX_GANG_ZONES",
-		"INVALID_GANG_ZONE",
+    	{"trigger": "MAX_GANG_ZONES", "annotation": "omp_gangzone.inc"},
+		{"trigger": "INVALID_GANG_ZONE", "annotation": "omp_gangzone.inc"},
 
 		/*
 			Global
 		*/
-		{"trigger": "GangZoneCreate", "contents": "GangZoneCreate(${1:Float:minX}, ${2:Float:minY}, ${3:Float:maxX}, ${4:Float:maxY})"},
-		{"trigger": "GangZoneDestroy", "contents": "GangZoneDestroy(${1:zoneid})"},
-		{"trigger": "GangZoneShowForPlayer", "contents": "GangZoneShowForPlayer(${1:playerid}, ${2:zoneid}, ${3:colour})"},
-		{"trigger": "GangZoneShowForAll", "contents": "GangZoneShowForAll(${1:zoneid}, ${2:colour})"},
-		{"trigger": "GangZoneHideForPlayer", "contents": "GangZoneHideForPlayer(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "GangZoneHideForAll", "contents": "GangZoneHideForAll(${1:zoneid})"},
-		{"trigger": "GangZoneFlashForPlayer", "contents": "GangZoneFlashForPlayer(${1:playerid}, ${2:zoneid}, ${3:flashColour})"},
-		{"trigger": "GangZoneFlashForAll", "contents": "GangZoneFlashForAll(${1:zoneid}, ${2:flashColour})"},
-		{"trigger": "GangZoneStopFlashForPlayer", "contents": "GangZoneStopFlashForPlayer(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "GangZoneStopFlashForAll", "contents": "GangZoneStopFlashForAll(${1:zoneid})"},
-		{"trigger": "IsValidGangZone", "contents": "IsValidGangZone(${1:zoneid})"},
-		{"trigger": "IsPlayerInGangZone", "contents": "IsPlayerInGangZone(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "IsGangZoneVisibleForPlayer", "contents": "IsGangZoneVisibleForPlayer(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "GangZoneGetColourForPlayer", "contents": "GangZoneGetColourForPlayer(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "GangZoneGetFlashColourForPlayer", "contents": "GangZoneGetFlashColourForPlayer(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "IsGangZoneFlashingForPlayer", "contents": "IsGangZoneFlashingForPlayer(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "GangZoneGetPos", "contents": "GangZoneGetPos(${1:zoneid}, ${2:&Float:minX}, ${3:&Float:minY = 0.0}, ${4:&Float:maxX = 0.0}, ${5:&Float:maxY = 0.0})"},
-		{"trigger": "UseGangZoneCheck", "contents": "UseGangZoneCheck(${1:zoneid}, ${2:bool:enable})"},
+		{"trigger": "GangZoneCreate", "contents": "GangZoneCreate(${1:Float:minX}, ${2:Float:minY}, ${3:Float:maxX}, ${4:Float:maxY})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "GangZoneDestroy", "contents": "GangZoneDestroy(${1:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "GangZoneShowForPlayer", "contents": "GangZoneShowForPlayer(${1:playerid}, ${2:zoneid}, ${3:colour})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "GangZoneShowForAll", "contents": "GangZoneShowForAll(${1:zoneid}, ${2:colour})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "GangZoneHideForPlayer", "contents": "GangZoneHideForPlayer(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "GangZoneHideForAll", "contents": "GangZoneHideForAll(${1:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "GangZoneFlashForPlayer", "contents": "GangZoneFlashForPlayer(${1:playerid}, ${2:zoneid}, ${3:flashColour})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "GangZoneFlashForAll", "contents": "GangZoneFlashForAll(${1:zoneid}, ${2:flashColour})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "GangZoneStopFlashForPlayer", "contents": "GangZoneStopFlashForPlayer(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "GangZoneStopFlashForAll", "contents": "GangZoneStopFlashForAll(${1:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "IsValidGangZone", "contents": "IsValidGangZone(${1:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "IsPlayerInGangZone", "contents": "IsPlayerInGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "IsGangZoneVisibleForPlayer", "contents": "IsGangZoneVisibleForPlayer(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "GangZoneGetColourForPlayer", "contents": "GangZoneGetColourForPlayer(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "GangZoneGetFlashColourForPlayer", "contents": "GangZoneGetFlashColourForPlayer(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "IsGangZoneFlashingForPlayer", "contents": "IsGangZoneFlashingForPlayer(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "GangZoneGetPos", "contents": "GangZoneGetPos(${1:zoneid}, ${2:&Float:minX}, ${3:&Float:minY = 0.0}, ${4:&Float:maxX = 0.0}, ${5:&Float:maxY = 0.0})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "UseGangZoneCheck", "contents": "UseGangZoneCheck(${1:zoneid}, ${2:bool:enable})", "annotation": "omp_gangzone.inc"},
 		
 		/*
 			Per-Player
 		*/
-		{"trigger": "CreatePlayerGangZone", "contents": "CreatePlayerGangZone(${1:playerid}, ${2:Float:minx}, ${3:Float:miny}, ${4:Float:maxx}, ${5:Float:maxy})"},
-		{"trigger": "PlayerGangZoneDestroy", "contents": "PlayerGangZoneDestroy(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "PlayerGangZoneShow", "contents": "PlayerGangZoneShow(${1:playerid}, ${2:zoneid}, ${3:colour})"},
-		{"trigger": "PlayerGangZoneHide", "contents": "PlayerGangZoneHide(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "PlayerGangZoneFlash", "contents": "PlayerGangZoneFlash(${1:playerid}, ${2:zoneid}, ${3:flashColour})"},
-		{"trigger": "PlayerGangZoneStopFlash", "contents": "PlayerGangZoneStopFlash(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "IsValidPlayerGangZone", "contents": "IsValidPlayerGangZone(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "IsPlayerInPlayerGangZone", "contents": "IsPlayerInPlayerGangZone(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "IsPlayerGangZoneVisible", "contents": "IsPlayerGangZoneVisible(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "PlayerGangZoneGetColour", "contents": "PlayerGangZoneGetColour(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "PlayerGangZoneGetFlashColour", "contents": "PlayerGangZoneGetFlashColour(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "IsPlayerGangZoneFlashing", "contents": "IsPlayerGangZoneFlashing(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "PlayerGangZoneGetPos", "contents": "PlayerGangZoneGetPos(${1:playerid}, ${2:zoneid}, ${3:&Float:minX}, ${4:&Float:minY = 0.0}, ${5:&Float:maxX = 0.0}, ${6:&Float:maxY = 0.0})"},
-		{"trigger": "UsePlayerGangZoneCheck", "contents": "UsePlayerGangZoneCheck(${1:zoneid}, ${2:bool:enable})"},
+		{"trigger": "CreatePlayerGangZone", "contents": "CreatePlayerGangZone(${1:playerid}, ${2:Float:minx}, ${3:Float:miny}, ${4:Float:maxx}, ${5:Float:maxy})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "PlayerGangZoneDestroy", "contents": "PlayerGangZoneDestroy(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "PlayerGangZoneShow", "contents": "PlayerGangZoneShow(${1:playerid}, ${2:zoneid}, ${3:colour})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "PlayerGangZoneHide", "contents": "PlayerGangZoneHide(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "PlayerGangZoneFlash", "contents": "PlayerGangZoneFlash(${1:playerid}, ${2:zoneid}, ${3:flashColour})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "PlayerGangZoneStopFlash", "contents": "PlayerGangZoneStopFlash(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "IsValidPlayerGangZone", "contents": "IsValidPlayerGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "IsPlayerInPlayerGangZone", "contents": "IsPlayerInPlayerGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "IsPlayerGangZoneVisible", "contents": "IsPlayerGangZoneVisible(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "PlayerGangZoneGetColour", "contents": "PlayerGangZoneGetColour(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "PlayerGangZoneGetFlashColour", "contents": "PlayerGangZoneGetFlashColour(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "IsPlayerGangZoneFlashing", "contents": "IsPlayerGangZoneFlashing(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "PlayerGangZoneGetPos", "contents": "PlayerGangZoneGetPos(${1:playerid}, ${2:zoneid}, ${3:&Float:minX}, ${4:&Float:minY = 0.0}, ${5:&Float:maxX = 0.0}, ${6:&Float:maxY = 0.0})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "UsePlayerGangZoneCheck", "contents": "UsePlayerGangZoneCheck(${1:zoneid}, ${2:bool:enable})", "annotation": "omp_gangzone.inc"},
 		
 		/*
 			Deprecated
 		*/
-		{"trigger": "GangZoneGetColorForPlayer", "contents": "GangZoneGetColorForPlayer(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "GangZoneGetFlashColorForPlayer", "contents": "GangZoneGetFlashColorForPlayer(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "PlayerGangZoneGetColor", "contents": "PlayerGangZoneGetColor(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "PlayerGangZoneGetFlashColor", "contents": "PlayerGangZoneGetFlashColor(${1:playerid}, ${2:zoneid})"},
+		{"trigger": "GangZoneGetColorForPlayer", "contents": "GangZoneGetColorForPlayer(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "GangZoneGetFlashColorForPlayer", "contents": "GangZoneGetFlashColorForPlayer(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "PlayerGangZoneGetColor", "contents": "PlayerGangZoneGetColor(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "PlayerGangZoneGetFlashColor", "contents": "PlayerGangZoneGetFlashColor(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
 
 		/*
 			Callbacks
 		*/
-		{"trigger": "OnPlayerEnterGangZone", "contents": "OnPlayerEnterGangZone(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "OnPlayerLeaveGangZone", "contents": "OnPlayerLeaveGangZone(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "OnPlayerEnterPlayerGangZone", "contents": "OnPlayerEnterPlayerGangZone(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "OnPlayerLeavePlayerGangZone", "contents": "OnPlayerLeavePlayerGangZone(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "OnPlayerClickGangZone", "contents": "OnPlayerClickGangZone(${1:playerid}, ${2:zoneid})"},
-		{"trigger": "OnPlayerClickPlayerGangZone", "contents": "OnPlayerClickPlayerGangZone(${1:playerid}, ${2:zoneid})"}
+		{"trigger": "OnPlayerEnterGangZone", "contents": "OnPlayerEnterGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "OnPlayerLeaveGangZone", "contents": "OnPlayerLeaveGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "OnPlayerEnterPlayerGangZone", "contents": "OnPlayerEnterPlayerGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "OnPlayerLeavePlayerGangZone", "contents": "OnPlayerLeavePlayerGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "OnPlayerClickGangZone", "contents": "OnPlayerClickGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		{"trigger": "OnPlayerClickPlayerGangZone", "contents": "OnPlayerClickPlayerGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"}
 	]
 }

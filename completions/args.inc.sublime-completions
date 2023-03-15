@@ -3,9 +3,9 @@
 
     "completions": 
     [
-    	{"trigger": "argcount", "contents": "argcount()"},
-		{"trigger": "argindex", "contents": "argindex(${1:index}, ${2:value[]}, ${3:size = sizeof (value)}, ${4:bool:pack = false})"},
-		{"trigger": "argstr", "contents": "argstr(${1:skip = 0}, ${2:const argument[] = \"\"}, ${3:value[] = \"\"}, ${4:size = sizeof (value)}, ${5:bool:pack = false})"},
-		{"trigger": "argvalue", "contents": "argvalue(${1:skip = 0}, ${2:const argument[] = \"\"}, ${3:&value = cellmin})"}
+    	{"trigger": "argcount", "contents": "argcount()", "annotation": "args.inc"},
+		{"trigger": "argindex", "contents": "argindex(${1:index}, ${2:value[]}, ${3:size = sizeof (value)}, ${4:bool:pack = false})", "annotation": "args.inc"},
+		{"trigger": "argstr", "contents": "argstr(${1:skip = 0}, ${2:const argument[] = \"\"}, ${3:value[] = \"\"}, ${4:size = sizeof (value)}, ${5:bool:pack = false})", "annotation": "args.inc"},
+		{"trigger": "argvalue", "contents": "argvalue(${1:skip = 0}, ${2:const argument[] = \"\"}, ${3:&value = cellmin})", "annotation": "args.inc"}
 	]
 }

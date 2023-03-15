@@ -3,16 +3,16 @@
 
     "completions": 
     [
-    	{"trigger": "gettime", "contents": "gettime(${1:&hour = 0}, ${2:&minute = 0}, ${3:&second = 0})"},
-		{"trigger": "getdate", "contents": "getdate(${1:&year = 0}, ${2:&month = 0}, ${3:&day = 0})"},
-		{"trigger": "tickcount", "contents": "tickcount(${1:&granularity = 0})"},
-		{"trigger": "__settimer", "contents": "__settimer(${1:const callback[]}, ${2:milliseconds}, ${3:bool:multishot})"},
-		{"trigger": "__killtimer", "contents": "__killtimer(${1:id})"},
-		{"trigger": "settimer", "contents": "settimer(${1:milliseconds}, ${2:bool:singleshot = false})"},
-		{"trigger": "delay", "contents": "delay(${1:milliseconds})"},
-		{"trigger": "cvttimestamp", "contents": "cvttimestamp(${1:seconds1970}, ${2:&year = 0}, ${3:&month = 0}, ${4:&day = 0}, ${5:&hour = 0}, ${6:&minute = 0}, ${7:&second = 0})"},
-		{"trigger": "setdate", "contents": "setdate(${1:year = cellmin}, ${2:month = cellmin}, ${3:day = cellmin})"},
-		{"trigger": "settime", "contents": "settime(${1:hour = cellmin}, ${2:minute = cellmin}, ${3:second = cellmin})"},
-		{"trigger": "settimestamp", "contents": "settimestamp(${1:seconds1970})"}
+    	{"trigger": "gettime", "contents": "gettime(${1:&hour = 0}, ${2:&minute = 0}, ${3:&second = 0})", "annotation": "time.inc"},
+		{"trigger": "getdate", "contents": "getdate(${1:&year = 0}, ${2:&month = 0}, ${3:&day = 0})", "annotation": "time.inc"},
+		{"trigger": "tickcount", "contents": "tickcount(${1:&granularity = 0})", "annotation": "time.inc"},
+		{"trigger": "__settimer", "contents": "__settimer(${1:const callback[]}, ${2:milliseconds}, ${3:bool:multishot})", "annotation": "time.inc"},
+		{"trigger": "__killtimer", "contents": "__killtimer(${1:id})", "annotation": "time.inc"},
+		{"trigger": "settimer", "contents": "settimer(${1:milliseconds}, ${2:bool:singleshot = false})", "annotation": "time.inc"},
+		{"trigger": "delay", "contents": "delay(${1:milliseconds})", "annotation": "time.inc"},
+		{"trigger": "cvttimestamp", "contents": "cvttimestamp(${1:seconds1970}, ${2:&year = 0}, ${3:&month = 0}, ${4:&day = 0}, ${5:&hour = 0}, ${6:&minute = 0}, ${7:&second = 0})", "annotation": "time.inc"},
+		{"trigger": "setdate", "contents": "setdate(${1:year = cellmin}, ${2:month = cellmin}, ${3:day = cellmin})", "annotation": "time.inc"},
+		{"trigger": "settime", "contents": "settime(${1:hour = cellmin}, ${2:minute = cellmin}, ${3:second = cellmin})", "annotation": "time.inc"},
+		{"trigger": "settimestamp", "contents": "settimestamp(${1:seconds1970})", "annotation": "time.inc"}
 	]
 }

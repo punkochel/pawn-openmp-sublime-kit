@@ -3,45 +3,45 @@
 
     "completions": 
     [
-		"VARTYPE_NONE",
-		"VARTYPE_INT",
-		"VARTYPE_STRING",
-		"VARTYPE_FLOAT",
-		"SERVER_VARTYPE_NONE",
-		"SERVER_VARTYPE_INT",
-		"SERVER_VARTYPE_STRING",
-		"SERVER_VARTYPE_FLOAT",
-		"PLAYER_VARTYPE_NONE",
-		"PLAYER_VARTYPE_INT",
-		"PLAYER_VARTYPE_STRING",
-		"PLAYER_VARTYPE_FLOAT",
+		{"trigger": "VARTYPE_NONE", "annotation": "omp_variable.inc"},
+		{"trigger": "VARTYPE_INT", "annotation": "omp_variable.inc"},
+		{"trigger": "VARTYPE_STRING", "annotation": "omp_variable.inc"},
+		{"trigger": "VARTYPE_FLOAT", "annotation": "omp_variable.inc"},
+		{"trigger": "SERVER_VARTYPE_NONE", "annotation": "omp_variable.inc"},
+		{"trigger": "SERVER_VARTYPE_INT", "annotation": "omp_variable.inc"},
+		{"trigger": "SERVER_VARTYPE_STRING", "annotation": "omp_variable.inc"},
+		{"trigger": "SERVER_VARTYPE_FLOAT", "annotation": "omp_variable.inc"},
+		{"trigger": "PLAYER_VARTYPE_NONE", "annotation": "omp_variable.inc"},
+		{"trigger": "PLAYER_VARTYPE_INT", "annotation": "omp_variable.inc"},
+		{"trigger": "PLAYER_VARTYPE_STRING", "annotation": "omp_variable.inc"},
+		{"trigger": "PLAYER_VARTYPE_FLOAT", "annotation": "omp_variable.inc"},
 
 		/*
 			SVar
 		*/
-		{"trigger": "SetSVarInt", "contents": "SetSVarInt(${1:const svar[]}, ${2:value})"},
-		{"trigger": "GetSVarInt", "contents": "GetSVarInt(${1:const svar[]})"},
-		{"trigger": "SetSVarString", "contents": "SetSVarString(${1:const svar[]}, ${2:const value[]}, ${3:OPEN_MP_TAGS:...})"},
-		{"trigger": "GetSVarString", "contents": "GetSVarString(${1:const svar[]}, ${2:output[]}, ${3:len = sizeof (output)})"},
-		{"trigger": "SetSVarFloat", "contents": "SetSVarFloat(${1:const svar[]}, ${2:Float:value})"},
-		{"trigger": "GetSVarFloat", "contents": "GetSVarFloat(${1:const svar[]})"},
-		{"trigger": "DeleteSVar", "contents": "DeleteSVar(${1:const svar[]})"},
-		{"trigger": "GetSVarsUpperIndex", "contents": "GetSVarsUpperIndex()"},
-		{"trigger": "GetSVarNameAtIndex", "contents": "GetSVarNameAtIndex(${1:index}, ${2:output[]}, ${3:size = sizeof (output)})"},
-		{"trigger": "GetSVarType", "contents": "GetSVarType(${1:const svar[]})"},
+		{"trigger": "SetSVarInt", "contents": "SetSVarInt(${1:const svar[]}, ${2:value})", "annotation": "omp_variable.inc"},
+		{"trigger": "GetSVarInt", "contents": "GetSVarInt(${1:const svar[]})", "annotation": "omp_variable.inc"},
+		{"trigger": "SetSVarString", "contents": "SetSVarString(${1:const svar[]}, ${2:const value[]}, ${3:OPEN_MP_TAGS:...})", "annotation": "omp_variable.inc"},
+		{"trigger": "GetSVarString", "contents": "GetSVarString(${1:const svar[]}, ${2:output[]}, ${3:len = sizeof (output)})", "annotation": "omp_variable.inc"},
+		{"trigger": "SetSVarFloat", "contents": "SetSVarFloat(${1:const svar[]}, ${2:Float:value})", "annotation": "omp_variable.inc"},
+		{"trigger": "GetSVarFloat", "contents": "GetSVarFloat(${1:const svar[]})", "annotation": "omp_variable.inc"},
+		{"trigger": "DeleteSVar", "contents": "DeleteSVar(${1:const svar[]})", "annotation": "omp_variable.inc"},
+		{"trigger": "GetSVarsUpperIndex", "contents": "GetSVarsUpperIndex()", "annotation": "omp_variable.inc"},
+		{"trigger": "GetSVarNameAtIndex", "contents": "GetSVarNameAtIndex(${1:index}, ${2:output[]}, ${3:size = sizeof (output)})", "annotation": "omp_variable.inc"},
+		{"trigger": "GetSVarType", "contents": "GetSVarType(${1:const svar[]})", "annotation": "omp_variable.inc"},
 		
 		/*
 			PVar
 		*/
-		{"trigger": "SetPVarInt", "contents": "SetPVarInt(${1:playerid}, ${2:const pvar[]}, ${3:value})"},
-		{"trigger": "GetPVarInt", "contents": "GetPVarInt(${1:playerid}, ${2:const pvar[]})"},
-		{"trigger": "SetPVarString", "contents": "SetPVarString(${1:playerid}, ${2:const pvar[]}, ${3:const value[]}, ${4:OPEN_MP_TAGS:...})"},
-		{"trigger": "GetPVarString", "contents": "GetPVarString(${1:playerid}, ${2:const pvar[]}, ${3:output[]}, ${4:len = sizeof (output)})"},
-		{"trigger": "SetPVarFloat", "contents": "SetPVarFloat(${1:playerid}, ${2:const pvar[]}, ${3:Float:value})"},
-		{"trigger": "GetPVarFloat", "contents": "GetPVarFloat(${1:playerid}, ${2:const pvar[]})"},
-		{"trigger": "DeletePVar", "contents": "DeletePVar(${1:playerid}, ${2:const pvar[]})"},
-		{"trigger": "GetPVarsUpperIndex", "contents": "GetPVarsUpperIndex(${1:playerid})"},
-		{"trigger": "GetPVarNameAtIndex", "contents": "GetPVarNameAtIndex(${1:playerid}, ${2:index}, ${3:output[]}, ${4:size = sizeof (output)})"},
-		{"trigger": "GetPVarType", "contents": "GetPVarType(${1:playerid}, ${2:const pvar[]})"}
+		{"trigger": "SetPVarInt", "contents": "SetPVarInt(${1:playerid}, ${2:const pvar[]}, ${3:value})", "annotation": "omp_variable.inc"},
+		{"trigger": "GetPVarInt", "contents": "GetPVarInt(${1:playerid}, ${2:const pvar[]})", "annotation": "omp_variable.inc"},
+		{"trigger": "SetPVarString", "contents": "SetPVarString(${1:playerid}, ${2:const pvar[]}, ${3:const value[]}, ${4:OPEN_MP_TAGS:...})", "annotation": "omp_variable.inc"},
+		{"trigger": "GetPVarString", "contents": "GetPVarString(${1:playerid}, ${2:const pvar[]}, ${3:output[]}, ${4:len = sizeof (output)})", "annotation": "omp_variable.inc"},
+		{"trigger": "SetPVarFloat", "contents": "SetPVarFloat(${1:playerid}, ${2:const pvar[]}, ${3:Float:value})", "annotation": "omp_variable.inc"},
+		{"trigger": "GetPVarFloat", "contents": "GetPVarFloat(${1:playerid}, ${2:const pvar[]})", "annotation": "omp_variable.inc"},
+		{"trigger": "DeletePVar", "contents": "DeletePVar(${1:playerid}, ${2:const pvar[]})", "annotation": "omp_variable.inc"},
+		{"trigger": "GetPVarsUpperIndex", "contents": "GetPVarsUpperIndex(${1:playerid})", "annotation": "omp_variable.inc"},
+		{"trigger": "GetPVarNameAtIndex", "contents": "GetPVarNameAtIndex(${1:playerid}, ${2:index}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_variable.inc"},
+		{"trigger": "GetPVarType", "contents": "GetPVarType(${1:playerid}, ${2:const pvar[]})", "annotation": "omp_variable.inc"}
 	]
 }

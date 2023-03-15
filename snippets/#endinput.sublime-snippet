@@ -1,0 +1,9 @@
+<snippet>
+	<description>#endinput</description>
+    <content><![CDATA[#if defined ${1/([A-Za-z0-9_]+).*/$1/}
+    #endinput
+#endif
+#define ${1:SYMBOL}]]></content>
+    <tabTrigger>endinput</tabTrigger>
+    <scope>source.pawn</scope>
+</snippet>

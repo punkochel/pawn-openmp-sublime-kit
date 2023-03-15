@@ -2,6 +2,6 @@
 	"scope": "source.pawn - variable.other.pawn",
 	"completions":
 	[
-		{"trigger": "sscanf", "contents": "sscanf(${1:const data[]}, ${2:const format[]}, ${3:...})"}
+		{"trigger": "sscanf", "contents": "sscanf(${1:const data[]}, ${2:const format[]}, ${3:...})", "annotation": "sscanf2.inc"}
 	]
 }
