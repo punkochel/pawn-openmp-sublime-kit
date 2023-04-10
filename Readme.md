@@ -20,8 +20,8 @@ Refactored snippets and completions
 Create a Default.sublime-keymap file in your Packages/User/ directory, then put the following code in it:
 ```
 [
-	{ "keys": ["f5"], "command": "build", "context" : [{"key": "selector", "operator": "equal", "operand": "source.pawn", "match_all": true}] },
-	{ "keys": ["pause"], "command": "exec", "args": {"kill": true}, "context" : [{"key": "selector", "operator": "equal", "operand": "source.pawn", "match_all": true}] }
+    { "keys": ["f5"], "command": "build", "context" : [{"key": "selector", "operator": "equal", "operand": "source.pawn", "match_all": true}] },
+    { "keys": ["pause"], "command": "exec", "args": {"kill": true}, "context" : [{"key": "selector", "operator": "equal", "operand": "source.pawn", "match_all": true}] }
 ]
 ```
 
