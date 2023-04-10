@@ -16,5 +16,15 @@ Refactored snippets and completions
 -	[mdialog](https://github.com/Open-GTO/mdialog)
 -	[a_mysql v40+](https://github.com/pBlueG/SA-MP-MySQL)
 
+## Compilation on F5 key
+Create a Default.sublime-keymap file in your Packages/User/ directory, then put the following code in it:
+```
+[
+	{ "keys": ["f5"], "command": "build", "context" : [{"key": "selector", "operator": "equal", "operand": "source.pawn", "match_all": true}] },
+	{ "keys": ["pause"], "command": "exec", "args": {"kill": true}, "context" : [{"key": "selector", "operator": "equal", "operand": "source.pawn", "match_all": true}] }
+]
+```
+
 ## Install
 later...
+
