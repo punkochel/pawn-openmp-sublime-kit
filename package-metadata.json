@@ -1,8 +1,0 @@
-{
-	"sublime_text": "*",
-	"version": "1.0.4",
-	"url": "https://github.com/punkochel/pawn-openmp-sublime-kit",
-	"platforms": ["*"],
-	"description": "Pawn language settings for Sublime Text. Is a fork Pawn syntax package, adapted to Open MP development",
-	"dependencies": []
-}
