@@ -1,0 +1,6 @@
+[
+    {
+      "caption": "Pawn Kit: Generate Build Settings File",
+      "command": "pawn_build_path"
+    }
+]
