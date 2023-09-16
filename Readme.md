@@ -26,5 +26,5 @@ Create a Default.sublime-keymap file in your Packages/User/ directory, then put 
 ```
 
 ## Install
-later...
+Package Control
 
