@@ -1,0 +1,29 @@
+<snippet>
+	<description>samp-bcrypt.inc</description>
+	<content><![CDATA[
+bcrypt_hash(playerid, "OnPassswordHash", "1234", BCRYPT_COST);
+
+forward OnPassswordHash(playerid);
+public OnPassswordHash(playerid)
+{
+	new dest[BCRYPT_HASH_LENGTH];
+	bcrypt_get_hash(dest);
+	bcrypt_verify(playerid, "OnPassswordVerify", "1234", dest);
+}
+
+forward OnPassswordVerify(playerid, bool:success);
+public OnPassswordVerify(playerid, bool:success)
+{
+	if (success)
+	{
+		// Verified
+	} 
+	else
+	{
+		// Hash doesn't match with 1234
+	}
+}
+]]></content>
+	<tabTrigger>bcrypt</tabTrigger>
+	<scope>source.pawn</scope>
+</snippet>

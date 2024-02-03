@@ -1,0 +1,34 @@
+{
+    "scope": "source.pawn - variable.other.pawn",
+    "completions": 
+    [
+        {
+            "trigger": "BCRYPT_HASH_LENGTH", 
+            "annotation": "samp_bcrypt.inc"
+        },
+        {
+            "trigger": "BCRYPT_COST", 
+            "annotation": "samp_bcrypt.inc"
+        },
+    	{
+            "trigger": "bcrypt_hash", 
+            "contents": "bcrypt_hash(${1:playerid}, ${2:const callback[]}, ${3:const input[]}, ${4:cost}, ${5:const args[] = \"\"}, ${6:...})", 
+            "annotation": "samp_bcrypt.inc"
+        },
+        {
+            "trigger": "bcrypt_verify", 
+            "contents": "bcrypt_verify(${1:playerid}, ${2:const callback[]}, ${3:const input[]}, ${4:const hash[]}, ${5:const args[] = \"\"}, ${6:...})", 
+            "annotation": "samp_bcrypt.inc"
+        },
+        {
+            "trigger": "bcrypt_get_hash", 
+            "contents": "bcrypt_get_hash(${1:hash[]}, ${2:size = sizeof(hash)})", 
+            "annotation": "samp_bcrypt.inc"
+        },
+        {
+            "trigger": "bcrypt_set_thread_limit", 
+            "contents": "bcrypt_set_thread_limit(${1:value})", 
+            "annotation": "samp_bcrypt.inc"
+        }
+	]
+}
