@@ -15,6 +15,7 @@ Refactored snippets and completions
 -	[streamer](https://github.com/samp-incognito/samp-streamer-plugin)
 -	[mdialog](https://github.com/Open-GTO/mdialog)
 -	[a_mysql v40+](https://github.com/pBlueG/SA-MP-MySQL)
+-	[samp-bcrypt](https://github.com/Sreyas-Sreelal/samp-bcrypt)
 
 ## Compilation on F5 key
 Create a Default.sublime-keymap file in your Packages/User/ directory, then put the following code in it:
