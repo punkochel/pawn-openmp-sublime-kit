@@ -5,6 +5,7 @@
     [
 		{"trigger": "MAX_VEHICLES", "annotation": "omp_vehicle.inc"},
 		{"trigger": "INVALID_VEHICLE_ID", "annotation": "omp_vehicle.inc"},
+		{"trigger": "UNKNOWN_CARMODTYPE", "annotation": "omp_vehicle.inc"},
 		{"trigger": "CARMODTYPE_NONE", "annotation": "omp_vehicle.inc"},
 		{"trigger": "CARMODTYPE_SPOILER", "annotation": "omp_vehicle.inc"},
 		{"trigger": "CARMODTYPE_HOOD", "annotation": "omp_vehicle.inc"},

@@ -3,9 +3,11 @@
 
     "completions": 
     [
+    	{"trigger": "UNKNOWN_HTTP_METHOD", "annotation": "omp_http.inc"},
     	{"trigger": "HTTP_GET", "annotation": "omp_http.inc"},
 		{"trigger": "HTTP_POST", "annotation": "omp_http.inc"},
 		{"trigger": "HTTP_HEAD", "annotation": "omp_http.inc"},
+		{"trigger": "UNKNOWN_HTTP_ERROR", "annotation": "omp_http.inc"},
 		{"trigger": "HTTP_ERROR_BAD_HOST", "annotation": "omp_http.inc"},
 		{"trigger": "HTTP_ERROR_NO_SOCKET", "annotation": "omp_http.inc"},
 		{"trigger": "HTTP_ERROR_CANT_CONNECT", "annotation": "omp_http.inc"},

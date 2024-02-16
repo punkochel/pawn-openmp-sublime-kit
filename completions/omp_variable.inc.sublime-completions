@@ -3,6 +3,7 @@
 
     "completions": 
     [
+    	{"trigger": "UNKNOWN_VARTYPE", "annotation": "omp_variable.inc"},
 		{"trigger": "VARTYPE_NONE", "annotation": "omp_variable.inc"},
 		{"trigger": "VARTYPE_INT", "annotation": "omp_variable.inc"},
 		{"trigger": "VARTYPE_STRING", "annotation": "omp_variable.inc"},

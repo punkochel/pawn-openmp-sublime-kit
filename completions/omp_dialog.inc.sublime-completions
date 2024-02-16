@@ -5,6 +5,7 @@
     [
     	{"trigger": "INVALID_DIALOG_ID", "annotation": "omp_dialog.inc"},
 		{"trigger": "MAX_DIALOG", "annotation": "omp_dialog.inc"},
+		{"trigger": "UNKNOWN_DIALOG_STYLE", "annotation": "omp_dialog.inc"},
 		{"trigger": "DIALOG_STYLE_MSGBOX", "annotation": "omp_dialog.inc"},
 		{"trigger": "DIALOG_STYLE_INPUT", "annotation": "omp_dialog.inc"},
 		{"trigger": "DIALOG_STYLE_LIST", "annotation": "omp_dialog.inc"},

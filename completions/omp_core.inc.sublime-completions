@@ -79,9 +79,7 @@
 		/*
 			Pawn Utilities
 		*/
-		{"trigger": "__open_mp_unused_print", "contents": "__open_mp_unused_print(${1:const string[]})", "annotation": "omp_core.inc"},
 		{"trigger": "print", "contents": "print(${1:const string[]})", "annotation": "omp_core.inc"},
-		{"trigger": "__open_mp_unused_printf", "contents": "__open_mp_unused_printf(${1:const format[]}, ${2:OPEN_MP_TAGS:...})", "annotation": "omp_core.inc"},
 		{"trigger": "printf", "contents": "printf(${1:const format[]}, ${2:OPEN_MP_TAGS:...})", "annotation": "omp_core.inc"},
 		{"trigger": "format", "contents": "format(${1:output[]}, ${2:len = sizeof (output)}, ${3:const format[]}, ${4:{Float, _}:...})", "annotation": "omp_core.inc"},
 		{"trigger": "SetTimer", "contents": "SetTimer(${1:const functionName[]}, ${2:interval}, ${3:bool:repeating})", "annotation": "omp_core.inc"},
@@ -101,7 +99,7 @@
 		{"trigger": "SendDeathMessage", "contents": "SendDeathMessage(${1:killer}, ${2:killee}, ${3:weapon})", "annotation": "omp_core.inc"},
 		{"trigger": "GetWeaponName", "contents": "GetWeaponName(${1:WEAPON:weaponid}, ${2:weapon[]}, ${3:len = sizeof (weapon)})", "annotation": "omp_core.inc"},
 		{"trigger": "IsValidNickName", "contents": "IsValidNickName(${1:const name[]})", "annotation": "omp_core.inc"},
-		{"trigger": "WEAPON_SLOT:GetWeaponSlot", "contents": "WEAPON_SLOT:GetWeaponSlot(${1:WEAPON:weaponid})", "annotation": "omp_core.inc"},
+		{"trigger": "GetWeaponSlot", "contents": "WEAPON_SLOT:GetWeaponSlot(${1:WEAPON:weaponid})", "annotation": "omp_core.inc"},
 		{"trigger": "GetAnimationName", "contents": "GetAnimationName(${1:index}, ${2:animationLibrary[]}, ${3:len1 = sizeof (animationLibrary)}, ${4:animationName[]}, ${5:len2 = sizeof (animationName)})", "annotation": "omp_core.inc"},
 		{"trigger": "CreateExplosion", "contents": "CreateExplosion(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:Float:radius})", "annotation": "omp_core.inc"},
 

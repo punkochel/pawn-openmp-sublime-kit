@@ -3,6 +3,7 @@
 
     "completions": 
     [
+    	{"trigger": "UNKNOWN_CP_TYPE", "annotation": "omp_checkpoint.inc"},
     	{"trigger": "CP_TYPE_GROUND_NORMAL", "annotation": "omp_checkpoint.inc"},
 		{"trigger": "CP_TYPE_GROUND_FINISH", "annotation": "omp_checkpoint.inc"},
 		{"trigger": "CP_TYPE_GROUND_EMPTY", "annotation": "omp_checkpoint.inc"},

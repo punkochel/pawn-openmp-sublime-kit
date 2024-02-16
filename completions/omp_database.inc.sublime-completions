@@ -3,6 +3,7 @@
 
     "completions": 
     [
+    	{"trigger": "UNKNOWN_SQLITE_OPEN", "annotation": "omp_database.inc"},
     	{"trigger": "SQLITE_OPEN_READONLY", "annotation": "omp_database.inc"},
 		{"trigger": "SQLITE_OPEN_READWRITE", "annotation": "omp_database.inc"},
 		{"trigger": "SQLITE_OPEN_CREATE", "annotation": "omp_database.inc"},

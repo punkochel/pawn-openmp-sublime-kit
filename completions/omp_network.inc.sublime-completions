@@ -3,6 +3,7 @@
 
     "completions": 
     [
+		{"trigger": "UNKNOWN_CONNECTION_STATUS", "annotation": "omp_network.inc"},
     	{"trigger": "CONNECTION_STATUS_NO_ACTION", "annotation": "omp_network.inc"},
 		{"trigger": "CONNECTION_STATUS_DISCONNECT_ASAP", "annotation": "omp_network.inc"},
 		{"trigger": "CONNECTION_STATUS_DISCONNECT_ASAP_SILENTLY", "annotation": "omp_network.inc"},
@@ -21,6 +22,7 @@
 		{"trigger": "CONNSTAT_UNVERIFIED_SENDER", "annotation": "omp_network.inc"},
 		{"trigger": "CONNSTAT_SET_ENCRYPTION", "annotation": "omp_network.inc"},
 		{"trigger": "CONNSTAT_CONNECTED", "annotation": "omp_network.inc"},
+		{"trigger": "UNKNOWN_DOWNLOAD_REQUEST", "annotation": "omp_network.inc"},
 		{"trigger": "DOWNLOAD_REQUEST_EMPTY", "annotation": "omp_network.inc"},
 		{"trigger": "DOWNLOAD_REQUEST_MODEL_FILE", "annotation": "omp_network.inc"},
 		{"trigger": "DOWNLOAD_REQUEST_TEXTURE_FILE", "annotation": "omp_network.inc"},

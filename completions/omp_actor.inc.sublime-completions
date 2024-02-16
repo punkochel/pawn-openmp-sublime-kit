@@ -1,0 +1,41 @@
+{
+    "scope": "source.pawn - variable.other.pawn",
+
+    "completions": 
+    [
+    	{"trigger": "MAX_ACTORS", "annotation": "omp_actor.inc"},
+    	{"trigger": "INVALID_ACTOR_ID", "annotation": "omp_actor.inc"},
+
+    	/*
+    		Natives
+    	*/
+    	{"trigger": "CreateActor", "contents": "CreateActor(${1:skin}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:angle})", "annotation": "omp_actor.inc"},
+    	{"trigger": "DestroyActor", "contents": "DestroyActor(${1:actorid})", "annotation": "omp_actor.inc"},
+    	{"trigger": "IsActorStreamedIn", "contents": "IsActorStreamedIn(${1:actorid}, ${2:playerid})", "annotation": "omp_actor.inc"},
+    	{"trigger": "SetActorVirtualWorld", "contents": "SetActorVirtualWorld(${1:actorid}, ${2:virtualWorld})", "annotation": "omp_actor.inc"},
+    	{"trigger": "GetActorVirtualWorld", "contents": "GetActorVirtualWorld(${1:actorid})", "annotation": "omp_actor.inc"},
+    	{"trigger": "ApplyActorAnimation", "contents": "ApplyActorAnimation(${1:actorid}, ${2:const animationLibrary[]}, ${3:const animationName[]}, ${4:Float:delta}, ${5:bool:loop}, ${6:bool:lockX}, ${7:bool:lockY}, ${8:bool:freeze}, ${9:time})", "annotation": "omp_actor.inc"},
+    	{"trigger": "ClearActorAnimations", "contents": "ClearActorAnimations(${1:actorid})", "annotation": "omp_actor.inc"},
+    	{"trigger": "SetActorPos", "contents": "SetActorPos(${1:actorid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})", "annotation": "omp_actor.inc"},
+    	{"trigger": "GetActorPos", "contents": "GetActorPos(${1:actorid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z})", "annotation": "omp_actor.inc"},
+    	{"trigger": "SetActorFacingAngle", "contents": "SetActorFacingAngle(${1:actorid}, ${2:Float:angle})", "annotation": "omp_actor.inc"},
+    	{"trigger": "GetActorFacingAngle", "contents": "GetActorFacingAngle(${1:actorid}, ${2:&Float:angle})", "annotation": "omp_actor.inc"},
+    	{"trigger": "SetActorHealth", "contents": "SetActorHealth(${1:actorid}, ${2:Float:health})", "annotation": "omp_actor.inc"},
+    	{"trigger": "GetActorHealth", "contents": "GetActorHealth(${1:actorid}, ${2:&Float:health})", "annotation": "omp_actor.inc"},
+    	{"trigger": "SetActorInvulnerable", "contents": "SetActorInvulnerable(${1:actorid}, ${2:bool:invulnerable = true})", "annotation": "omp_actor.inc"},
+    	{"trigger": "IsActorInvulnerable", "contents": "IsActorInvulnerable(${1:actorid})", "annotation": "omp_actor.inc"},
+    	{"trigger": "IsValidActor", "contents": "IsValidActor(${1:actorid})", "annotation": "omp_actor.inc"},
+    	{"trigger": "SetActorSkin", "contents": "SetActorSkin(${1:actorid}, ${2:skin})", "annotation": "omp_actor.inc"},
+    	{"trigger": "GetActorSkin", "contents": "GetActorSkin(${1:actorid})", "annotation": "omp_actor.inc"},
+    	{"trigger": "GetActorAnimation", "contents": "GetActorAnimation(${1:actorid}, ${2:const animationLibrary[]}, ${3:librarySize = sizeof(animationLibrary)} ${4:const animationName[]}, ${5:nameSize = sizeof(animationName)} ${6:&Float:delta}, ${7:&bool:loop = false}, ${8:&bool:lockX = false}, ${9:&bool:lockY = false}, ${10:&bool:freeze = false}, ${11:&time = 0})", "annotation": "omp_actor.inc"},
+    	{"trigger": "GetActorSpawnInfo", "contents": "GetActorSpawnInfo(${1:actorid}, ${2:&skin}, ${3:&Float:spawnX = 0.0}, ${4:&Float:spawnY = 0.0}, ${5:&Float:spawnZ = 0.0}, ${6:&Float:spawnAngle = 0.0})", "annotation": "omp_actor.inc"},
+    	{"trigger": "GetActors", "contents": "GetActors(${1:actors[]}, ${2:size = sizeof(actors)})", "annotation": "omp_actor.inc"},
+
+    	/*
+    		Callbacks
+    	*/
+    	{"trigger": "OnPlayerGiveDamageActor", "contents": "OnPlayerGiveDamageActor(${1:playerid}, ${2:damaged_actorid}, ${3:Float:amount}, ${4:WEAPON:weaponid}, ${5:bodypart})", "annotation": "omp_actor.inc"},
+		{"trigger": "OnActorStreamIn", "contents": "OnActorStreamIn(${1:actorid, ${2:forplayerid})", "annotation": "omp_actor.inc"},
+		{"trigger": "OnActorStreamOut", "contents": "OnActorStreamOut(${1:actorid, ${2:forplayerid})", "annotation": "omp_actor.inc"}
+	]
+}
