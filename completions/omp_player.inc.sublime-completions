@@ -41,6 +41,7 @@
 		{"trigger": "SPECIAL_ACTION_CUFFED", "annotation": "omp_player.inc"},
 		{"trigger": "SPECIAL_ACTION_CARRY", "annotation": "omp_player.inc"},
 		{"trigger": "SPECIAL_ACTION_PISSING", "annotation": "omp_player.inc"},
+		{"trigger": "MAX_FIGHT_STYLES", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_FIGHT_STYLE", "annotation": "omp_player.inc"},
 		{"trigger": "FIGHT_STYLE_NORMAL", "annotation": "omp_player.inc"},
 		{"trigger": "FIGHT_STYLE_BOXING", "annotation": "omp_player.inc"},
@@ -48,7 +49,7 @@
 		{"trigger": "FIGHT_STYLE_KNEEHEAD", "annotation": "omp_player.inc"},
 		{"trigger": "FIGHT_STYLE_GRABKICK", "annotation": "omp_player.inc"},
 		{"trigger": "FIGHT_STYLE_ELBOW", "annotation": "omp_player.inc"},
-		{"trigger": "MAX_FIGHT_STYLES", "annotation": "omp_player.inc"},
+		{"trigger": "MAX_WEAPONSKILLS", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_WEAPONSKILL", "annotation": "omp_player.inc"},
 		{"trigger": "WEAPONSKILL_PISTOL", "annotation": "omp_player.inc"},
 		{"trigger": "WEAPONSKILL_PISTOL_SILENCED", "annotation": "omp_player.inc"},
@@ -61,7 +62,7 @@
 		{"trigger": "WEAPONSKILL_AK47", "annotation": "omp_player.inc"},
 		{"trigger": "WEAPONSKILL_M4", "annotation": "omp_player.inc"},
 		{"trigger": "WEAPONSKILL_SNIPERRIFLE", "annotation": "omp_player.inc"},
-		{"trigger": "MAX_WEAPONSKILLS", "annotation": "omp_player.inc"},
+		{"trigger": "UNKNOWN_WEAPONSTATE", "annotation": "omp_player.inc"},
 		{"trigger": "WEAPONSTATE_UNKNOWN", "annotation": "omp_player.inc"},
 		{"trigger": "WEAPONSTATE_NO_BULLETS", "annotation": "omp_player.inc"},
 		{"trigger": "WEAPONSTATE_LAST_BULLET", "annotation": "omp_player.inc"},
@@ -77,6 +78,7 @@
 		{"trigger": "KEY_JUMP", "annotation": "omp_player.inc"},
 		{"trigger": "KEY_LOOK_RIGHT", "annotation": "omp_player.inc"},
 		{"trigger": "KEY_HANDBRAKE", "annotation": "omp_player.inc"},
+		{"trigger": "KEY_AIM", "annotation": "omp_player.inc"},
 		{"trigger": "KEY_LOOK_LEFT", "annotation": "omp_player.inc"},
 		{"trigger": "KEY_SUBMISSION", "annotation": "omp_player.inc"},
 		{"trigger": "KEY_LOOK_BEHIND", "annotation": "omp_player.inc"},
@@ -150,6 +152,7 @@
 		{"trigger": "CreateExplosionForPlayer", "contents": "CreateExplosionForPlayer(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:type}, ${6:Float:radius})", "annotation": "omp_player.inc"},
 		{"trigger": "SetPlayerTime", "contents": "SetPlayerTime(${1:playerid}, ${2:hour}, ${3:minute})", "annotation": "omp_player.inc"},
 		{"trigger": "GetPlayerTime", "contents": "GetPlayerTime(${1:playerid}, ${2:&hour}, ${3:&minute})", "annotation": "omp_player.inc"},
+		{"trigger": "PlayerHasClockEnabled", "contents": "PlayerHasClockEnabled(${1:playerid})", "annotation": "omp_player.inc"},
 		{"trigger": "TogglePlayerClock", "contents": "TogglePlayerClock(${1:playerid}, ${2:bool:toggle})", "annotation": "omp_player.inc"},
 		{"trigger": "PlayerPlaySound", "contents": "PlayerPlaySound(${1:playerid}, ${2:soundid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})", "annotation": "omp_player.inc"},
 		{"trigger": "SetPlayerWorldBounds", "contents": "SetPlayerWorldBounds(${1:playerid}, ${2:Float:maxX}, ${3:Float:minX}, ${4:Float:maxY}, ${5:Float:minY})", "annotation": "omp_player.inc"},
@@ -206,6 +209,7 @@
 		{"trigger": "GetPlayerScore", "contents": "GetPlayerScore(${1:playerid})", "annotation": "omp_player.inc"},
 		{"trigger": "SetPlayerColor", "contents": "SetPlayerColor(${1:playerid}, ${2:colour})", "annotation": "omp_player.inc"},
 		{"trigger": "GetPlayerColor", "contents": "GetPlayerColor(${1:playerid})", "annotation": "omp_player.inc"},
+		{"trigger": "GetDefaultPlayerColour", "contents": "GetDefaultPlayerColour(${1:playerid})", "annotation": "omp_player.inc"},
 		{"trigger": "SetPlayerName", "contents": "SetPlayerName(${1:playerid}, ${2:const name[]})", "annotation": "omp_player.inc"},
 		{"trigger": "GetPlayerName", "contents": "GetPlayerName(${1:playerid}, ${2:name[]}, ${3:len = sizeof (name)})", "annotation": "omp_player.inc"},
 		{"trigger": "SetPlayerVirtualWorld", "contents": "SetPlayerVirtualWorld(${1:playerid}, ${2:virtualWorld})", "annotation": "omp_player.inc"},
@@ -276,6 +280,9 @@
 		{"trigger": "IsPlayerWidescreenToggled", "contents": "IsPlayerWidescreenToggled(${1:playerid})", "annotation": "omp_player.inc"},
 		{"trigger": "GetPlayerSpectateID", "contents": "GetPlayerSpectateID(${1:playerid})", "annotation": "omp_player.inc"},
 		{"trigger": "GetPlayerSpectateType", "contents": "GetPlayerSpectateType(${1:playerid})", "annotation": "omp_player.inc"},
+		{"trigger": "GetPlayerAnimFlags", "contents": "GetPlayerAnimFlags(${1:playerid})", "annotation": "omp_player.inc"},
+		{"trigger": "IsPlayerInDriveByMode", "contents": "IsPlayerInDriveByMode(${1:playerid})", "annotation": "omp_player.inc"},
+		{"trigger": "IsPlayerCuffed", "contents": "IsPlayerCuffed(${1:playerid})", "annotation": "omp_player.inc"},
 		{"trigger": "GetPlayerZAim", "contents": "GetPlayerZAim(${1:playerid})", "annotation": "omp_player.inc"},
 		{"trigger": "GetPlayers", "contents": "GetPlayers(${1:players[]}, ${2:size = sizeof (players)})", "annotation": "omp_player.inc"},
 		{"trigger": "IsPlayerUsingOfficialClient", "contents": "IsPlayerUsingOfficialClient(${1:playerid})", "annotation": "omp_player.inc"},
@@ -283,14 +290,15 @@
 		{"trigger": "IsPlayerTeleportAllowed", "contents": "IsPlayerTeleportAllowed(${1:playerid})", "annotation": "omp_player.inc"},
 		{"trigger": "AllowPlayerWeapons", "contents": "AllowPlayerWeapons(${1:playerid}, ${2:bool:allow})", "annotation": "omp_player.inc"},
 		{"trigger": "ArePlayerWeaponsAllowed", "contents": "ArePlayerWeaponsAllowed(${1:playerid})", "annotation": "omp_player.inc"},
+		{"trigger": "IsPlayerUsingOmp", "contents": "IsPlayerUsingOmp(${1:playerid})", "annotation": "omp_player.inc"},
 		
 		/*
 			Deprecated
 		*/
-		{"trigger": "SendClientMessagef", "contents": "SendClientMessagef(${1:playerid}, ${2:colour}, ${3:const format[]}, ${4:OPEN_MP_TAGS:...})", "annotation": "omp_player.inc"},
-		{"trigger": "SendClientMessageToAllf", "contents": "SendClientMessageToAllf(${1:colour}, ${2:const format[]}, ${3:OPEN_MP_TAGS:...})", "annotation": "omp_player.inc"},
-		{"trigger": "GameTextForPlayerf", "contents": "GameTextForPlayerf(${1:playerid}, ${2:const format[]}, ${3:time}, ${4:style}, ${5:OPEN_MP_TAGS:...})", "annotation": "omp_player.inc"},
-		{"trigger": "SendPlayerMessageToPlayerf", "contents": "SendPlayerMessageToPlayerf(${1:playerid}, ${2:senderid}, ${3:const format[]}, ${4:OPEN_MP_TAGS:...})", "annotation": "omp_player.inc"},
+		// {"trigger": "SendClientMessagef", "contents": "SendClientMessagef(${1:playerid}, ${2:colour}, ${3:const format[]}, ${4:OPEN_MP_TAGS:...})", "annotation": "omp_player.inc"},
+		// {"trigger": "SendClientMessageToAllf", "contents": "SendClientMessageToAllf(${1:colour}, ${2:const format[]}, ${3:OPEN_MP_TAGS:...})", "annotation": "omp_player.inc"},
+		// {"trigger": "GameTextForPlayerf", "contents": "GameTextForPlayerf(${1:playerid}, ${2:const format[]}, ${3:time}, ${4:style}, ${5:OPEN_MP_TAGS:...})", "annotation": "omp_player.inc"},
+		// {"trigger": "SendPlayerMessageToPlayerf", "contents": "SendPlayerMessageToPlayerf(${1:playerid}, ${2:senderid}, ${3:const format[]}, ${4:OPEN_MP_TAGS:...})", "annotation": "omp_player.inc"},
 		
 		/*
 			Callbacks
@@ -302,7 +310,6 @@
 		{"trigger": "OnPlayerClickPlayer", "contents": "OnPlayerClickPlayer(${1:playerid}, ${2:clickedplayerid}, ${3:CLICK_SOURCE:source})", "annotation": "omp_player.inc"},
 		{"trigger": "OnPlayerDeath", "contents": "OnPlayerDeath(${1:playerid}, ${2:killerid}, ${3:reason})", "annotation": "omp_player.inc"},
 		{"trigger": "OnPlayerWeaponShot", "contents": "OnPlayerWeaponShot(${1:playerid}, ${2:weaponid}, ${3:BULLET_HIT_TYPE:hittype}, ${4:hitid}, ${5:Float:fX}, ${6:Float:fY}, ${7:Float:fZ})", "annotation": "omp_player.inc"},
-		{"trigger": "OnScriptCash", "contents": "OnScriptCash(${1:playerid}, ${2:amount}, ${3:source})", "annotation": "omp_player.inc"},
 		{"trigger": "OnPlayerClickMap", "contents": "OnPlayerClickMap(${1:playerid}, ${2:Float:fX}, ${3:Float:fY}, ${4:Float:fZ})", "annotation": "omp_player.inc"},
 		{"trigger": "OnIncomingConnection", "contents": "OnIncomingConnection(${1:playerid}, ${2:ip_address[]}, ${3:port})", "annotation": "omp_player.inc"},
 		{"trigger": "OnPlayerUpdate", "contents": "OnPlayerUpdate(${1:playerid})", "annotation": "omp_player.inc"},
@@ -312,6 +319,6 @@
 		{"trigger": "OnPlayerText", "contents": "OnPlayerText(${1:playerid}, ${2:text[]})", "annotation": "omp_player.inc"},
 		{"trigger": "OnPlayerCommandText", "contents": "OnPlayerCommandText(${1:playerid}, ${2:cmdtext[]})", "annotation": "omp_player.inc"},
 		{"trigger": "OnPlayerConnect", "contents": "OnPlayerConnect(${1:playerid})", "annotation": "omp_player.inc"},
-		{"trigger": "OnPlayerDisconnect", "contents": "OnPlayerDisconnect(${1:playerid}, ${2:reason})", "annotation": "omp_player.inc"}
+		{"trigger": "OnPlayerDisconnect", "contents": "OnPlayerDisconnect(${1:playerid}, ${2:reason})", "annotation": "omp_player.inc"},
 	]
 }

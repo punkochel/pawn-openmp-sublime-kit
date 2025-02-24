@@ -41,7 +41,7 @@
 		{"trigger": "SetPlayerAdmin", "contents": "SetPlayerAdmin(${1:playerid}, ${2:bool:admin})", "annotation": "omp_network.inc"},
 		{"trigger": "SendRconCommand", "contents": "SendRconCommand(${1:const format[]}, ${2:OPEN_MP_TAGS:...})", "annotation": "omp_network.inc"},
 		{"trigger": "GetPlayerVersion", "contents": "GetPlayerVersion(${1:playerid}, ${2:version[]}, ${3:len = sizeof (version)})", "annotation": "omp_network.inc"},
-		{"trigger": "GPCI", "contents": "GPCI(${1:playerid}, ${2:serial[]}, ${3:len = sizeof (serial)})", "annotation": "omp_network.inc"},
+		{"trigger": "gpci", "contents": "gpci(${1:playerid}, ${2:serial[]}, ${3:len = sizeof (serial)})", "annotation": "omp_network.inc"},
 		{"trigger": "GetPlayerIp", "contents": "GetPlayerIp(${1:playerid}, ${2:ip[]}, ${3:len = sizeof (ip)})", "annotation": "omp_network.inc"},
 		{"trigger": "GetPlayerRawIp", "contents": "GetPlayerRawIp(${1:playerid})", "annotation": "omp_network.inc"},
 		{"trigger": "GetPlayerPing", "contents": "GetPlayerPing(${1:playerid})", "annotation": "omp_network.inc"},
@@ -79,6 +79,6 @@
 		{"trigger": "OnRconLoginAttempt", "contents": "OnRconLoginAttempt(${1:ip[]}, ${2:password[]}, ${3:success})", "annotation": "omp_network.inc"},
 		{"trigger": "OnPlayerFinishedDownloading", "contents": "OnPlayerFinishedDownloading(${1:playerid}, ${2:virtualworld})", "annotation": "omp_network.inc"},
 		{"trigger": "OnPlayerRequestDownload", "contents": "OnPlayerRequestDownload(${1:playerid}, ${2:DOWNLOAD_REQUEST:type}, ${3:crc})", "annotation": "omp_network.inc"},
-		{"trigger": "OnRconCommand", "contents": "OnRconCommand(${1:cmd[]})", "annotation": "omp_network.inc"}
+		{"trigger": "OnRconCommand", "contents": "OnRconCommand(${1:cmd[]})", "annotation": "omp_network.inc"},
 	]
 }

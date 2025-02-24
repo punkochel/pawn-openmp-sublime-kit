@@ -24,7 +24,6 @@
 		{"trigger": "SetPickupVirtualWorld", "contents": "SetPickupVirtualWorld(${1:pickupid}, ${2:virtualWorld})", "annotation": "omp_pickup.inc"},
 		{"trigger": "ShowPickupForPlayer", "contents": "ShowPickupForPlayer(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
 		{"trigger": "HidePickupForPlayer", "contents": "HidePickupForPlayer(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
-		{"trigger": "SetPickupForPlayer", "contents": "SetPickupForPlayer(${1:playerid}, ${2:id}, ${3:model}, ${4:type}, ${5:Float:x}, ${6:Float:y}, ${7:Float:z})", "annotation": "omp_pickup.inc"},
 		{"trigger": "IsPickupHiddenForPlayer", "contents": "IsPickupHiddenForPlayer(${1:playerid}, ${2:pickupid})", "annotation": "omp_pickup.inc"},
 		
 		/*
@@ -51,6 +50,6 @@
 		{"trigger": "OnPickupStreamIn", "contents": "OnPickupStreamIn(${1:pickupid}, ${2:playerid})", "annotation": "omp_pickup.inc"},
 		{"trigger": "OnPickupStreamOut", "contents": "OnPickupStreamOut(${1:pickupid}, ${2:playerid})", "annotation": "omp_pickup.inc"},
 		{"trigger": "OnPlayerPickupStreamIn", "contents": "OnPlayerPickupStreamIn(${1:pickupid}, ${2:playerid})", "annotation": "omp_pickup.inc"},
-		{"trigger": "OnPlayerPickupStreamOut", "contents": "OnPlayerPickupStreamOut(${1:pickupid}, ${2:playerid})", "annotation": "omp_pickup.inc"}
+		{"trigger": "OnPlayerPickupStreamOut", "contents": "OnPlayerPickupStreamOut(${1:pickupid}, ${2:playerid})", "annotation": "omp_pickup.inc"},
 	]
 }

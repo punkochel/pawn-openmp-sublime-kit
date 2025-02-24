@@ -13,6 +13,6 @@
 		{"trigger": "cvttimestamp", "contents": "cvttimestamp(${1:seconds1970}, ${2:&year = 0}, ${3:&month = 0}, ${4:&day = 0}, ${5:&hour = 0}, ${6:&minute = 0}, ${7:&second = 0})", "annotation": "time.inc"},
 		{"trigger": "setdate", "contents": "setdate(${1:year = cellmin}, ${2:month = cellmin}, ${3:day = cellmin})", "annotation": "time.inc"},
 		{"trigger": "settime", "contents": "settime(${1:hour = cellmin}, ${2:minute = cellmin}, ${3:second = cellmin})", "annotation": "time.inc"},
-		{"trigger": "settimestamp", "contents": "settimestamp(${1:seconds1970})", "annotation": "time.inc"}
+		{"trigger": "settimestamp", "contents": "settimestamp(${1:seconds1970})", "annotation": "time.inc"},
 	]
 }

@@ -18,6 +18,6 @@
 		/*
 			Natives
 		*/
-		{"trigger": "HTTP", "contents": "HTTP(${1:index}, ${2:HTTP_METHOD:method}, ${3:const url[]}, ${4:const data[]}, ${5:const callback[]})", "annotation": "omp_http.inc"}
+		{"trigger": "HTTP", "contents": "HTTP(${1:index}, ${2:HTTP_METHOD:method}, ${3:const url[]}, ${4:const data[]}, ${5:const callback[]})", "annotation": "omp_http.inc"},
 	]
 }

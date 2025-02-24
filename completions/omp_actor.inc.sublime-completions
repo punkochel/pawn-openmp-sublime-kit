@@ -36,6 +36,6 @@
     	*/
     	{"trigger": "OnPlayerGiveDamageActor", "contents": "OnPlayerGiveDamageActor(${1:playerid}, ${2:damaged_actorid}, ${3:Float:amount}, ${4:WEAPON:weaponid}, ${5:bodypart})", "annotation": "omp_actor.inc"},
 		{"trigger": "OnActorStreamIn", "contents": "OnActorStreamIn(${1:actorid, ${2:forplayerid})", "annotation": "omp_actor.inc"},
-		{"trigger": "OnActorStreamOut", "contents": "OnActorStreamOut(${1:actorid, ${2:forplayerid})", "annotation": "omp_actor.inc"}
+		{"trigger": "OnActorStreamOut", "contents": "OnActorStreamOut(${1:actorid, ${2:forplayerid})", "annotation": "omp_actor.inc"},
 	]
 }

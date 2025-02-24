@@ -7,6 +7,6 @@
 		{"trigger": "sendpacket", "contents": "sendpacket(${1:const packet[]}, ${2:size}, ${3:const destination[] = \"\"})", "annotation": "datagram.inc"},
 		{"trigger": "listenport", "contents": "listenport(${1:port})", "annotation": "datagram.inc"},
 		{"trigger": "receivestring", "contents": "@receivestring(${1:const message[]}, ${2:const source[]})", "annotation": "datagram.inc"},
-		{"trigger": "receivepacket", "contents": "@receivepacket(${1:const packet[]}, ${2:size}, ${3:const source[]})", "annotation": "datagram.inc"}
+		{"trigger": "receivepacket", "contents": "@receivepacket(${1:const packet[]}, ${2:size}, ${3:const source[]})", "annotation": "datagram.inc"},
 	]
 }

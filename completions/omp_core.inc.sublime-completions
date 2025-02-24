@@ -4,9 +4,17 @@
     "completions": 
     [
     	{"trigger": "INVALID_TIMER", "annotation": "omp_core.inc"},
-		{"trigger": "MAX_WEAPONS", "annotation": "omp_core.inc"},
-		{"trigger": "MAX_WEAPON_SLOTS", "annotation": "omp_core.inc"},
-		{"trigger": "WEAPON_UNKNOWN", "annotation": "omp_core.inc"},
+    	{"trigger": "MAX_WEAPONS", "annotation": "omp_core.inc"},
+    	{"trigger": "UNKNOWN_WEAPON", "annotation": "omp_core.inc"},
+		{"trigger": "REASON_VEHICLE", "annotation": "omp_core.inc"},
+		{"trigger": "REASON_HELICOPTER_BLADES", "annotation": "omp_core.inc"},
+		{"trigger": "REASON_EXPLOSION", "annotation": "omp_core.inc"},
+		{"trigger": "REASON_DROWN", "annotation": "omp_core.inc"},
+		{"trigger": "REASON_COLLISION", "annotation": "omp_core.inc"},
+		{"trigger": "REASON_SPLAT", "annotation": "omp_core.inc"},
+		{"trigger": "REASON_CONNECT", "annotation": "omp_core.inc"},
+		{"trigger": "REASON_DISCONNECT", "annotation": "omp_core.inc"},
+		{"trigger": "REASON_SUICIDE", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_FIST", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_BRASSKNUCKLE", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_GOLFCLUB", "annotation": "omp_core.inc"},
@@ -53,11 +61,13 @@
 		{"trigger": "WEAPON_NIGHT_VISION_GOGGLES", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_THERMAL_GOGGLES", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_PARACHUTE", "annotation": "omp_core.inc"},
+		{"trigger": "WEAPON_UNKNOWN", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_VEHICLE", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_DROWN", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_COLLISION", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_SPLAT", "annotation": "omp_core.inc"},
-		{"trigger": "WEAPON_SLOT_UNKNOWN", "annotation": "omp_core.inc"},
+		{"trigger": "MAX_WEAPON_SLOTS", "annotation": "omp_core.inc"},
+		{"trigger": "UNKNOWN_WEAPON_SLOT", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_SLOT_UNARMED", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_SLOT_MELEE", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_SLOT_PISTOL", "annotation": "omp_core.inc"},
@@ -71,10 +81,13 @@
 		{"trigger": "WEAPON_SLOT_GIFT", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_SLOT_GADGET", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_SLOT_DETONATOR", "annotation": "omp_core.inc"},
-		{"trigger": "PLAYER_MARKERS_MODE_UNKNOWN", "annotation": "omp_core.inc"},
+		{"trigger": "WEAPON_SLOT_UNKNOWN", "annotation": "omp_core.inc"},
+		
+		{"trigger": "UNKNOWN_PLAYER_MARKERS_MODE", "annotation": "omp_core.inc"},
 		{"trigger": "PLAYER_MARKERS_MODE_OFF", "annotation": "omp_core.inc"},
 		{"trigger": "PLAYER_MARKERS_MODE_GLOBAL", "annotation": "omp_core.inc"},
 		{"trigger": "PLAYER_MARKERS_MODE_STREAMED", "annotation": "omp_core.inc"},
+		{"trigger": "PLAYER_MARKERS_MODE_UNKNOWN", "annotation": "omp_core.inc"},
 
 		/*
 			Pawn Utilities
@@ -99,7 +112,7 @@
 		{"trigger": "SendDeathMessage", "contents": "SendDeathMessage(${1:killer}, ${2:killee}, ${3:weapon})", "annotation": "omp_core.inc"},
 		{"trigger": "GetWeaponName", "contents": "GetWeaponName(${1:WEAPON:weaponid}, ${2:weapon[]}, ${3:len = sizeof (weapon)})", "annotation": "omp_core.inc"},
 		{"trigger": "IsValidNickName", "contents": "IsValidNickName(${1:const name[]})", "annotation": "omp_core.inc"},
-		{"trigger": "GetWeaponSlot", "contents": "WEAPON_SLOT:GetWeaponSlot(${1:WEAPON:weaponid})", "annotation": "omp_core.inc"},
+		{"trigger": "GetWeaponSlot", "contents": "GetWeaponSlot(${1:WEAPON:weaponid})", "annotation": "omp_core.inc"},
 		{"trigger": "GetAnimationName", "contents": "GetAnimationName(${1:index}, ${2:animationLibrary[]}, ${3:len1 = sizeof (animationLibrary)}, ${4:animationName[]}, ${5:len2 = sizeof (animationName)})", "annotation": "omp_core.inc"},
 		{"trigger": "CreateExplosion", "contents": "CreateExplosion(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:Float:radius})", "annotation": "omp_core.inc"},
 
@@ -131,8 +144,8 @@
 		{"trigger": "SetServerRule", "contents": "SetServerRule(${1:const rule[]}, ${2:const format[]}, ${3:OPEN_MP_TAGS:...})", "annotation": "omp_core.inc"},
 		{"trigger": "RemoveServerRule", "contents": "RemoveServerRule(${1:const rule[]})", "annotation": "omp_core.inc"},
 		{"trigger": "IsValidServerRule", "contents": "IsValidServerRule(${1:const rule[]})", "annotation": "omp_core.inc"},
-		{"trigger": "SetServerRuleFlags", "contents": "SetServerRuleFlags(${1:const rule[]}, ${2:E_SERVER_RULE_FLAGS:flags})", "annotation": "omp_core.inc"},
-		{"trigger": "GetServerRuleFlags", "contents": "GetServerRuleFlags(${1:const rule[]})", "annotation": "omp_core.inc"},
+		// {"trigger": "SetServerRuleFlags", "contents": "SetServerRuleFlags(${1:const rule[]}, ${2:E_SERVER_RULE_FLAGS:flags})", "annotation": "omp_core.inc"},
+		// {"trigger": "GetServerRuleFlags", "contents": "GetServerRuleFlags(${1:const rule[]})", "annotation": "omp_core.inc"},
 
 		/*
 			Client Config
@@ -159,8 +172,8 @@
 		{"trigger": "IsAdminTeleportAllowed", "contents": "IsAdminTeleportAllowed()", "annotation": "omp_core.inc"},
 		{"trigger": "AllowInteriorWeapons", "contents": "AllowInteriorWeapons(${1:bool:allow})", "annotation": "omp_core.inc"},
 		{"trigger": "AreInteriorWeaponsAllowed", "contents": "AreInteriorWeaponsAllowed()", "annotation": "omp_core.inc"},
-		{"trigger": "AreAllAnimationsEnabled", "contents": "AreAllAnimationsEnabled()", "annotation": "omp_core.inc"},
 		{"trigger": "EnableAllAnimations", "contents": "EnableAllAnimations(${1:bool:enable})", "annotation": "omp_core.inc"},
+		{"trigger": "AreAllAnimationsEnabled", "contents": "AreAllAnimationsEnabled()", "annotation": "omp_core.inc"},
 		{"trigger": "EnableZoneNames", "contents": "EnableZoneNames(${1:bool:enable})", "annotation": "omp_core.inc"},
 
 		/*
@@ -171,20 +184,20 @@
 		/*
 			Deprecated
 		*/
-		{"trigger": "GetPlayerPoolSize", "contents": "GetPlayerPoolSize()", "annotation": "omp_core.inc"},
-		{"trigger": "GetVehiclePoolSize", "contents": "GetVehiclePoolSize()", "annotation": "omp_core.inc"},
-		{"trigger": "GetActorPoolSize", "contents": "GetActorPoolSize()", "annotation": "omp_core.inc"},
-		{"trigger": "EnableTirePopping", "contents": "EnableTirePopping(${1:bool:enable})", "annotation": "omp_core.inc"},
-		{"trigger": "GameTextForAllf", "contents": "GameTextForAllf(${1:const format[]}, ${2:time}, ${3:style}, ${4:OPEN_MP_TAGS:...})", "annotation": "omp_core.inc"},
-		{"trigger": "GetServerVarAsString", "contents": "GetServerVarAsString(${1:const cvar[]}, ${2:buffer[]}, ${3:len = sizeof (buffer)})", "annotation": "omp_core.inc"},
-		{"trigger": "GetServerVarAsInt", "contents": "GetServerVarAsInt(${1:const cvar[]})", "annotation": "omp_core.inc"},
-		{"trigger": "GetServerVarAsFloat", "contents": "GetServerVarAsFloat(${1:const cvar[]})", "annotation": "omp_core.inc"},
-		{"trigger": "GetServerVarAsBool", "contents": "GetServerVarAsBool(${1:const cvar[]})", "annotation": "omp_core.inc"},
-		{"trigger": "SendPlayerMessageToAllf", "contents": "SendPlayerMessageToAllf(${1:senderid}, ${2:const format[]}, ${3:OPEN_MP_TAGS:...})", "annotation": "omp_core.inc"},
-		{"trigger": "SetDeathDropAmount", "contents": "SetDeathDropAmount(${1:amount})", "annotation": "omp_core.inc"},
-		{"trigger": "SHA256_PassHash", "contents": "SHA256_PassHash(${1:const password[]}, ${2:const salt[]}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_core.inc"},
-		{"trigger": "SetDeathDropAmount", "contents": "SetDeathDropAmount(${1:amount})", "annotation": "omp_core.inc"},
-		{"trigger": "GetRunningTimers", "contents": "GetRunningTimers()", "annotation": "omp_core.inc"},
+		// {"trigger": "GetPlayerPoolSize", "contents": "GetPlayerPoolSize()", "annotation": "omp_core.inc"},
+		// {"trigger": "GetVehiclePoolSize", "contents": "GetVehiclePoolSize()", "annotation": "omp_core.inc"},
+		// {"trigger": "GetActorPoolSize", "contents": "GetActorPoolSize()", "annotation": "omp_core.inc"},
+		// {"trigger": "EnableTirePopping", "contents": "EnableTirePopping(${1:bool:enable})", "annotation": "omp_core.inc"},
+		// {"trigger": "GameTextForAllf", "contents": "GameTextForAllf(${1:const format[]}, ${2:time}, ${3:style}, ${4:OPEN_MP_TAGS:...})", "annotation": "omp_core.inc"},
+		// {"trigger": "GetServerVarAsString", "contents": "GetServerVarAsString(${1:const cvar[]}, ${2:buffer[]}, ${3:len = sizeof (buffer)})", "annotation": "omp_core.inc"},
+		// {"trigger": "GetServerVarAsInt", "contents": "GetServerVarAsInt(${1:const cvar[]})", "annotation": "omp_core.inc"},
+		// {"trigger": "GetServerVarAsFloat", "contents": "GetServerVarAsFloat(${1:const cvar[]})", "annotation": "omp_core.inc"},
+		// {"trigger": "GetServerVarAsBool", "contents": "GetServerVarAsBool(${1:const cvar[]})", "annotation": "omp_core.inc"},
+		// {"trigger": "SendPlayerMessageToAllf", "contents": "SendPlayerMessageToAllf(${1:senderid}, ${2:const format[]}, ${3:OPEN_MP_TAGS:...})", "annotation": "omp_core.inc"},
+		// {"trigger": "SetDeathDropAmount", "contents": "SetDeathDropAmount(${1:amount})", "annotation": "omp_core.inc"},
+		// {"trigger": "SHA256_PassHash", "contents": "SHA256_PassHash(${1:const password[]}, ${2:const salt[]}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_core.inc"},
+		// {"trigger": "SetDeathDropAmount", "contents": "SetDeathDropAmount(${1:amount})", "annotation": "omp_core.inc"},
+		// {"trigger": "GetRunningTimers", "contents": "GetRunningTimers()", "annotation": "omp_core.inc"},
 
 		/*
 			Callbacks
@@ -192,6 +205,8 @@
 		{"trigger": "OnGameModeInit", "contents": "OnGameModeInit()", "annotation": "omp_core.inc"},
 		{"trigger": "OnGameModeExit", "contents": "OnGameModeExit()", "annotation": "omp_core.inc"},
 		{"trigger": "OnFilterScriptInit", "contents": "OnFilterScriptInit()", "annotation": "omp_core.inc"},
-		{"trigger": "OnFilterScriptExit", "contents": "OnFilterScriptExit()", "annotation": "omp_core.inc"}
+		{"trigger": "OnFilterScriptExit", "contents": "OnFilterScriptExit()", "annotation": "omp_core.inc"},
+		{"trigger": "OnScriptLoadPlayer", "contents": "OnScriptLoadPlayer(${1:playerid}, ${2:bool:isEntryScript})", "annotation": "omp_core.inc"},
+		{"trigger": "OnScriptUnloadPlayer", "contents": "OnScriptUnloadPlayer(${1:playerid}, ${2:bool:isEntryScript})", "annotation": "omp_core.inc"},
 	]
 }

@@ -45,6 +45,6 @@
 		{"trigger": "dfind", "contents": "dfind(${1:const pattern[]}, ${2:filename[]}, ${3:size = sizeof (filename)}, ${4:&idx})", "annotation": "file.inc"},
 		{"trigger": "dcreate", "contents": "dcreate(${1:const name[]})", "annotation": "file.inc"},
 		{"trigger": "drename", "contents": "drename(${1:const oldname[]}, ${2:const newname[]})", "annotation": "file.inc"},
-		{"trigger": "ftouch", "contents": "ftouch(${1:const filename[]})", "annotation": "file.inc"}
+		{"trigger": "ftouch", "contents": "ftouch(${1:const filename[]})", "annotation": "file.inc"},
 	]
 }

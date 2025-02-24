@@ -74,18 +74,18 @@
 		/*
 			Deprecated Compact
 		*/
-		{"trigger": "DB_Query", "contents": "DB_Query(${1:DB:db}, ${2:const query[]})", "annotation": "omp_database.inc"},
-		{"trigger": "DB_FreeResult", "contents": "DB_FreeResult(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		{"trigger": "DB_NumRows", "contents": "DB_NumRows(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		{"trigger": "DB_NextRow", "contents": "DB_NextRow(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		{"trigger": "DB_NumFields", "contents": "DB_NumFields(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		{"trigger": "DB_FieldName", "contents": "DB_FieldName(${1:DBResult:result}, ${2:field}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
-		{"trigger": "DB_GetField", "contents": "DB_GetField(${1:DBResult:result}, ${2:field}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
-		{"trigger": "DB_GetFieldAssoc", "contents": "DB_GetFieldAssoc(${1:DBResult:result}, ${2:const field[]}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
-		{"trigger": "DB_GetFieldAssocInt", "contents": "DB_GetFieldAssocInt(${1:DBResult:result}, ${2:const field[]})", "annotation": "omp_database.inc"},
-		{"trigger": "DB_GetFieldAssocFloat", "contents": "DB_GetFieldAssocFloat(${1:DBResult:result}, ${2:const field[]})", "annotation": "omp_database.inc"},
-		{"trigger": "DB_GetResultMemHandle", "contents": "DB_GetResultMemHandle(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		{"trigger": "DB_DebugOpenFiles", "contents": "DB_DebugOpenFiles()", "annotation": "omp_database.inc"},
-		{"trigger": "DB_DebugOpenResults", "contents": "DB_DebugOpenResults()", "annotation": "omp_database.inc"}
+		// {"trigger": "DB_Query", "contents": "DB_Query(${1:DB:db}, ${2:const query[]})", "annotation": "omp_database.inc"},
+		// {"trigger": "DB_FreeResult", "contents": "DB_FreeResult(${1:DBResult:result})", "annotation": "omp_database.inc"},
+		// {"trigger": "DB_NumRows", "contents": "DB_NumRows(${1:DBResult:result})", "annotation": "omp_database.inc"},
+		// {"trigger": "DB_NextRow", "contents": "DB_NextRow(${1:DBResult:result})", "annotation": "omp_database.inc"},
+		// {"trigger": "DB_NumFields", "contents": "DB_NumFields(${1:DBResult:result})", "annotation": "omp_database.inc"},
+		// {"trigger": "DB_FieldName", "contents": "DB_FieldName(${1:DBResult:result}, ${2:field}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
+		// {"trigger": "DB_GetField", "contents": "DB_GetField(${1:DBResult:result}, ${2:field}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
+		// {"trigger": "DB_GetFieldAssoc", "contents": "DB_GetFieldAssoc(${1:DBResult:result}, ${2:const field[]}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
+		// {"trigger": "DB_GetFieldAssocInt", "contents": "DB_GetFieldAssocInt(${1:DBResult:result}, ${2:const field[]})", "annotation": "omp_database.inc"},
+		// {"trigger": "DB_GetFieldAssocFloat", "contents": "DB_GetFieldAssocFloat(${1:DBResult:result}, ${2:const field[]})", "annotation": "omp_database.inc"},
+		// {"trigger": "DB_GetResultMemHandle", "contents": "DB_GetResultMemHandle(${1:DBResult:result})", "annotation": "omp_database.inc"},
+		// {"trigger": "DB_DebugOpenFiles", "contents": "DB_DebugOpenFiles()", "annotation": "omp_database.inc"},
+		// {"trigger": "DB_DebugOpenResults", "contents": "DB_DebugOpenResults()", "annotation": "omp_database.inc"},
 	]
 }

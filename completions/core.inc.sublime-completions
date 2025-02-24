@@ -19,5 +19,9 @@
 		{"trigger": "setproperty", "contents": "setproperty(${1:id = 0}, ${2:const name[] = \"\"}, ${3:value = cellmin}, ${4:const string[] = \"\"})", "annotation": "core.inc"},
 		{"trigger": "deleteproperty", "contents": "deleteproperty(${1:id = 0}, ${2:const name[] = \"\"}, ${3:value = cellmin})", "annotation": "core.inc"},
 		{"trigger": "existproperty", "contents": "existproperty(${1:id = 0}, ${2:const name[] = \"\"}, ${3:value = cellmin})", "annotation": "core.inc"}
+		{"trigger": "getpubvar", "contents": "getpubvar(${1:const __name[]})", "annotation": "core.inc"},
+		{"trigger": "setpubvar", "contents": "setpubvar(${1:const __name[]}, ${2:__value})", "annotation": "core.inc"},
+		{"trigger": "existpubvar", "contents": "existpubvar(${1:const __name[]})", "annotation": "core.inc"},
+		{"trigger": "numpubvars", "contents": "numpubvars()", "annotation": "core.inc"},
 	]
 }

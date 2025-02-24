@@ -14,6 +14,16 @@
 		{"trigger": "TEXT_DRAW_FONT_3", "annotation": "omp_textdraw.inc"},
 		{"trigger": "TEXT_DRAW_FONT_SPRITE_DRAW", "annotation": "omp_textdraw.inc"},
 		{"trigger": "TEXT_DRAW_FONT_MODEL_PREVIEW", "annotation": "omp_textdraw.inc"},
+		{"trigger": "TEXT_DRAW_FONT_BANK", "annotation": "omp_textdraw.inc"},
+		{"trigger": "TEXT_DRAW_FONT_STANDARD", "annotation": "omp_textdraw.inc"},
+		{"trigger": "TEXT_DRAW_FONT_SPACEAGE", "annotation": "omp_textdraw.inc"},
+		{"trigger": "TEXT_DRAW_FONT_HEADING", "annotation": "omp_textdraw.inc"},
+		{"trigger": "TEXT_DRAW_FONT_BECKETT_REGULAR", "annotation": "omp_textdraw.inc"},
+		{"trigger": "TEXT_DRAW_FONT_AHARONI_BOLD", "annotation": "omp_textdraw.inc"},
+		{"trigger": "TEXT_DRAW_FONT_BANK_GOTHIC", "annotation": "omp_textdraw.inc"},
+		{"trigger": "TEXT_DRAW_FONT_PRICEDOWN", "annotation": "omp_textdraw.inc"},
+		{"trigger": "TEXT_DRAW_FONT_SPRITE", "annotation": "omp_textdraw.inc"},
+		{"trigger": "TEXT_DRAW_FONT_PREVIEW", "annotation": "omp_textdraw.inc"},
 		{"trigger": "UNKNOWN_TEXT_DRAW_ALIGN", "annotation": "omp_textdraw.inc"},
 		{"trigger": "TEXT_DRAW_ALIGN_LEFT", "annotation": "omp_textdraw.inc"},
 		{"trigger": "TEXT_DRAW_ALIGN_CENTRE", "annotation": "omp_textdraw.inc"},
@@ -44,8 +54,8 @@
 		{"trigger": "TextDrawSetString", "contents": "TextDrawSetString(${1:Text:textid}, ${2:const format[]}, ${3:OPEN_MP_TAGS:...})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "TextDrawSetPreviewModel", "contents": "TextDrawSetPreviewModel(${1:Text:textid}, ${2:model})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "TextDrawSetPreviewRot", "contents": "TextDrawSetPreviewRot(${1:Text:textid}, ${2:Float:rotationX}, ${3:Float:rotationY}, ${4:Float:rotationZ}, ${5:Float:zoom = 1.0})", "annotation": "omp_textdraw.inc"},
+		{"trigger": "TextDrawSetPreviewVehCol", "contents": "TextDrawSetPreviewVehCol(${1:Text:textid}, ${2:colour1}, ${3:colour2})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "TextDrawSetPreviewVehicleColours", "contents": "TextDrawSetPreviewVehicleColours(${1:Text:textid}, ${2:colour1}, ${3:colour2})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "__TextDrawSetPreviewVehCol", "contents": "__TextDrawSetPreviewVehCol()", "annotation": "omp_textdraw.inc"},
 		{"trigger": "IsValidTextDraw", "contents": "IsValidTextDraw(${1:Text:textid})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "IsTextDrawVisibleForPlayer", "contents": "IsTextDrawVisibleForPlayer(${1:playerid}, ${2:Text:textid})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "TextDrawGetString", "contents": "TextDrawGetString(${1:Text:textid}, ${2:string[]}, ${3:stringSize = sizeof (string)})", "annotation": "omp_textdraw.inc"},
@@ -65,8 +75,8 @@
 		{"trigger": "TextDrawGetAlignment", "contents": "TextDrawGetAlignment(${1:Text:textid})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "TextDrawGetPreviewModel", "contents": "TextDrawGetPreviewModel(${1:Text:textid})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "TextDrawGetPreviewRot", "contents": "TextDrawGetPreviewRot(${1:Text:textid}, ${2:&Float:rotationX}, ${3:&Float:rotationY}, ${4:&Float:rotationZ}, ${5:&Float:zoom})", "annotation": "omp_textdraw.inc"},
+		{"trigger": "TextDrawGetPreviewVehCol", "contents": "TextDrawGetPreviewVehCol(${1:Text:textid}, ${2:&colour1}, ${3:&colour2})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "TextDrawGetPreviewVehicleColours", "contents": "TextDrawGetPreviewVehicleColours(${1:Text:textid}, ${2:&colour1}, ${3:&colour2})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "__TextDrawGetPreviewVehCol", "contents": "__TextDrawGetPreviewVehCol()", "annotation": "omp_textdraw.inc"},
 		{"trigger": "TextDrawSetStringForPlayer", "contents": "TextDrawSetStringForPlayer(${1:Text:textid}, ${2:playerid}, ${3:const format[]}, ${4:OPEN_MP_TAGS:...})", "annotation": "omp_textdraw.inc"},
 		
 		/*
@@ -91,8 +101,8 @@
 		{"trigger": "PlayerTextDrawSetString", "contents": "PlayerTextDrawSetString(${1:playerid}, ${2:PlayerText:textid}, ${3:const format[]}, ${4:OPEN_MP_TAGS:...})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "PlayerTextDrawSetPreviewModel", "contents": "PlayerTextDrawSetPreviewModel(${1:playerid}, ${2:PlayerText:textid}, ${3:model})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "PlayerTextDrawSetPreviewRot", "contents": "PlayerTextDrawSetPreviewRot(${1:playerid}, ${2:PlayerText:textid}, ${3:Float:rotX}, ${4:Float:rotY}, ${5:Float:rotZ}, ${6:Float:zoom = 1.0})", "annotation": "omp_textdraw.inc"},
+		{"trigger": "PlayerTextDrawSetPreviewVehCol", "contents": "PlayerTextDrawSetPreviewVehCol(${1:playerid}, ${2:PlayerText:textid}, ${3:colour1}, ${4:colour2})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "PlayerTextDrawSetPreviewVehicleColours", "contents": "PlayerTextDrawSetPreviewVehicleColours(${1:playerid}, ${2:PlayerText:textid}, ${3:colour1}, ${4:colour2})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "__PlayerTextDrawSetPreviewVehCo", "contents": "__PlayerTextDrawSetPreviewVehCo()", "annotation": "omp_textdraw.inc"},
 		{"trigger": "IsValidPlayerTextDraw", "contents": "IsValidPlayerTextDraw(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "IsPlayerTextDrawVisible", "contents": "IsPlayerTextDrawVisible(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "PlayerTextDrawGetString", "contents": "PlayerTextDrawGetString(${1:playerid}, ${2:PlayerText:textid}, ${3:string[]}, ${4:stringSize = sizeof (string)})", "annotation": "omp_textdraw.inc"},
@@ -102,8 +112,8 @@
 		{"trigger": "PlayerTextDrawGetPos", "contents": "PlayerTextDrawGetPos(${1:playerid}, ${2:PlayerText:textid}, ${3:&Float:x}, ${4:&Float:y})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "PlayerTextDrawGetColour", "contents": "PlayerTextDrawGetColour(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "PlayerTextDrawGetBoxColour", "contents": "PlayerTextDrawGetBoxColour(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
+		{"trigger": "PlayerTextDrawGetBackgroundCol", "contents": "PlayerTextDrawGetBackgroundCol(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "PlayerTextDrawGetBackgroundColour", "contents": "PlayerTextDrawGetBackgroundColour(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "__PlayerTextDrawGetBackgroundCo", "contents": "__PlayerTextDrawGetBackgroundCo()", "annotation": "omp_textdraw.inc"},
 		{"trigger": "PlayerTextDrawGetShadow", "contents": "PlayerTextDrawGetShadow(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "PlayerTextDrawGetOutline", "contents": "PlayerTextDrawGetOutline(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "PlayerTextDrawGetFont", "contents": "PlayerTextDrawGetFont(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
@@ -113,8 +123,8 @@
 		{"trigger": "PlayerTextDrawGetAlignment", "contents": "PlayerTextDrawGetAlignment(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "PlayerTextDrawGetPreviewModel", "contents": "PlayerTextDrawGetPreviewModel(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "PlayerTextDrawGetPreviewRot", "contents": "PlayerTextDrawGetPreviewRot(${1:playerid}, ${2:PlayerText:textid}, ${3:&Float:rotationX}, ${4:&Float:rotationY}, ${5:&Float:rotationZ}, ${6:&Float:zoom})", "annotation": "omp_textdraw.inc"},
+		{"trigger": "PlayerTextDrawGetPreviewVehCol", "contents": "PlayerTextDrawGetPreviewVehCol(${1:playerid}, ${2:PlayerText:textid}, ${3:&colour1}, ${4:&colour2})", "annotation": "omp_textdraw.inc"},
 		{"trigger": "PlayerTextDrawGetPreviewVehicleColours", "contents": "PlayerTextDrawGetPreviewVehicleColours(${1:playerid}, ${2:PlayerText:textid}, ${3:&colour1}, ${4:&colour2})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "__PlayerTextDrawGetPreviewVehCo", "contents": "__PlayerTextDrawGetPreviewVehCo()", "annotation": "omp_textdraw.inc"},
 		
 		/*
 			Selection
@@ -125,28 +135,28 @@
 		/*
 			Deprecated
 		*/
-		{"trigger": "TextDrawColor", "contents": "TextDrawColor(${1:Text:textid}, ${2:textColour})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "TextDrawBoxColor", "contents": "TextDrawBoxColor(${1:Text:textid}, ${2:boxColour})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "TextDrawBackgroundColor", "contents": "TextDrawBackgroundColor(${1:Text:textid}, ${2:backgroundColour})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "TextDrawSetPreviewVehCol", "contents": "TextDrawSetPreviewVehCol(${1:Text:textid}, ${2:colour1}, ${3:colour2})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "PlayerTextDrawColor", "contents": "PlayerTextDrawColor(${1:playerid}, ${2:PlayerText:textid}, ${3:textColour})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "PlayerTextDrawBoxColor", "contents": "PlayerTextDrawBoxColor(${1:playerid}, ${2:PlayerText:textid}, ${3:boxColour})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "PlayerTextDrawBackgroundColor", "contents": "PlayerTextDrawBackgroundColor(${1:playerid}, ${2:PlayerText:textid}, ${3:backgroundColour})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "PlayerTextDrawSetPreviewVehCol", "contents": "PlayerTextDrawSetPreviewVehCol(${1:playerid}, ${2:PlayerText:textid}, ${3:colour1}, ${4:colour2})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "TextDrawGetColor", "contents": "TextDrawGetColor(${1:Text:textid})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "TextDrawGetBoxColor", "contents": "TextDrawGetBoxColor(${1:Text:textid})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "TextDrawGetBackgroundColor", "contents": "TextDrawGetBackgroundColor(${1:Text:textid})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "TextDrawGetPreviewVehCol", "contents": "TextDrawGetPreviewVehCol(${1:Text:textid}, ${2:&colour1}, ${3:&colour2})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "PlayerTextDrawGetColor", "contents": "PlayerTextDrawGetColor(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "PlayerTextDrawGetBoxColor", "contents": "PlayerTextDrawGetBoxColor(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "PlayerTextDrawGetBackgroundCol", "contents": "PlayerTextDrawGetBackgroundCol(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "PlayerTextDrawGetPreviewVehCol", "contents": "PlayerTextDrawGetPreviewVehCol(${1:playerid}, ${2:PlayerText:textid}, ${3:&colour1}, ${4:&colour2})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "TextDrawColor", "contents": "TextDrawColor(${1:Text:textid}, ${2:textColour})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "TextDrawBoxColor", "contents": "TextDrawBoxColor(${1:Text:textid}, ${2:boxColour})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "TextDrawBackgroundColor", "contents": "TextDrawBackgroundColor(${1:Text:textid}, ${2:backgroundColour})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "TextDrawSetPreviewVehCol", "contents": "TextDrawSetPreviewVehCol(${1:Text:textid}, ${2:colour1}, ${3:colour2})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "PlayerTextDrawColor", "contents": "PlayerTextDrawColor(${1:playerid}, ${2:PlayerText:textid}, ${3:textColour})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "PlayerTextDrawBoxColor", "contents": "PlayerTextDrawBoxColor(${1:playerid}, ${2:PlayerText:textid}, ${3:boxColour})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "PlayerTextDrawBackgroundColor", "contents": "PlayerTextDrawBackgroundColor(${1:playerid}, ${2:PlayerText:textid}, ${3:backgroundColour})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "PlayerTextDrawSetPreviewVehCol", "contents": "PlayerTextDrawSetPreviewVehCol(${1:playerid}, ${2:PlayerText:textid}, ${3:colour1}, ${4:colour2})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "TextDrawGetColor", "contents": "TextDrawGetColor(${1:Text:textid})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "TextDrawGetBoxColor", "contents": "TextDrawGetBoxColor(${1:Text:textid})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "TextDrawGetBackgroundColor", "contents": "TextDrawGetBackgroundColor(${1:Text:textid})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "TextDrawGetPreviewVehCol", "contents": "TextDrawGetPreviewVehCol(${1:Text:textid}, ${2:&colour1}, ${3:&colour2})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "PlayerTextDrawGetColor", "contents": "PlayerTextDrawGetColor(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "PlayerTextDrawGetBoxColor", "contents": "PlayerTextDrawGetBoxColor(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "PlayerTextDrawGetBackgroundCol", "contents": "PlayerTextDrawGetBackgroundCol(${1:playerid}, ${2:PlayerText:textid})", "annotation": "omp_textdraw.inc"},
+		// {"trigger": "PlayerTextDrawGetPreviewVehCol", "contents": "PlayerTextDrawGetPreviewVehCol(${1:playerid}, ${2:PlayerText:textid}, ${3:&colour1}, ${4:&colour2})", "annotation": "omp_textdraw.inc"},
 		
 		/*
 			Callbacks
 		*/
 		{"trigger": "OnPlayerClickTextDraw", "contents": "OnPlayerClickTextDraw(${1:playerid}, ${2:Text:clickedid})", "annotation": "omp_textdraw.inc"},
-		{"trigger": "OnPlayerClickPlayerTextDraw", "contents": "OnPlayerClickPlayerTextDraw(${1:playerid}, ${2:PlayerText:playertextid})", "annotation": "omp_textdraw.inc"}
+		{"trigger": "OnPlayerClickPlayerTextDraw", "contents": "OnPlayerClickPlayerTextDraw(${1:playerid}, ${2:PlayerText:playertextid})", "annotation": "omp_textdraw.inc"},
 	]
 }
 

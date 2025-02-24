@@ -12,6 +12,6 @@
 		{"trigger": "getstring", "contents": "getstring(${1:string[]}, ${2:size = sizeof (string)}, ${3:bool:pack = false})", "annotation": "console.inc"},
 		{"trigger": "getvalue", "contents": "getvalue(${1:base = 10}, ${2:end = '\r'}, ${3:...})", "annotation": "console.inc"},
 		{"trigger": "gotoxy", "contents": "gotoxy(${1:x = 1}, ${2:y = 1})", "annotation": "console.inc"},
-		{"trigger": "setattr", "contents": "setattr(${1:foreground = -1}, ${2:background = -1})", "annotation": "console.inc"}
+		{"trigger": "setattr", "contents": "setattr(${1:foreground = -1}, ${2:background = -1})", "annotation": "console.inc"},
 	]
 }

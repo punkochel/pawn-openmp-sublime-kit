@@ -29,7 +29,7 @@
 		/*
 			Callbacks
 		*/
-		{"trigger": "OnDialogResponse", "contents": "OnDialogResponse(${1:playerid}, ${2:dialogid}, ${3:response}, ${4:listitem}, ${5:inputtext[]})", "annotation": "omp_dialog.inc"}
+		{"trigger": "OnDialogResponse", "contents": "OnDialogResponse(${1:playerid}, ${2:dialogid}, ${3:response}, ${4:listitem}, ${5:inputtext[]})", "annotation": "omp_dialog.inc"},
 
 	]
 }

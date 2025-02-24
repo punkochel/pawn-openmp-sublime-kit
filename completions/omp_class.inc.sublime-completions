@@ -22,6 +22,6 @@
 		*/
 		{"trigger": "OnPlayerRequestClass", "contents": "OnPlayerRequestClass(${1:playerid}, ${2:classid})", "annotation": "omp_class.inc"},
 		{"trigger": "OnPlayerRequestSpawn", "contents": "OnPlayerRequestSpawn(${1:playerid})", "annotation": "omp_class.inc"},
-		{"trigger": "OnPlayerSpawn", "contents": "OnPlayerSpawn(${1:playerid})", "annotation": "omp_class.inc"}
+		{"trigger": "OnPlayerSpawn", "contents": "OnPlayerSpawn(${1:playerid})", "annotation": "omp_class.inc"},
 	]
 }

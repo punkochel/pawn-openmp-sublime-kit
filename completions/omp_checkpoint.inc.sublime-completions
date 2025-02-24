@@ -38,6 +38,6 @@
 		{"trigger": "OnPlayerEnterCheckpoint", "contents": "OnPlayerEnterCheckpoint(${1:playerid})", "annotation": "omp_checkpoint.inc"},
 		{"trigger": "OnPlayerLeaveCheckpoint", "contents": "OnPlayerLeaveCheckpoint(${1:playerid})", "annotation": "omp_checkpoint.inc"},
 		{"trigger": "OnPlayerEnterRaceCheckpoint", "contents": "OnPlayerEnterRaceCheckpoint(${1:playerid})", "annotation": "omp_checkpoint.inc"},
-		{"trigger": "OnPlayerLeaveRaceCheckpoint", "contents": "OnPlayerLeaveRaceCheckpoint(${1:playerid})", "annotation": "omp_checkpoint.inc"}
+		{"trigger": "OnPlayerLeaveRaceCheckpoint", "contents": "OnPlayerLeaveRaceCheckpoint(${1:playerid})", "annotation": "omp_checkpoint.inc"},
 	]
 }

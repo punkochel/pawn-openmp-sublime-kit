@@ -43,6 +43,6 @@
 		{"trigger": "DeletePVar", "contents": "DeletePVar(${1:playerid}, ${2:const pvar[]})", "annotation": "omp_variable.inc"},
 		{"trigger": "GetPVarsUpperIndex", "contents": "GetPVarsUpperIndex(${1:playerid})", "annotation": "omp_variable.inc"},
 		{"trigger": "GetPVarNameAtIndex", "contents": "GetPVarNameAtIndex(${1:playerid}, ${2:index}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_variable.inc"},
-		{"trigger": "GetPVarType", "contents": "GetPVarType(${1:playerid}, ${2:const pvar[]})", "annotation": "omp_variable.inc"}
+		{"trigger": "GetPVarType", "contents": "GetPVarType(${1:playerid}, ${2:const pvar[]})", "annotation": "omp_variable.inc"},
 	]
 }

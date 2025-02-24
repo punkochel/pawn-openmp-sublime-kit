@@ -32,6 +32,6 @@
 			Callbacks
 		*/
 		{"trigger": "OnPlayerSelectedMenuRow", "contents": "OnPlayerSelectedMenuRow(${1:playerid}, ${2:row})", "annotation": "omp_menu.inc"},
-		{"trigger": "OnPlayerExitedMenu", "contents": "OnPlayerExitedMenu(${1:playerid})", "annotation": "omp_menu.inc"}
+		{"trigger": "OnPlayerExitedMenu", "contents": "OnPlayerExitedMenu(${1:playerid})", "annotation": "omp_menu.inc"},
 	]
 }

@@ -49,10 +49,10 @@
 		/*
 			Deprecated
 		*/
-		{"trigger": "GangZoneGetColorForPlayer", "contents": "GangZoneGetColorForPlayer(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
-		{"trigger": "GangZoneGetFlashColorForPlayer", "contents": "GangZoneGetFlashColorForPlayer(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
-		{"trigger": "PlayerGangZoneGetColor", "contents": "PlayerGangZoneGetColor(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
-		{"trigger": "PlayerGangZoneGetFlashColor", "contents": "PlayerGangZoneGetFlashColor(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		// {"trigger": "GangZoneGetColorForPlayer", "contents": "GangZoneGetColorForPlayer(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		// {"trigger": "GangZoneGetFlashColorForPlayer", "contents": "GangZoneGetFlashColorForPlayer(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		// {"trigger": "PlayerGangZoneGetColor", "contents": "PlayerGangZoneGetColor(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
+		// {"trigger": "PlayerGangZoneGetFlashColor", "contents": "PlayerGangZoneGetFlashColor(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
 
 		/*
 			Callbacks
@@ -62,6 +62,6 @@
 		{"trigger": "OnPlayerEnterPlayerGangZone", "contents": "OnPlayerEnterPlayerGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
 		{"trigger": "OnPlayerLeavePlayerGangZone", "contents": "OnPlayerLeavePlayerGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
 		{"trigger": "OnPlayerClickGangZone", "contents": "OnPlayerClickGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
-		{"trigger": "OnPlayerClickPlayerGangZone", "contents": "OnPlayerClickPlayerGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"}
+		{"trigger": "OnPlayerClickPlayerGangZone", "contents": "OnPlayerClickPlayerGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
 	]
 }

@@ -28,6 +28,6 @@
 		{"trigger": "floatsin", "contents": "floatsin(${1:Float:value}, ${2:anglemode:mode = radian})", "annotation": "float.inc"},
 		{"trigger": "floatcos", "contents": "floatcos(${1:Float:value}, ${2:anglemode:mode = radian})", "annotation": "float.inc"},
 		{"trigger": "floattan", "contents": "floattan(${1:Float:value}, ${2:anglemode:mode = radian})", "annotation": "float.inc"},
-		{"trigger": "floatabs", "contents": "floatabs(${1:Float:value})", "annotation": "float.inc"}
+		{"trigger": "floatabs", "contents": "floatabs(${1:Float:value})", "annotation": "float.inc"},
 	]
 }
