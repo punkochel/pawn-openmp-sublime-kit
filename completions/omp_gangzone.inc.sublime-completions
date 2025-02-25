@@ -47,14 +47,6 @@
 		{"trigger": "UsePlayerGangZoneCheck", "contents": "UsePlayerGangZoneCheck(${1:zoneid}, ${2:bool:enable})", "annotation": "omp_gangzone.inc"},
 		
 		/*
-			Deprecated
-		*/
-		// {"trigger": "GangZoneGetColorForPlayer", "contents": "GangZoneGetColorForPlayer(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
-		// {"trigger": "GangZoneGetFlashColorForPlayer", "contents": "GangZoneGetFlashColorForPlayer(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
-		// {"trigger": "PlayerGangZoneGetColor", "contents": "PlayerGangZoneGetColor(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
-		// {"trigger": "PlayerGangZoneGetFlashColor", "contents": "PlayerGangZoneGetFlashColor(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},
-
-		/*
 			Callbacks
 		*/
 		{"trigger": "OnPlayerEnterGangZone", "contents": "OnPlayerEnterGangZone(${1:playerid}, ${2:zoneid})", "annotation": "omp_gangzone.inc"},

@@ -4,6 +4,7 @@
     "completions": 
     [
     	{"trigger": "INVALID_TIMER", "annotation": "omp_core.inc"},
+    	{"trigger": "WEAPON", "contents": "WEAPON:", "annotation": "omp_core.inc"},
     	{"trigger": "MAX_WEAPONS", "annotation": "omp_core.inc"},
     	{"trigger": "UNKNOWN_WEAPON", "annotation": "omp_core.inc"},
 		{"trigger": "REASON_VEHICLE", "annotation": "omp_core.inc"},
@@ -61,11 +62,14 @@
 		{"trigger": "WEAPON_NIGHT_VISION_GOGGLES", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_THERMAL_GOGGLES", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_PARACHUTE", "annotation": "omp_core.inc"},
+		
 		{"trigger": "WEAPON_UNKNOWN", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_VEHICLE", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_DROWN", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_COLLISION", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_SPLAT", "annotation": "omp_core.inc"},
+		
+		{"trigger": "WEAPON_SLOT", "contents": "WEAPON_SLOT:", "annotation": "omp_core.inc"},
 		{"trigger": "MAX_WEAPON_SLOTS", "annotation": "omp_core.inc"},
 		{"trigger": "UNKNOWN_WEAPON_SLOT", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_SLOT_UNARMED", "annotation": "omp_core.inc"},
@@ -83,6 +87,7 @@
 		{"trigger": "WEAPON_SLOT_DETONATOR", "annotation": "omp_core.inc"},
 		{"trigger": "WEAPON_SLOT_UNKNOWN", "annotation": "omp_core.inc"},
 		
+		{"trigger": "PLAYER_MARKERS_MODE", "contents": "PLAYER_MARKERS_MODE:", "annotation": "omp_core.inc"},
 		{"trigger": "UNKNOWN_PLAYER_MARKERS_MODE", "annotation": "omp_core.inc"},
 		{"trigger": "PLAYER_MARKERS_MODE_OFF", "annotation": "omp_core.inc"},
 		{"trigger": "PLAYER_MARKERS_MODE_GLOBAL", "annotation": "omp_core.inc"},
@@ -144,8 +149,6 @@
 		{"trigger": "SetServerRule", "contents": "SetServerRule(${1:const rule[]}, ${2:const format[]}, ${3:OPEN_MP_TAGS:...})", "annotation": "omp_core.inc"},
 		{"trigger": "RemoveServerRule", "contents": "RemoveServerRule(${1:const rule[]})", "annotation": "omp_core.inc"},
 		{"trigger": "IsValidServerRule", "contents": "IsValidServerRule(${1:const rule[]})", "annotation": "omp_core.inc"},
-		// {"trigger": "SetServerRuleFlags", "contents": "SetServerRuleFlags(${1:const rule[]}, ${2:E_SERVER_RULE_FLAGS:flags})", "annotation": "omp_core.inc"},
-		// {"trigger": "GetServerRuleFlags", "contents": "GetServerRuleFlags(${1:const rule[]})", "annotation": "omp_core.inc"},
 
 		/*
 			Client Config
@@ -184,20 +187,7 @@
 		/*
 			Deprecated
 		*/
-		// {"trigger": "GetPlayerPoolSize", "contents": "GetPlayerPoolSize()", "annotation": "omp_core.inc"},
-		// {"trigger": "GetVehiclePoolSize", "contents": "GetVehiclePoolSize()", "annotation": "omp_core.inc"},
-		// {"trigger": "GetActorPoolSize", "contents": "GetActorPoolSize()", "annotation": "omp_core.inc"},
-		// {"trigger": "EnableTirePopping", "contents": "EnableTirePopping(${1:bool:enable})", "annotation": "omp_core.inc"},
-		// {"trigger": "GameTextForAllf", "contents": "GameTextForAllf(${1:const format[]}, ${2:time}, ${3:style}, ${4:OPEN_MP_TAGS:...})", "annotation": "omp_core.inc"},
-		// {"trigger": "GetServerVarAsString", "contents": "GetServerVarAsString(${1:const cvar[]}, ${2:buffer[]}, ${3:len = sizeof (buffer)})", "annotation": "omp_core.inc"},
-		// {"trigger": "GetServerVarAsInt", "contents": "GetServerVarAsInt(${1:const cvar[]})", "annotation": "omp_core.inc"},
-		// {"trigger": "GetServerVarAsFloat", "contents": "GetServerVarAsFloat(${1:const cvar[]})", "annotation": "omp_core.inc"},
-		// {"trigger": "GetServerVarAsBool", "contents": "GetServerVarAsBool(${1:const cvar[]})", "annotation": "omp_core.inc"},
-		// {"trigger": "SendPlayerMessageToAllf", "contents": "SendPlayerMessageToAllf(${1:senderid}, ${2:const format[]}, ${3:OPEN_MP_TAGS:...})", "annotation": "omp_core.inc"},
-		// {"trigger": "SetDeathDropAmount", "contents": "SetDeathDropAmount(${1:amount})", "annotation": "omp_core.inc"},
-		// {"trigger": "SHA256_PassHash", "contents": "SHA256_PassHash(${1:const password[]}, ${2:const salt[]}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_core.inc"},
-		// {"trigger": "SetDeathDropAmount", "contents": "SetDeathDropAmount(${1:amount})", "annotation": "omp_core.inc"},
-		// {"trigger": "GetRunningTimers", "contents": "GetRunningTimers()", "annotation": "omp_core.inc"},
+		{"trigger": "SHA256_Hash", "contents": "SHA256_Hash(${1:const content[]}, ${2:const salt[]}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_core.inc"},
 
 		/*
 			Callbacks

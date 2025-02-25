@@ -3,6 +3,8 @@
 
     "completions": 
     [
+    	{"trigger": "Text3D", "contents": "Text3D:", "annotation": "omp_textlabel.inc"},
+    	{"trigger": "PlayerText3D", "contents": "PlayerText3D:", "annotation": "omp_textlabel.inc"},
 		{"trigger": "MAX_3DTEXT_GLOBAL", "annotation": "omp_textlabel.inc"},
 		{"trigger": "MAX_3DTEXT_PLAYER", "annotation": "omp_textlabel.inc"},
 		{"trigger": "INVALID_3DTEXT_ID", "annotation": "omp_textlabel.inc"},
@@ -46,15 +48,5 @@
 		{"trigger": "GetPlayer3DTextLabelVirtualWorld", "contents": "GetPlayer3DTextLabelVirtualWorld(${1:playerid}, ${2:PlayerText3D:textid})", "annotation": "omp_textlabel.inc"},
 		{"trigger": "SetPlayer3DTextLabelVirtualWorld", "contents": "SetPlayer3DTextLabelVirtualWorld(${1:playerid}, ${2:PlayerText3D:textid}, ${3:virtualWorld})", "annotation": "omp_textlabel.inc"},
 		{"trigger": "GetPlayer3DTextLabelAttachedData", "contents": "GetPlayer3DTextLabelAttachedData(${1:playerid}, ${2:PlayerText3D:textid}, ${3:&parentPlayerid}, ${4:&parentVehicleid})", "annotation": "omp_textlabel.inc"},
-		
-		/*
-			Deprecated
-		*/
-		// {"trigger": "Get3DTextLabelColor", "contents": "Get3DTextLabelColor(${1:Text3D:textid})", "annotation": "omp_textlabel.inc"},
-		// {"trigger": "GetPlayer3DTextLabelColor", "contents": "GetPlayer3DTextLabelColor(${1:playerid}, ${2:PlayerText3D:textid})", "annotation": "omp_textlabel.inc"},
-		// {"trigger": "GetPlayer3DTextLabelDrawDist", "contents": "GetPlayer3DTextLabelDrawDist(${1:playerid}, ${2:PlayerText3D:textid})", "annotation": "omp_textlabel.inc"},
-		// {"trigger": "SetPlayer3DTextLabelDrawDist", "contents": "SetPlayer3DTextLabelDrawDist(${1:playerid}, ${2:PlayerText3D:textid}, ${3:Float:drawDistance})", "annotation": "omp_textlabel.inc"},
-		// {"trigger": "GetPlayer3DTextLabelVirtualW", "contents": "GetPlayer3DTextLabelVirtualW(${1:playerid}, ${2:PlayerText3D:textid})", "annotation": "omp_textlabel.inc"},
-		// {"trigger": "GetPlayer3DTextLabelAttached", "contents": "GetPlayer3DTextLabelAttached(${1:playerid}, ${2:PlayerText3D:textid}, ${3:&parentPlayerid}, ${4:&parentVehicleid})", "annotation": "omp_textlabel.inc"}
 	]
 }

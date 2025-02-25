@@ -3,7 +3,6 @@
 
     "completions": 
     [
-    	{"trigger": "__print", "contents": "__print(${1:const string[]})", "annotation": "console.inc"},
 		{"trigger": "print", "contents": "print(${1:const string[]}, ${2:foreground = -1}, ${3:background = -1})", "annotation": "console.inc"},
 		{"trigger": "printf", "contents": "printf(${1:const format[]}, ${2:{Float, _}:...})", "annotation": "console.inc"},
 		{"trigger": "clreol", "contents": "clreol()", "annotation": "console.inc"},

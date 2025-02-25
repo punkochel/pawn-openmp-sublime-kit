@@ -4,9 +4,15 @@
     "completions": 
     [
     	{"trigger": "MAX_OBJECTS", "annotation": "omp_object.inc"},
+		{"trigger": "MAX_OBJECT_MATERIAL_SLOTS", "annotation": "omp_object.inc"},
 		{"trigger": "INVALID_OBJECT_ID", "annotation": "omp_object.inc"},
+		
+		{"trigger": "SELECT_OBJECT", "contents": "SELECT_OBJECT:", "annotation": "omp_object.inc"},
+		{"trigger": "UNKNOWN_SELECT_OBJECT", "annotation": "omp_object.inc"},
 		{"trigger": "SELECT_OBJECT_GLOBAL_OBJECT", "annotation": "omp_object.inc"},
 		{"trigger": "SELECT_OBJECT_PLAYER_OBJECT", "annotation": "omp_object.inc"},
+		
+		{"trigger": "OBJECT_MATERIAL_SIZE", "contents": "OBJECT_MATERIAL_SIZE:", "annotation": "omp_object.inc"},
 		{"trigger": "UNKNOWN_OBJECT_MATERIAL_SIZE", "annotation": "omp_object.inc"},
 		{"trigger": "OBJECT_MATERIAL_SIZE_32x32", "annotation": "omp_object.inc"},
 		{"trigger": "OBJECT_MATERIAL_SIZE_64x32", "annotation": "omp_object.inc"},
@@ -22,13 +28,15 @@
 		{"trigger": "OBJECT_MATERIAL_SIZE_512x128", "annotation": "omp_object.inc"},
 		{"trigger": "OBJECT_MATERIAL_SIZE_512x256", "annotation": "omp_object.inc"},
 		{"trigger": "OBJECT_MATERIAL_SIZE_512x512", "annotation": "omp_object.inc"},
+		
+		{"trigger": "OBJECT_MATERIAL_TEXT_ALIGN", "contents": "OBJECT_MATERIAL_TEXT_ALIGN:", "annotation": "omp_object.inc"},
 		{"trigger": "UNKNOWN_OBJECT_MATERIAL_TEXT_ALIGN", "annotation": "omp_object.inc"},
 		{"trigger": "OBJECT_MATERIAL_TEXT_ALIGN_CENTRE", "annotation": "omp_object.inc"},
 		{"trigger": "OBJECT_MATERIAL_TEXT_ALIGN_CENTER", "annotation": "omp_object.inc"},
 		{"trigger": "OBJECT_MATERIAL_TEXT_ALIGN_RIGHT", "annotation": "omp_object.inc"},
 		{"trigger": "OBJECT_MATERIAL_TEXT_ALIGN_LEFT", "annotation": "omp_object.inc"},
-		{"trigger": "OBJECT_MATERIAL_TEXT_ALIGN_CENT", "annotation": "omp_object.inc"},
-		{"trigger": "OBJECT_MATERIAL_TEXT_ALIGN_RIGT", "annotation": "omp_object.inc"},
+		
+		{"trigger": "EDIT_RESPONSE", "contents": "EDIT_RESPONSE:", "annotation": "omp_object.inc"},
 		{"trigger": "UNKNOWN_EDIT_RESPONSE", "annotation": "omp_object.inc"},
 		{"trigger": "EDIT_RESPONSE_CANCEL", "annotation": "omp_object.inc"},
 		{"trigger": "EDIT_RESPONSE_FINAL", "annotation": "omp_object.inc"},
@@ -38,7 +46,6 @@
 			Global
 		*/
 		{"trigger": "SetObjectsDefaultCameraCollision", "contents": "SetObjectsDefaultCameraCollision(${1:bool:disable})", "annotation": "omp_object.inc"},
-		{"trigger": "SetObjectsDefaultCameraCol", "contents": "SetObjectsDefaultCameraCol(${1:bool:disable})", "annotation": "omp_object.inc"},
 		{"trigger": "GetObjectType", "contents": "GetObjectType(${1:playerid}, ${2:objectid})", "annotation": "omp_object.inc"},		
 		{"trigger": "CreateObject", "contents": "CreateObject(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rotationX}, ${6:Float:rotationY}, ${7:Float:rotationZ}, ${8:Float:drawDistance = 0.0})", "annotation": "omp_object.inc"},
 		{"trigger": "AttachObjectToVehicle", "contents": "AttachObjectToVehicle(${1:objectid}, ${2:parentid}, ${3:Float:offsetX}, ${4:Float:offsetY}, ${5:Float:offsetZ}, ${6:Float:rotationX}, ${7:Float:rotationY}, ${8:Float:rotationZ})", "annotation": "omp_object.inc"},
@@ -71,7 +78,7 @@
 		{"trigger": "IsObjectMaterialSlotUsed", "contents": "IsObjectMaterialSlotUsed(${1:objectid}, ${2:materialIndex})", "annotation": "omp_object.inc"},
 		{"trigger": "GetObjectMaterial", "contents": "GetObjectMaterial(${1:objectid}, ${2:materialIndex}, ${3:&modelid}, ${4:textureLibrary[]}, ${5:textureLibrarySize = sizeof (textureLibrary)}, ${6:textureName[]}, ${7:textureNameSize = sizeof (textureName)}, ${8:&materialColour = 0})", "annotation": "omp_object.inc"},
 		{"trigger": "GetObjectMaterialText", "contents": "GetObjectMaterialText(${1:objectid}, ${2:materialIndex}, ${3:text[]}, ${4:textSize = sizeof (text)}, ${5:&OBJECT_MATERIAL_SIZE:materialSize}, ${6:fontFace[]}, ${7:fontFaceSize = sizeof (fontFace)}, ${8:&fontSize = 0}, ${9:&bool:bold = true}, ${10:&fontColour = 0xFFFFFFFF}, ${11:&backgroundColour = 0}, ${12:&OBJECT_MATERIAL_TEXT_ALIGN:textAlignment = OBJECT_MATERIAL_TEXT_ALIGN_LEFT})", "annotation": "omp_object.inc"},
-		{"trigger": "IsObjectNoCameraCol", "contents": "IsObjectNoCameraCol(${1:objectid})", "annotation": "omp_object.inc"},
+		// {"trigger": "IsObjectNoCameraCol", "contents": "IsObjectNoCameraCol(${1:objectid})", "annotation": "omp_object.inc"},
 		{"trigger": "HasObjectCameraCollision", "contents": "HasObjectCameraCollision(${1:objectid})", "annotation": "omp_object.inc"},
 		
 		/*
@@ -87,7 +94,6 @@
 		{"trigger": "GetPlayerObjectRot", "contents": "GetPlayerObjectRot(${1:playerid}, ${2:objectid}, ${3:&Float:rotationX}, ${4:&Float:rotationY}, ${5:&Float:rotationZ})", "annotation": "omp_object.inc"},
 		{"trigger": "GetPlayerObjectModel", "contents": "GetPlayerObjectModel(${1:playerid}, ${2:objectid})", "annotation": "omp_object.inc"},
 		{"trigger": "SetPlayerObjectNoCameraCollision", "contents": "SetPlayerObjectNoCameraCollision(${1:playerid}, ${2:objectid})", "annotation": "omp_object.inc"},
-		{"trigger": "SetPlayerObjectNoCameraCol", "contents": "SetPlayerObjectNoCameraCol()", "annotation": "omp_object.inc"},
 		{"trigger": "IsValidPlayerObject", "contents": "IsValidPlayerObject(${1:playerid}, ${2:objectid})", "annotation": "omp_object.inc"},
 		{"trigger": "DestroyPlayerObject", "contents": "DestroyPlayerObject(${1:playerid}, ${2:objectid})", "annotation": "omp_object.inc"},
 		{"trigger": "MovePlayerObject", "contents": "MovePlayerObject(${1:playerid}, ${2:objectid}, ${3:Float:targetX}, ${4:Float:targetY}, ${5:Float:targetZ}, ${6:Float:speed}, ${7:Float:rotationX = -1000.0}, ${8:Float:rotationY = -1000.0}, ${9:Float:rotationZ = -1000.0})", "annotation": "omp_object.inc"},
@@ -106,13 +112,12 @@
 		{"trigger": "IsPlayerObjectMaterialSlotUsed", "contents": "IsPlayerObjectMaterialSlotUsed(${1:playerid}, ${2:objectid}, ${3:materialIndex})", "annotation": "omp_object.inc"},
 		{"trigger": "GetPlayerObjectMaterial", "contents": "GetPlayerObjectMaterial(${1:playerid}, ${2:objectid}, ${3:materialIndex}, ${4:&modelid}, ${5:textureLibrary[]}, ${6:textureLibrarySize = sizeof (textureLibrary)}, ${7:textureName[]}, ${8:textureNameSize = sizeof (textureName)}, ${9:&materialColour = 0})", "annotation": "omp_object.inc"},
 		{"trigger": "GetPlayerObjectMaterialText", "contents": "GetPlayerObjectMaterialText(${1:playerid}, ${2:objectid}, ${3:materialIndex}, ${4:text[]}, ${5:textSize = sizeof (text)}, ${6:&OBJECT_MATERIAL_SIZE:materialSize}, ${7:fontFace[]}, ${8:fontFaceSize = sizeof (fontFace)}, ${9:&fontSize = 0}, ${10:&bool:bold = true}, ${11:&fontColour = 0xFFFFFFFF}, ${12:&backgroundColour = 0}, ${13:&OBJECT_MATERIAL_TEXT_ALIGN:textAlignment = OBJECT_MATERIAL_TEXT_ALIGN_LEFT})", "annotation": "omp_object.inc"},
-		{"trigger": "IsPlayerObjectNoCameraCol", "contents": "IsPlayerObjectNoCameraCol(${1:playerid}, ${2:objectid})", "annotation": "omp_object.inc"},
+		// {"trigger": "IsPlayerObjectNoCameraCol", "contents": "IsPlayerObjectNoCameraCol(${1:playerid}, ${2:objectid})", "annotation": "omp_object.inc"},
 		{"trigger": "HasPlayerObjectCameraCollision", "contents": "HasPlayerObjectCameraCollision(${1:playerid}, ${2:objectid})", "annotation": "omp_object.inc"},
 		{"trigger": "GetPlayerSurfingPlayerObjectID", "contents": "GetPlayerSurfingPlayerObjectID(${1:playerid})", "annotation": "omp_object.inc"},
 		{"trigger": "GetPlayerObjectMovingTargetPos", "contents": "GetPlayerObjectMovingTargetPos(${1:playerid}, ${2:objectid}, ${3:&Float:targetX}, ${4:&Float:targetY}, ${5:&Float:targetZ})", "annotation": "omp_object.inc"},
 		{"trigger": "GetPlayerObjectMovingTargetRot", "contents": "GetPlayerObjectMovingTargetRot(${1:playerid}, ${2:objectid}, ${3:&Float:rotationX}, ${4:&Float:rotationY}, ${5:&Float:rotationZ})", "annotation": "omp_object.inc"},
 		{"trigger": "GetPlayerCameraTargetPlayerObject", "contents": "GetPlayerCameraTargetPlayerObject(${1:playerid})", "annotation": "omp_object.inc"},
-		{"trigger": "GetPlayerCameraTargetPlayerObj", "contents": "GetPlayerCameraTargetPlayerObj()", "annotation": "omp_object.inc"},
 		
 		/*
 			Attachments
@@ -134,22 +139,7 @@
 		{"trigger": "RedirectDownload", "contents": "RedirectDownload(${1:playerid}, ${2:const url[]})", "annotation": "omp_object.inc"},
 		{"trigger": "GetCustomModelPath", "contents": "GetCustomModelPath(${1:modelid}, ${2:dffPath[]}, ${3:dffSize = sizeof (dffPath)}, ${4:txdPath[]}, ${5:txdSize = sizeof (txdPath)})", "annotation": "omp_object.inc"},
 		{"trigger": "IsValidCustomModel", "contents": "IsValidCustomModel(${1:modelid})", "annotation": "omp_object.inc"},
-		
-		/*
-			Deprecated
-		*/
-		// {"trigger": "SelectObject", "contents": "SelectObject(${1:playerid})", "annotation": "omp_object.inc"},
-		// {"trigger": "EditObject", "contents": "EditObject(${1:playerid}, ${2:objectid})", "annotation": "omp_object.inc"},
-		// {"trigger": "EditPlayerObject", "contents": "EditPlayerObject(${1:playerid}, ${2:objectid})", "annotation": "omp_object.inc"},
-		// {"trigger": "CancelEdit", "contents": "CancelEdit(${1:playerid})", "annotation": "omp_object.inc"},
-		// {"trigger": "GetObjectTarget", "contents": "GetObjectTarget(${1:objectid}, ${2:&Float:targetX = 0.0}, ${3:&Float:targetY = 0.0}, ${4:&Float:targetZ = 0.0})", "annotation": "omp_object.inc"},
-		// {"trigger": "SetObjectsDefaultCameraCol", "contents": "SetObjectsDefaultCameraCol(${1:bool:disable})", "annotation": "omp_object.inc"},
-		// {"trigger": "SetObjectNoCameraCol", "contents": "SetObjectNoCameraCol(${1:objectid})", "annotation": "omp_object.inc"},
-		// {"trigger": "IsObjectNoCameraCol", "contents": "IsObjectNoCameraCol(${1:objectid})", "annotation": "omp_object.inc"},
-		// {"trigger": "SetPlayerObjectNoCameraCol", "contents": "SetPlayerObjectNoCameraCol(${1:playerid}, ${2:objectid})", "annotation": "omp_object.inc"},
-		// {"trigger": "IsPlayerObjectNoCameraCol", "contents": "IsPlayerObjectNoCameraCol(${1:playerid}, ${2:objectid})", "annotation": "omp_object.inc"},
-		// {"trigger": "GetPlayerCameraTargetPlayerObj", "contents": "GetPlayerCameraTargetPlayerObj(${1:playerid})", "annotation": "omp_object.inc"},
-		
+				
 		/*
 			Callbacks
 		*/

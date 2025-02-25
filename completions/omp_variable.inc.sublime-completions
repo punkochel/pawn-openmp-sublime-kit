@@ -3,15 +3,18 @@
 
     "completions": 
     [
+    	{"trigger": "VARTYPE", "contents": "VARTYPE:", "annotation": "omp_variable.inc"},
     	{"trigger": "UNKNOWN_VARTYPE", "annotation": "omp_variable.inc"},
 		{"trigger": "VARTYPE_NONE", "annotation": "omp_variable.inc"},
 		{"trigger": "VARTYPE_INT", "annotation": "omp_variable.inc"},
 		{"trigger": "VARTYPE_STRING", "annotation": "omp_variable.inc"},
 		{"trigger": "VARTYPE_FLOAT", "annotation": "omp_variable.inc"},
+		
 		{"trigger": "SERVER_VARTYPE_NONE", "annotation": "omp_variable.inc"},
 		{"trigger": "SERVER_VARTYPE_INT", "annotation": "omp_variable.inc"},
 		{"trigger": "SERVER_VARTYPE_STRING", "annotation": "omp_variable.inc"},
 		{"trigger": "SERVER_VARTYPE_FLOAT", "annotation": "omp_variable.inc"},
+		
 		{"trigger": "PLAYER_VARTYPE_NONE", "annotation": "omp_variable.inc"},
 		{"trigger": "PLAYER_VARTYPE_INT", "annotation": "omp_variable.inc"},
 		{"trigger": "PLAYER_VARTYPE_STRING", "annotation": "omp_variable.inc"},

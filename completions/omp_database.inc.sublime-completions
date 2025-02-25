@@ -3,6 +3,7 @@
 
     "completions": 
     [
+    	{"trigger": "SQLITE_OPEN", "contents": "SQLITE_OPEN:", "annotation": "omp_database.inc"},
     	{"trigger": "UNKNOWN_SQLITE_OPEN", "annotation": "omp_database.inc"},
     	{"trigger": "SQLITE_OPEN_READONLY", "annotation": "omp_database.inc"},
 		{"trigger": "SQLITE_OPEN_READWRITE", "annotation": "omp_database.inc"},
@@ -48,44 +49,5 @@
 		{"trigger": "DB_GetLegacyDBResult", "contents": "DB_GetLegacyDBResult(${1:DBResult:result})", "annotation": "omp_database.inc"},
 		{"trigger": "DB_GetDatabaseConnectionCount", "contents": "DB_GetDatabaseConnectionCount()", "annotation": "omp_database.inc"},
 		{"trigger": "DB_GetDatabaseResultSetCount", "contents": "DB_GetDatabaseResultSetCount()", "annotation": "omp_database.inc"},
-
-		/*
-			Deprecated Legacy
-		*/
-		{"trigger": "db_open", "contents": "db_open(${1:const name[]})", "annotation": "omp_database.inc"},
-		{"trigger": "db_close", "contents": "db_close(${1:DB:db})", "annotation": "omp_database.inc"},
-		{"trigger": "db_query", "contents": "db_query(${1:DB:db}, ${2:const query[]})", "annotation": "omp_database.inc"},
-		{"trigger": "db_free_result", "contents": "db_free_result(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		{"trigger": "db_num_rows", "contents": "db_num_rows(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		{"trigger": "db_next_row", "contents": "db_next_row(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		{"trigger": "db_num_fields", "contents": "db_num_fields(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		{"trigger": "db_field_name", "contents": "db_field_name(${1:DBResult:result}, ${2:field}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
-		{"trigger": "db_get_field", "contents": "db_get_field(${1:DBResult:result}, ${2:field}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
-		{"trigger": "db_get_field_int", "contents": "db_get_field_int(${1:DBResult:result}, ${2:field = 0})", "annotation": "omp_database.inc"},
-		{"trigger": "db_get_field_float", "contents": "db_get_field_float(${1:DBResult:result}, ${2:field = 0})", "annotation": "omp_database.inc"},
-		{"trigger": "db_get_field_assoc", "contents": "db_get_field_assoc(${1:DBResult:result}, ${2:const field[]}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
-		{"trigger": "db_get_field_assoc_int", "contents": "db_get_field_assoc_int(${1:DBResult:result}, ${2:const field[]})", "annotation": "omp_database.inc"},
-		{"trigger": "db_get_field_assoc_float", "contents": "db_get_field_assoc_float(${1:DBResult:result}, ${2:const field[]})", "annotation": "omp_database.inc"},
-		{"trigger": "db_get_mem_handle", "contents": "db_get_mem_handle(${1:DB:db})", "annotation": "omp_database.inc"},
-		{"trigger": "db_get_result_mem_handle", "contents": "db_get_result_mem_handle(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		{"trigger": "db_debug_openfiles", "contents": "db_debug_openfiles()", "annotation": "omp_database.inc"},
-		{"trigger": "db_debug_openresults", "contents": "db_debug_openresults()", "annotation": "omp_database.inc"},
-		
-		/*
-			Deprecated Compact
-		*/
-		// {"trigger": "DB_Query", "contents": "DB_Query(${1:DB:db}, ${2:const query[]})", "annotation": "omp_database.inc"},
-		// {"trigger": "DB_FreeResult", "contents": "DB_FreeResult(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		// {"trigger": "DB_NumRows", "contents": "DB_NumRows(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		// {"trigger": "DB_NextRow", "contents": "DB_NextRow(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		// {"trigger": "DB_NumFields", "contents": "DB_NumFields(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		// {"trigger": "DB_FieldName", "contents": "DB_FieldName(${1:DBResult:result}, ${2:field}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
-		// {"trigger": "DB_GetField", "contents": "DB_GetField(${1:DBResult:result}, ${2:field}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
-		// {"trigger": "DB_GetFieldAssoc", "contents": "DB_GetFieldAssoc(${1:DBResult:result}, ${2:const field[]}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
-		// {"trigger": "DB_GetFieldAssocInt", "contents": "DB_GetFieldAssocInt(${1:DBResult:result}, ${2:const field[]})", "annotation": "omp_database.inc"},
-		// {"trigger": "DB_GetFieldAssocFloat", "contents": "DB_GetFieldAssocFloat(${1:DBResult:result}, ${2:const field[]})", "annotation": "omp_database.inc"},
-		// {"trigger": "DB_GetResultMemHandle", "contents": "DB_GetResultMemHandle(${1:DBResult:result})", "annotation": "omp_database.inc"},
-		// {"trigger": "DB_DebugOpenFiles", "contents": "DB_DebugOpenFiles()", "annotation": "omp_database.inc"},
-		// {"trigger": "DB_DebugOpenResults", "contents": "DB_DebugOpenResults()", "annotation": "omp_database.inc"},
 	]
 }

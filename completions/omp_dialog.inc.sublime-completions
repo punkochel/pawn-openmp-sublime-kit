@@ -5,6 +5,8 @@
     [
     	{"trigger": "INVALID_DIALOG_ID", "annotation": "omp_dialog.inc"},
 		{"trigger": "MAX_DIALOG", "annotation": "omp_dialog.inc"},
+		
+		{"trigger": "DIALOG_STYLE", "contents": "DIALOG_STYLE:", "annotation": "omp_dialog.inc"},
 		{"trigger": "UNKNOWN_DIALOG_STYLE", "annotation": "omp_dialog.inc"},
 		{"trigger": "DIALOG_STYLE_MSGBOX", "annotation": "omp_dialog.inc"},
 		{"trigger": "DIALOG_STYLE_INPUT", "annotation": "omp_dialog.inc"},
@@ -30,6 +32,5 @@
 			Callbacks
 		*/
 		{"trigger": "OnDialogResponse", "contents": "OnDialogResponse(${1:playerid}, ${2:dialogid}, ${3:response}, ${4:listitem}, ${5:inputtext[]})", "annotation": "omp_dialog.inc"},
-
 	]
 }

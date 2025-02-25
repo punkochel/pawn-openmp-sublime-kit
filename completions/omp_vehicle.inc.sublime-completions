@@ -5,6 +5,8 @@
     [
 		{"trigger": "MAX_VEHICLES", "annotation": "omp_vehicle.inc"},
 		{"trigger": "INVALID_VEHICLE_ID", "annotation": "omp_vehicle.inc"},
+		
+		{"trigger": "CARMODTYPE", "contents": "CARMODTYPE:", "annotation": "omp_vehicle.inc"},
 		{"trigger": "MAX_CARMODS", "annotation": "omp_vehicle.inc"},
 		{"trigger": "UNKNOWN_CARMODTYPE", "annotation": "omp_vehicle.inc"},
 		{"trigger": "CARMODTYPE_NONE", "annotation": "omp_vehicle.inc"},
@@ -24,9 +26,13 @@
 		{"trigger": "CARMODTYPE_VENT_LEFT", "annotation": "omp_vehicle.inc"},
 		{"trigger": "CARMODTYPE_FRONT_BULLBAR", "annotation": "omp_vehicle.inc"},
 		{"trigger": "CARMODTYPE_REAR_BULLBAR", "annotation": "omp_vehicle.inc"},
+		
+		{"trigger": "VEHICLE_PARAMS", "contents": "VEHICLE_PARAMS:", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_PARAMS_UNSET", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_PARAMS_OFF", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_PARAMS_ON", "annotation": "omp_vehicle.inc"},
+		
+		{"trigger": "VEHICLE_MODEL_INFO", "contents": "VEHICLE_MODEL_INFO:", "annotation": "omp_vehicle.inc"},
 		{"trigger": "MAX_VEHICLE_MODEL_INFOS", "annotation": "omp_vehicle.inc"},
 		{"trigger": "UNKNOWN_VEHICLE_MODEL_INFO", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_MODEL_INFO_SIZE", "annotation": "omp_vehicle.inc"},
@@ -44,10 +50,12 @@
 		{"trigger": "VEHICLE_MODEL_INFO_WHEELSFRONT", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_MODEL_INFO_WHEELSREAR", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_MODEL_INFO_WHEELSMID", "annotation": "omp_vehicle.inc"},
-		{"trigger": "VEHICLE_MODEL_INFO_FRONT_BUMPER", "annotation": "omp_vehicle.inc"},
-		{"trigger": "VEHICLE_MODEL_INFO_REAR_BUMPER", "annotation": "omp_vehicle.inc"},
+		
+		{"trigger": "VEHICLE_PANEL_STATUS", "contents": "VEHICLE_PANEL_STATUS:", "annotation": "omp_vehicle.inc"},
 		{"trigger": "UNKNOWN_VEHICLE_PANEL_STATUS", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_PANEL_STATUS_NONE", "annotation": "omp_vehicle.inc"},
+		
+		{"trigger": "VEHICLE_DOOR_STATUS", "contents": "VEHICLE_DOOR_STATUS:", "annotation": "omp_vehicle.inc"},
 		{"trigger": "UNKNOWN_VEHICLE_DOOR_STATUS", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_DOOR_STATUS_NONE", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_DOOR_STATUS_BONNET_OPEN", "annotation": "omp_vehicle.inc"},
@@ -74,31 +82,8 @@
 		{"trigger": "VEHICLE_DOOR_STATUS_PASSENGER_OPEN", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_DOOR_STATUS_PASSENGER_DAMAGED", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_DOOR_STATUS_PASSENGER_MISSING", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_NONE", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_BONNET_OPEN", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_BONNET_DAMAGED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_BONNET_MISSING", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_HOOD_OPEN", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_HOOD_DAMAGED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_HOOD_MISSING", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_BOOT_OPEN", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_BOOT_DAMAGED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_BOOT_MISSING", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_TRUNK_OPEN", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_TRUNK_DAMAGED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_TRUNK_MISSING", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_FRONT_LEFT_OPEN", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_FRONT_LEFT_DAMAGED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_FRONT_LEFT_MISSING", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_DRIVER_OPEN", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_DRIVER_DAMAGED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_DRIVER_MISSING", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_FRONT_RIGHT_OPEN", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_FRONT_RIGHT_DAMAGED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_FRONT_RIGHT_MISSING", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_PASSENGER_OPEN", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_PASSENGER_DAMAGED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARDOOR_PASSENGER_MISSING", "annotation": "omp_vehicle.inc"},
+			
+		{"trigger": "VEHICLE_LIGHT_STATUS", "contents": "VEHICLE_LIGHT_STATUS:", "annotation": "omp_vehicle.inc"},	
 		{"trigger": "UNKNOWN_VEHICLE_LIGHT_STATUS", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_LIGHT_STATUS_NONE", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_LIGHT_STATUS_FRONT_LEFT_BROKEN", "annotation": "omp_vehicle.inc"},
@@ -106,11 +91,8 @@
 		{"trigger": "VEHICLE_LIGHT_STATUS_DRIVER_BROKEN", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_LIGHT_STATUS_PASSENGER_BROKEN", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_LIGHT_STATUS_REAR_BROKEN", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARLIGHT_FRONT_LEFT_BROKEN", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARLIGHT_FRONT_RIGHT_BROKEN", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARLIGHT_DRIVER_BROKEN", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARLIGHT_PASSENGER_BROKEN", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARLIGHT_REAR_BROKEN", "annotation": "omp_vehicle.inc"},
+		
+		{"trigger": "VEHICLE_TYRE_STATUS", "contents": "VEHICLE_TYRE_STATUS:", "annotation": "omp_vehicle.inc"},		
 		{"trigger": "UNKNOWN_VEHICLE_TYRE_STATUS", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_TYRE_STATUS_FRONT_LEFT_POPPED", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_TYRE_STATUS_FRONT_RIGHT_POPPED", "annotation": "omp_vehicle.inc"},
@@ -120,14 +102,8 @@
 		{"trigger": "VEHICLE_TIRE_STATUS_FRONT_RIGHT_POPPED", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_TIRE_STATUS_REAR_LEFT_POPPED", "annotation": "omp_vehicle.inc"},
 		{"trigger": "VEHICLE_TIRE_STATUS_REAR_RIGHT_POPPED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARTYRE_FRONT_LEFT_POPPED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARTYRE_FRONT_RIGHT_POPPED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARTYRE_REAR_LEFT_POPPED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARTYRE_REAR_RIGHT_POPPED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARTIRE_FRONT_LEFT_POPPED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARTIRE_FRONT_RIGHT_POPPED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARTIRE_REAR_LEFT_POPPED", "annotation": "omp_vehicle.inc"},
-		{"trigger": "CARTIRE_REAR_RIGHT_POPPED", "annotation": "omp_vehicle.inc"},
+		
+		{"trigger": "LANDING_GEAR_STATE", "contents": "LANDING_GEAR_STATE:", "annotation": "omp_vehicle.inc"},		
 		{"trigger": "LANDING_GEAR_STATE_DOWN", "annotation": "omp_vehicle.inc"},
 		{"trigger": "LANDING_GEAR_STATE_UP", "annotation": "omp_vehicle.inc"},
 
@@ -221,15 +197,6 @@
 		{"trigger": "GetVehicles", "contents": "GetVehicles(${1:vehicles[]}, ${2:size = sizeof (vehicles)})", "annotation": "omp_vehicle.inc"},
 		{"trigger": "GetVehicleOccupant", "contents": "GetVehicleOccupant(${1:vehicleid}, ${2:seatid})", "annotation": "omp_vehicle.inc"},
 		{"trigger": "CountVehicleOccupants", "contents": "CountVehicleOccupants(${1:vehicleid})", "annotation": "omp_vehicle.inc"},
-		
-		/*
-			Deprecated
-		*/
-		// {"trigger": "ChangeVehicleColor", "contents": "ChangeVehicleColor(${1:vehicleid}, ${2:colour1}, ${3:colour2})", "annotation": "omp_vehicle.inc"},
-		// {"trigger": "EnableTirePopping", "contents": "EnableTirePopping(${1:bool:enable})", "annotation": "omp_vehicle.inc"},
-		// {"trigger": "GetVehicleColor", "contents": "GetVehicleColor(${1:vehicleid}, ${2:&colour1}, ${3:&colour2})", "annotation": "omp_vehicle.inc"},
-		// {"trigger": "GetRandomCarColPair", "contents": "GetRandomCarColPair(${1:modelid}, ${2:&colour1}, ${3:&colour2}, ${4:&colour3 = 0}, ${5:&colour4 = 0})", "annotation": "omp_vehicle.inc"},
-		// {"trigger": "CarColIndexToColour", "contents": "CarColIndexToColour(${1:index}, ${2:alpha = 0xFF})", "annotation": "omp_vehicle.inc"},
 
 		/*
 			Callbacks

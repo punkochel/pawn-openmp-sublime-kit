@@ -7,6 +7,7 @@
 		{"trigger": "io_write", "annotation": "file.inc"},
 		{"trigger": "io_readwrite", "annotation": "file.inc"},
 		{"trigger": "io_append", "annotation": "file.inc"},
+
 		{"trigger": "seek_start", "annotation": "file.inc"},
 		{"trigger": "seek_current", "annotation": "file.inc"},
 		{"trigger": "seek_end", "annotation": "file.inc"},
@@ -34,7 +35,6 @@
 		{"trigger": "diskfree", "contents": "diskfree(${1:const volume[] = \"\"})", "annotation": "file.inc"},
 		{"trigger": "fattrib", "contents": "fattrib(${1:const filename[]}, ${2:timestamp = 0}, ${3:attrib = 0x0F})", "annotation": "file.inc"},
 		{"trigger": "fmatch", "contents": "fmatch(${1:filename[]}, ${2:const pattern[]}, ${3:index = 0}, ${4:size = sizeof (filename)})", "annotation": "file.inc"},
-		{"trigger": "fmkdir", "contents": "fmkdir(${1:const dirname[]})", "annotation": "file.inc"},
 		{"trigger": "fcreatedir", "contents": "fcreatedir(${1:const dirname[]})", "annotation": "file.inc"},
 		{"trigger": "deletecfg", "contents": "deletecfg(${1:const cfgname[] = \"\"}, ${2:const section[] = \"\"}, ${3:const key[] = \"\"})", "annotation": "file.inc"},
 		{"trigger": "readcfg", "contents": "readcfg(${1:const cfgname[] = \"\"}, ${2:const section[] = \"\"}, ${3:const key[]}, ${4:value[]}, ${5:size = sizeof (value)}, ${6:const defvalue[] = \"\"}, ${7:bool:pack = false})", "annotation": "file.inc"},

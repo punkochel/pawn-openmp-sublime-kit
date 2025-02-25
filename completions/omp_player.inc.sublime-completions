@@ -9,6 +9,8 @@
 		{"trigger": "MAX_CHATBUBBLE_LENGTH", "annotation": "omp_player.inc"},
 		{"trigger": "NO_TEAM", "annotation": "omp_player.inc"},
 		{"trigger": "INVALID_PLAYER_ID", "annotation": "omp_player.inc"},
+		
+		{"trigger": "PLAYER_STATE", "contents": "PLAYER_STATE:", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_PLAYER_STATE", "annotation": "omp_player.inc"},
 		{"trigger": "PLAYER_STATE_NONE", "annotation": "omp_player.inc"},
 		{"trigger": "PLAYER_STATE_ONFOOT", "annotation": "omp_player.inc"},
@@ -17,9 +19,12 @@
 		{"trigger": "PLAYER_STATE_WASTED", "annotation": "omp_player.inc"},
 		{"trigger": "PLAYER_STATE_SPAWNED", "annotation": "omp_player.inc"},
 		{"trigger": "PLAYER_STATE_SPECTATING", "annotation": "omp_player.inc"},
+		
 		{"trigger": "PLAYER_STATE_EXIT_VEHICLE", "annotation": "omp_player.inc"},
 		{"trigger": "PLAYER_STATE_ENTER_VEHICLE_DRIVER", "annotation": "omp_player.inc"},
 		{"trigger": "PLAYER_STATE_ENTER_VEHICLE_PASSENGER", "annotation": "omp_player.inc"},
+		
+		{"trigger": "SPECIAL_ACTION", "contents": "SPECIAL_ACTION:", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_SPECIAL_ACTION", "annotation": "omp_player.inc"},
 		{"trigger": "SPECIAL_ACTION_NONE", "annotation": "omp_player.inc"},
 		{"trigger": "SPECIAL_ACTION_DUCK", "annotation": "omp_player.inc"},
@@ -41,6 +46,8 @@
 		{"trigger": "SPECIAL_ACTION_CUFFED", "annotation": "omp_player.inc"},
 		{"trigger": "SPECIAL_ACTION_CARRY", "annotation": "omp_player.inc"},
 		{"trigger": "SPECIAL_ACTION_PISSING", "annotation": "omp_player.inc"},
+		
+		{"trigger": "FIGHT_STYLE", "contents": "FIGHT_STYLE:", "annotation": "omp_player.inc"},
 		{"trigger": "MAX_FIGHT_STYLES", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_FIGHT_STYLE", "annotation": "omp_player.inc"},
 		{"trigger": "FIGHT_STYLE_NORMAL", "annotation": "omp_player.inc"},
@@ -49,6 +56,9 @@
 		{"trigger": "FIGHT_STYLE_KNEEHEAD", "annotation": "omp_player.inc"},
 		{"trigger": "FIGHT_STYLE_GRABKICK", "annotation": "omp_player.inc"},
 		{"trigger": "FIGHT_STYLE_ELBOW", "annotation": "omp_player.inc"},
+		
+		{"trigger": "WEAPONSKILL", "contents": "WEAPONSKILL:", "annotation": "omp_player.inc"},
+		{"trigger": "SPECIAL_ACTION", "contents": "SPECIAL_ACTION:", "annotation": "omp_player.inc"},
 		{"trigger": "MAX_WEAPONSKILLS", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_WEAPONSKILL", "annotation": "omp_player.inc"},
 		{"trigger": "WEAPONSKILL_PISTOL", "annotation": "omp_player.inc"},
@@ -62,12 +72,16 @@
 		{"trigger": "WEAPONSKILL_AK47", "annotation": "omp_player.inc"},
 		{"trigger": "WEAPONSKILL_M4", "annotation": "omp_player.inc"},
 		{"trigger": "WEAPONSKILL_SNIPERRIFLE", "annotation": "omp_player.inc"},
+		
+		{"trigger": "WEAPONSTATE", "contents": "WEAPONSTATE:", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_WEAPONSTATE", "annotation": "omp_player.inc"},
-		{"trigger": "WEAPONSTATE_UNKNOWN", "annotation": "omp_player.inc"},
 		{"trigger": "WEAPONSTATE_NO_BULLETS", "annotation": "omp_player.inc"},
 		{"trigger": "WEAPONSTATE_LAST_BULLET", "annotation": "omp_player.inc"},
 		{"trigger": "WEAPONSTATE_MORE_BULLETS", "annotation": "omp_player.inc"},
 		{"trigger": "WEAPONSTATE_RELOADING", "annotation": "omp_player.inc"},
+		{"trigger": "WEAPONSTATE_UNKNOWN", "annotation": "omp_player.inc"},
+
+		{"trigger": "KEY", "contents": "KEY:", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_KEY", "annotation": "omp_player.inc"},
 		{"trigger": "KEY_NONE", "annotation": "omp_player.inc"},
 		{"trigger": "KEY_ACTION", "annotation": "omp_player.inc"},
@@ -94,9 +108,13 @@
 		{"trigger": "KEY_DOWN", "annotation": "omp_player.inc"},
 		{"trigger": "KEY_LEFT", "annotation": "omp_player.inc"},
 		{"trigger": "KEY_RIGHT", "annotation": "omp_player.inc"},
+		
+		{"trigger": "CAM_MOVE", "contents": "CAM_MOVE:", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_CAM_MOVE", "annotation": "omp_player.inc"},
 		{"trigger": "CAMERA_MOVE", "annotation": "omp_player.inc"},
 		{"trigger": "CAMERA_CUT", "annotation": "omp_player.inc"},
+		
+		{"trigger": "CAM_MODE", "contents": "CAM_MODE:", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_CAM_MODE", "annotation": "omp_player.inc"},
 		{"trigger": "CAM_MODE_DISCONNECTED", "annotation": "omp_player.inc"},
 		{"trigger": "CAM_MODE_NONE", "annotation": "omp_player.inc"},
@@ -113,25 +131,37 @@
 		{"trigger": "CAM_MODE_AIMWEAPON", "annotation": "omp_player.inc"},
 		{"trigger": "CAM_MODE_AIMWEAPON_FROMCAR", "annotation": "omp_player.inc"},
 		{"trigger": "CAM_MODE_DW_HELI_CHASE", "annotation": "omp_player.inc"},
+		
+		{"trigger": "MAPICON", "contents": "MAPICON:", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_MAPICON", "annotation": "omp_player.inc"},
 		{"trigger": "MAPICON_LOCAL", "annotation": "omp_player.inc"},
 		{"trigger": "MAPICON_GLOBAL", "annotation": "omp_player.inc"},
 		{"trigger": "MAPICON_LOCAL_CHECKPOINT", "annotation": "omp_player.inc"},
 		{"trigger": "MAPICON_GLOBAL_CHECKPOINT", "annotation": "omp_player.inc"},
+		
+		{"trigger": "SPECTATE_MODE", "contents": "SPECTATE_MODE:", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_SPECTATE_MODE", "annotation": "omp_player.inc"},
 		{"trigger": "SPECTATE_MODE_NORMAL", "annotation": "omp_player.inc"},
 		{"trigger": "SPECTATE_MODE_FIXED", "annotation": "omp_player.inc"},
 		{"trigger": "SPECTATE_MODE_SIDE", "annotation": "omp_player.inc"},
+		
+		{"trigger": "PLAYER_RECORDING_TYPE", "contents": "PLAYER_RECORDING_TYPE:", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_PLAYER_RECORDING_TYPE", "annotation": "omp_player.inc"},
 		{"trigger": "PLAYER_RECORDING_TYPE_NONE", "annotation": "omp_player.inc"},
 		{"trigger": "PLAYER_RECORDING_TYPE_DRIVER", "annotation": "omp_player.inc"},
 		{"trigger": "PLAYER_RECORDING_TYPE_ONFOOT", "annotation": "omp_player.inc"},
+		
+		{"trigger": "FORCE_SYNC", "contents": "FORCE_SYNC:", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_FORCE_SYNC", "annotation": "omp_player.inc"},
 		{"trigger": "SYNC_NONE", "annotation": "omp_player.inc"},
 		{"trigger": "SYNC_ALL", "annotation": "omp_player.inc"},
 		{"trigger": "SYNC_OTHER", "annotation": "omp_player.inc"},
+		
+		{"trigger": "CLICK_SOURCE", "contents": "CLICK_SOURCE:", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_CLICK_SOURCE", "annotation": "omp_player.inc"},
 		{"trigger": "CLICK_SOURCE_SCOREBOARD", "annotation": "omp_player.inc"},
+		
+		{"trigger": "BULLET_HIT_TYPE", "contents": "BULLET_HIT_TYPE:", "annotation": "omp_player.inc"},
 		{"trigger": "UNKNOWN_BULLET_HIT_TYPE", "annotation": "omp_player.inc"},
 		{"trigger": "BULLET_HIT_TYPE_NONE", "annotation": "omp_player.inc"},
 		{"trigger": "BULLET_HIT_TYPE_PLAYER", "annotation": "omp_player.inc"},
@@ -291,15 +321,7 @@
 		{"trigger": "AllowPlayerWeapons", "contents": "AllowPlayerWeapons(${1:playerid}, ${2:bool:allow})", "annotation": "omp_player.inc"},
 		{"trigger": "ArePlayerWeaponsAllowed", "contents": "ArePlayerWeaponsAllowed(${1:playerid})", "annotation": "omp_player.inc"},
 		{"trigger": "IsPlayerUsingOmp", "contents": "IsPlayerUsingOmp(${1:playerid})", "annotation": "omp_player.inc"},
-		
-		/*
-			Deprecated
-		*/
-		// {"trigger": "SendClientMessagef", "contents": "SendClientMessagef(${1:playerid}, ${2:colour}, ${3:const format[]}, ${4:OPEN_MP_TAGS:...})", "annotation": "omp_player.inc"},
-		// {"trigger": "SendClientMessageToAllf", "contents": "SendClientMessageToAllf(${1:colour}, ${2:const format[]}, ${3:OPEN_MP_TAGS:...})", "annotation": "omp_player.inc"},
-		// {"trigger": "GameTextForPlayerf", "contents": "GameTextForPlayerf(${1:playerid}, ${2:const format[]}, ${3:time}, ${4:style}, ${5:OPEN_MP_TAGS:...})", "annotation": "omp_player.inc"},
-		// {"trigger": "SendPlayerMessageToPlayerf", "contents": "SendPlayerMessageToPlayerf(${1:playerid}, ${2:senderid}, ${3:const format[]}, ${4:OPEN_MP_TAGS:...})", "annotation": "omp_player.inc"},
-		
+				
 		/*
 			Callbacks
 		*/

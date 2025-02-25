@@ -3,6 +3,7 @@
 
     "completions": 
     [
+    	{"trigger": "Menu", "contents": "Menu:", "annotation": "omp_menu.inc"},
     	{"trigger": "MAX_MENUS", "annotation": "omp_menu.inc"},
 		{"trigger": "INVALID_MENU", "annotation": "omp_menu.inc"},
 
