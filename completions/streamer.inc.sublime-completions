@@ -10,15 +10,18 @@
         {"trigger": "STREAMER_TYPE_3D_TEXT_LABEL", "annotation": "streamer.inc"},
         {"trigger": "STREAMER_TYPE_AREA", "annotation": "streamer.inc"},
         {"trigger": "STREAMER_TYPE_ACTOR", "annotation": "streamer.inc"},
+        
         {"trigger": "STREAMER_AREA_TYPE_CIRCLE", "annotation": "streamer.inc"},
         {"trigger": "STREAMER_AREA_TYPE_CYLINDER", "annotation": "streamer.inc"},
         {"trigger": "STREAMER_AREA_TYPE_SPHERE", "annotation": "streamer.inc"},
         {"trigger": "STREAMER_AREA_TYPE_RECTANGLE", "annotation": "streamer.inc"},
         {"trigger": "STREAMER_AREA_TYPE_CUBOID", "annotation": "streamer.inc"},
         {"trigger": "STREAMER_AREA_TYPE_POLYGON", "annotation": "streamer.inc"},
+        
         {"trigger": "STREAMER_OBJECT_TYPE_GLOBAL", "annotation": "streamer.inc"},
         {"trigger": "STREAMER_OBJECT_TYPE_PLAYER", "annotation": "streamer.inc"},
         {"trigger": "STREAMER_OBJECT_TYPE_DYNAMIC", "annotation": "streamer.inc"},
+        
         {"trigger": "STREAMER_MAX_TYPES", "annotation": "streamer.inc"},
         {"trigger": "STREAMER_MAX_AREA_TYPES", "annotation": "streamer.inc"},
         {"trigger": "STREAMER_MAX_OBJECT_TYPES", "annotation": "streamer.inc"},
@@ -26,16 +29,16 @@
         {"trigger": "INVALID_STREAMER_ID", "annotation": "streamer.inc"},
         {"trigger": "FLOAT_INFINITY", "annotation": "streamer.inc"},
 
-        {"trigger": "STREAMER_TAG_OBJECT", "annotation": "streamer.inc"},
-        {"trigger": "STREAMER_TAG_OBJECT_ALT", "annotation": "streamer.inc"},
-        {"trigger": "STREAMER_TAG_PICKUP", "annotation": "streamer.inc"},
-        {"trigger": "STREAMER_TAG_CP", "annotation": "streamer.inc"},
-        {"trigger": "STREAMER_TAG_RACE_CP", "annotation": "streamer.inc"},
-        {"trigger": "STREAMER_TAG_MAP_ICON", "annotation": "streamer.inc"},
-        {"trigger": "STREAMER_TAG_3D_TEXT_LABEL", "annotation": "streamer.inc"},
-        {"trigger": "STREAMER_TAG_AREA", "annotation": "streamer.inc"},
-        {"trigger": "STREAMER_TAG_ACTOR", "annotation": "streamer.inc"},
-        {"trigger": "STREAMER_ALL_TAGS", "annotation": "streamer.inc"},
+        {"trigger": "STREAMER_TAG_OBJECT", "contents": "STREAMER_TAG_OBJECT:", "annotation": "streamer.inc"},
+        {"trigger": "STREAMER_TAG_OBJECT_ALT", "contents": "STREAMER_TAG_OBJECT_ALT:", "annotation": "streamer.inc"},
+        {"trigger": "STREAMER_TAG_PICKUP", "contents": "STREAMER_TAG_PICKUP:", "annotation": "streamer.inc"},
+        {"trigger": "STREAMER_TAG_CP", "contents": "STREAMER_TAG_CP:", "annotation": "streamer.inc"},
+        {"trigger": "STREAMER_TAG_RACE_CP", "contents": "STREAMER_TAG_RACE_CP:", "annotation": "streamer.inc"},
+        {"trigger": "STREAMER_TAG_MAP_ICON", "contents": "STREAMER_TAG_MAP_ICON:", "annotation": "streamer.inc"},
+        {"trigger": "STREAMER_TAG_3D_TEXT_LABEL", "contents": "STREAMER_TAG_3D_TEXT_LABEL:", "annotation": "streamer.inc"},
+        {"trigger": "STREAMER_TAG_AREA", "contents": "STREAMER_TAG_AREA:", "annotation": "streamer.inc"},
+        {"trigger": "STREAMER_TAG_ACTOR", "contents": "STREAMER_TAG_ACTOR:", "annotation": "streamer.inc"},
+        {"trigger": "STREAMER_ALL_TAGS", "contents": "STREAMER_ALL_TAGS:", "annotation": "streamer.inc"},
 
         {"trigger": "STREAMER_OBJECT_SD", "annotation": "streamer.inc"},
         {"trigger": "STREAMER_OBJECT_DD", "annotation": "streamer.inc"},
@@ -383,6 +386,6 @@
         {"trigger": "OnDynamicActorStreamOut", "contents": "OnDynamicActorStreamOut(${1:STREAMER_TAG_ACTOR:actorid}, ${2:forplayerid})", "annotation": "streamer.inc"},
         {"trigger": "Streamer_OnItemStreamIn", "contents": "Streamer_OnItemStreamIn(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:forplayerid})", "annotation": "streamer.inc"},
         {"trigger": "Streamer_OnItemStreamOut", "contents": "Streamer_OnItemStreamOut(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:forplayerid})", "annotation": "streamer.inc"},
-        {"trigger": "Streamer_OnPluginError", "contents": "Streamer_OnPluginError(${1:const error[]})", "annotation": "streamer.inc"}
+        {"trigger": "Streamer_OnPluginError", "contents": "Streamer_OnPluginError(${1:const error[]})", "annotation": "streamer.inc"},
 	]
 }
