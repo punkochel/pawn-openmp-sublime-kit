@@ -4,10 +4,12 @@
     [
     	{"trigger": "Dialog_Open", "contents": "Dialog_Open(${1:playerid}, ${2:const function[]}, ${3:style}, ${4:const caption[]}, ${5:const info[]}, ${6:const button1[]}, ${7:const button2[]})", "annotation": "mdialog.inc"},
 		{"trigger": "Dialog_Close", "contents": "Dialog_Close(${1:playerid}, ${2:const function[] = \"\"}, ${3:showDialog = true})", "annotation": "mdialog.inc"},
+		{"trigger": "Dialog_Interrupt", "contents": "Dialog_Interrupt(${1:playerid}, ${2:const function[]})", "annotation": "mdialog.inc"},
 		{"trigger": "Dialog_IsOpen", "contents": "Dialog_IsOpen(${1:playerid}, ${2:const function[] = \"\"})", "annotation": "mdialog.inc"},
 		{"trigger": "Dialog_Show", "contents": "Dialog_Show(${1:playerid}, ${2:const function[]})", "annotation": "mdialog.inc"},
 		{"trigger": "Dialog_GetCurrent", "contents": "Dialog_GetCurrent(${1:playerid}, ${2:function[]}, ${3:const size = sizeof(function)})", "annotation": "mdialog.inc"},
 		{"trigger": "Dialog_Message", "contents": "Dialog_Message(${1:playerid}, ${2:const caption[]}, ${3:const info[]}, ${4:const button1[]})", "annotation": "mdialog.inc"},
-		{"trigger": "Dialog_MessageEx", "contents": "Dialog_MessageEx(${1:playerid}, ${2:const response[]}, ${3:const caption[]}, ${4:const info[]}, ${5:const button1[]}, ${6:const button2[]})", "annotation": "mdialog.inc"}
+		{"trigger": "Dialog_MessageEx", "contents": "Dialog_MessageEx(${1:playerid}, ${2:const response[]}, ${3:const caption[]}, ${4:const info[]}, ${5:const button1[]}, ${6:const button2[]})", "annotation": "mdialog.inc"},
+		{"trigger": "MDialog_strlen", "contents": "MDialog_strlen(${const string[]})", "annotation": "mdialog.inc"},
 	]
 }
