@@ -3,17 +3,6 @@
     "completions": 
     [
     	{"trigger": "ITER_NONE", "annotation": "foreach.inc"},
-    	{"trigger": "FOREACH_I_Player", "annotation": "foreach.inc"},
-		{"trigger": "FOREACH_I_Bot", "annotation": "foreach.inc"},
-		{"trigger": "FOREACH_I_Character", "annotation": "foreach.inc"},
-		{"trigger": "FOREACH_I_Vehicle", "annotation": "foreach.inc"},
-		{"trigger": "FOREACH_I_Actor", "annotation": "foreach.inc"},
-		{"trigger": "FOREACH_I_PlayerPlayersStream", "annotation": "foreach.inc"},
-		{"trigger": "FOREACH_I_PlayerVehiclesStream", "annotation": "foreach.inc"},
-		{"trigger": "FOREACH_I_VehiclePlayersStream", "annotation": "foreach.inc"},
-		{"trigger": "FOREACH_I_PlayerActorsStream", "annotation": "foreach.inc"},
-		{"trigger": "FOREACH_I_ActorPlayersStream", "annotation": "foreach.inc"},
-		{"trigger": "FOREACH_I_PlayerInVehicle", "annotation": "foreach.inc"},
 		
 		/*
 			Snippets
