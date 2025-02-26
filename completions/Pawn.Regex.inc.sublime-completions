@@ -2,17 +2,25 @@
     "scope": "source.pawn - variable.other.pawn",
     "completions": 
     [
+        {"trigger": "Regex", "contents": "Regex:", "annotation": "Pawn.Regex.inc"},
+        {"trigger": "RegexMatch", "contents": "RegexMatch:", "annotation": "Pawn.Regex.inc"},
+        {"trigger": "E_REGEX_GRAMMAR", "contents": "E_REGEX_GRAMMAR:", "annotation": "Pawn.Regex.inc"},
+        {"trigger": "E_REGEX_FLAG", "contents": "E_REGEX_FLAG:", "annotation": "Pawn.Regex.inc"},
+        {"trigger": "E_MATCH_FLAG", "contents": "E_MATCH_FLAG:", "annotation": "Pawn.Regex.inc"},
+
     	{"trigger": "REGEX_ECMASCRIPT", "annotation": "Pawn.Regex.inc"},
         {"trigger": "REGEX_BASIC", "annotation": "Pawn.Regex.inc"},
         {"trigger": "REGEX_EXTENDED", "annotation": "Pawn.Regex.inc"},
         {"trigger": "REGEX_AWK", "annotation": "Pawn.Regex.inc"},
         {"trigger": "REGEX_GREP", "annotation": "Pawn.Regex.inc"},
         {"trigger": "REGEX_EGREP", "annotation": "Pawn.Regex.inc"},
+       
         {"trigger": "REGEX_DEFAULT", "annotation": "Pawn.Regex.inc"},
         {"trigger": "REGEX_ICASE", "annotation": "Pawn.Regex.inc"},
         {"trigger": "REGEX_NOSUBS", "annotation": "Pawn.Regex.inc"},
         {"trigger": "REGEX_OPTIMIZE", "annotation": "Pawn.Regex.inc"},
         {"trigger": "REGEX_COLLATE", "annotation": "Pawn.Regex.inc"},
+        
         {"trigger": "MATCH_DEFAULT", "annotation": "Pawn.Regex.inc"},
         {"trigger": "MATCH_NOT_BOL", "annotation": "Pawn.Regex.inc"},
         {"trigger": "MATCH_NOT_EOL", "annotation": "Pawn.Regex.inc"},
@@ -33,6 +41,6 @@
         {"trigger": "Regex_Search", "contents": "Regex_Search(${1:const str[]}, ${2:Regex:r}, ${3:&RegexMatch:m}, ${4:&pos}, ${5:startpos = 0}, ${6:E_MATCH_FLAG:flags = MATCH_DEFAULT})", "annotation": "Pawn.Regex.inc"},
         {"trigger": "Regex_Replace", "contents": "Regex_Replace(${1:const str[]}, ${2:Regex:r}, ${3:const fmt[]}, ${4:dest[]}, ${5:E_MATCH_FLAG:flags = MATCH_DEFAULT}, ${6:size = sizeof dest})", "annotation": "Pawn.Regex.inc"},
         {"trigger": "Match_GetGroup", "contents": "Match_GetGroup(${1:RegexMatch:m}, ${2:index}, ${3:dest[]}, ${4:&length}, ${5:size = sizeof dest})", "annotation": "Pawn.Regex.inc"},
-        {"trigger": "Match_Free", "contents": "Match_Free(${1:&RegexMatch:m})", "annotation": "Pawn.Regex.inc"}
+        {"trigger": "Match_Free", "contents": "Match_Free(${1:&RegexMatch:m})", "annotation": "Pawn.Regex.inc"},
 	]
 }
