@@ -2,7 +2,9 @@
     "scope": "source.pawn - variable.other.pawn",
     "completions": 
     [
-    	{"trigger": "PC_RegAlias", "contents": "PC_RegAlias(${1:const cmd[]}, ${2:const alias[]}, ${3:...})", "annotation": "Pawn.CMD.inc"},
+        {"trigger": "CmdArray", "contents": "CmdArray:", "annotation": "Pawn.CMD.inc"},
+        
+        {"trigger": "PC_RegAlias", "contents": "PC_RegAlias(${1:const cmd[]}, ${2:const alias[]}, ${3:...})", "annotation": "Pawn.CMD.inc"},
         {"trigger": "PC_SetFlags", "contents": "PC_SetFlags(${1:const cmd[]}, ${2:flags})", "annotation": "Pawn.CMD.inc"},
         {"trigger": "PC_GetFlags", "contents": "PC_GetFlags(${1:const cmd[]})", "annotation": "Pawn.CMD.inc"},
         {"trigger": "PC_RenameCommand", "contents": "PC_RenameCommand(${1:const cmd[]}, ${2:const newname[]})", "annotation": "Pawn.CMD.inc"},
