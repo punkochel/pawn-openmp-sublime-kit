@@ -4,8 +4,8 @@ This plugin is a fork of [Pawn syntax](https://github.com/Southclaws/pawn-sublim
 If you development for SA:MP, use Pawn syntax.
 
 ## Description
-The plugin is adapted for development under [Open MP](https://www.open.mp/)  
-Refactored snippets and completions
+The plugin is adapted for development to [Open MP](https://www.open.mp/).
+Refactored snippets and completions.
 
 ## Supported Libraries
 -	[sscanf2](https://github.com/Y-Less/sscanf)
